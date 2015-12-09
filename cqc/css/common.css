@@ -1,0 +1,12 @@
+/* 公共样式 
+*  公共样式样式命名以 .m- 开始	.m-header{}
+*/
+
+/* 站点样式重置 */
+body,textarea,input,button,select,keygen,legend{font:14px/1.4 '微软雅黑',arial,\5b8b\4f53;color:#333;}
+
+/* ty头部 */
+#m-header{}
+
+/* cl底部 */
+#m-footer{}
