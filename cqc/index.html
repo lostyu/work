@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -9,391 +8,566 @@
     <title>众创先锋-首页</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
-    <style>
-    .m-picText{}
-    .m-picText .pic{
-        float: left;
-        margin-right: 10px;
-    }
-    .m-picText .text{
-        overflow: hidden;
-    }
-
-    .m-tag {
-        padding: 4px 5px;
-        min-width: 62px;
-        height: 20px;
-        line-height: 20px;
-        margin-right: 6px;
-        border: 1px solid #d0d0d0;
-        color: #939a9a;
-        font-size: 12px;
-    }
-    
-    .m-msgBox {
-        
-        border: 1px solid #e2e3e3;
-        border-radius: 2px;
-        background-color: #fff;
-    }
-    
-    .m-msgBox .hd {
-        line-height: 39px;
-        position: relative;
-        padding: 0 15px;
-        border-bottom: 1px solid #e2e3e3;
-    }
-    
-    .m-msgBox .hd h2 {
-        font-size: 18px;
-        color: #616161;
-        font-weight: normal;
-    }
-    
-    .m-msgBox .hd h2 img {
-        position: relative;
-        top: 2px;
-        margin-right: 8px;
-    }
-    
-    .m-msgBox .hd .more {
-        position: absolute;
-        right: 10px;
-        top: 0;
-        color: #949a9a;
-    }
-    
-    .ty-zcxfb {
-        float: left;
-        width: 843px;
-        height: 445px;
-    }
-    
-    .ty-zcxfb .m-msgBox .bd {
-        padding-top: 30px;
-        padding-right: 30px;
-        height: 373px;
-    }
-    
-    .ty-zcxfb .tabs-nav {
-        margin-right: 26px;
-        float: left;
-        width: 124px;
-        border-right: 1px solid #d0d0d0;
-    }
-    
-    .ty-zcxfb .tabs-nav li {
-        position: relative;
-    }
-    
-    .ty-zcxfb .tabs-nav a {
-        position: relative;
-        right: -1px;
-        display: block;
-        height: 40px;
-        line-height: 40px;
-        font-size: 16px;
-        text-align: center;
-        border-right: 4px solid transparent;
-        color: #616161;
-    }
-    .ty-zcxfb .tabs-nav a:hover, .ty-zcxfb .tabs-nav .active a{
-        border-right: 4px solid #4285f4;
-        color: #4285f4;
-    }
-    
-    .ty-zcxfb .tab-panel {
-        float: left;
-        width: 660px;
-    }
-    
-    .ty-zcxfb .tab-panel .firstNews {
-        height: 140px;
-        margin-bottom: 36px;
-    }
-    
-    .ty-zcxfb .tab-panel .firstNews .img {
-        float: left;
-        margin-right: 18px;
-    }
-    
-    .ty-zcxfb .tab-panel .firstNews .text {
-        overflow: hidden;
-    }
-    
-    .ty-zcxfb .tab-panel .firstNews .text h3 {
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: normal;
-    }
-    
-    .ty-zcxfb .tab-panel .firstNews .text h3 a {
-        color: #2c2d32;
-    }
-    
-    .ty-zcxfb .tab-panel .firstNews .text p {
-        font-size: 14px;
-        line-height: 24px;
-        color: #616161;
-    }
-    
-    .ty-zcxfb .tab-panel .list2 {}
-    
-    .ty-zcxfb .tab-panel .list2 li {
-        float: left;
-        width: 50%;        
-    }
-    
-    .ty-zcxfb .tab-panel .list2 a {
-        display: block;
-        height: 46px;
-        line-height: 46px;        
-        font-size: 16px;
-        color: #2c2d32;
-        border-left: 4px solid transparent;
-    }
-    .ty-zcxfb .tab-panel .list2 a:hover{
-        border-left: 4px solid #349aff;
-        color: #349aff;
-    }
-    .ty-zcxfb .tab-panel .list2 li span{
-        display: inline-block;
-        padding: 0 30px 0 14px;
-        font-size: 22px;
-        font-style: italic;
-    }
-    
-    .ty-zcxfb .firstNews .text .tag {
-        line-height: 26px;
-        margin-top: 15px;
-    }
-    
-    .ty-zcxfb .firstNews .text .fx {
-        line-height: 30px;
-        font-size: 14px;
-        color: #939a9a;
-    }
-    
-    .ty-zcxfb .firstNews .text .fx ul {
-        float: right;
-    }
-    
-    .ty-zcxfb .firstNews .text .fx ul li {
-        float: left;
-        text-align: right;
-    }
-    
-    .ty-zcxfb .firstNews .text .fx ul li a {
-        color: #939a9a;
-    }
-    
-    .ty-zcxfb .firstNews .text .fx .xin1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        background: url(img/xin.png) left center no-repeat;
-    }
-    
-    .ty-zcxfb .firstNews .text .fx .xin2 {
-        padding-left: 20px;
-        background: url(img/xin2.png) left 6px no-repeat;
-        padding-right: 24px;
-    }
-    .ty-zcxfb .tijiao{
-        margin-top: 10px;
-        text-align: right;    
-    }
-    .ty-zcxfb .tijiao a{
-        font-size: 16px;
-        color: #349aff;
-    }
-
-
-    .ty-xfzx {
-        float: right;
-        width: 330px;
-        margin-bottom: 20px;
-        color: #616161;
-    }
-    .ty-xfzx .m-msgBox .bd{
-        padding: 10px;
-        border-bottom: 1px dotted #d4d8e0;
-    }
-    .ty-xfzx .m-msgBox .ft{
-        padding: 10px;
-    }
-    .ty-xfzx .m-msgBox .ft li{
-        line-height: 28px;
-        overflow:hidden;word-wrap:normal;white-space:nowrap;text-overflow:ellipsis;
-    }
-    .ty-xfzx .m-msgBox .ft li a{
-        color: #616161;
-    }
-    .ty-xfzx .m-picText{
-        height: 80px;
-    }
-    .ty-xfzx .m-picText .text h3{
-        font-size: 16px;
-    }
-
-
-    .ty-xmdt{
-        float: right;
-        width: 330px;        
-        background-color: #fff;        
-        color: #616161;
-    }
-    .ty-xmdt .m-msgBox .bd{
-        padding: 10px;
-        height: 144px;
-        overflow: hidden;
-    }
-    .ty-xmdt ul{
-        margin-left: 8px;
-        border-left: 1px solid #e9ebef;
-    }
-    .ty-xmdt li{
-        position: relative;
-        height: 77px;
-        padding-left: 15px;                
-    }
-    .ty-xmdt .dot{
-        position: absolute;
-        left: -5px;
-        top: 4px;
-        width: 10px;
-        height: 10px;
-        background: url(img/dot.png) no-repeat;
-    }
-    .ty-xmdt .time{
-        margin-bottom: 5px;
-        font-size: 12px;
-        color: #949a9a;
-    }
-    .ty-xmdt .text{
-        font-size: 14px;
-        color: #616161;
-    }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <div class="m-wrap f-cb">
-
-        
-        <div class="ty-zcxfb">
-            <div class="m-msgBox">
-                <div class="hd">
-                    <h2><img src="img/tit1.png">众创先锋榜</h2>                    
-                </div>
-                <div class="bd">
-                    <div class="f-cb">
-                        <ul class="tabs-nav">
-                            <li class="active"><a href="javascript:;">互联网+</a></li>
-                            <li><a href="javascript:;">智能制造</a></li>
-                            <li><a href="javascript:;">旅游度假</a></li>
-                            <li><a href="javascript:;">广告传媒</a></li>
-                            <li><a href="javascript:;">生活服务</a></li>
-                            <li><a href="javascript:;">食品领域</a></li>
-                            <li><a href="javascript:;">工业4.0</a></li>
-                            <li><a href="javascript:;">更多++</a></li>
+    <!--顶部-->
+    <div class="head">
+        <div class="head-m center">
+            <!--登录前-->
+            <div class="bf-login s s12 r">
+                您好，欢迎登录众创空间！
+                <span class="sp-login">
+                        <a class="s14" href="19.login.html">登录</a>
+                    </span>
+                <span class="sp-reg">
+                        <a class="s14" href="#">注册</a>
+                    </span>
+            </div>
+            <!--登录后-->
+            <div class="af-login w r" style="display: none;">
+                <div class="user-info r x">
+                    <img class="head" src="images/head.png">
+                    <div class="info-tips box-sh y">
+                        <ul>
+                            <li><a href="#">李达兆</a></li>
+                            <li><a href="#">我的主页</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="javascript:;">退出</a></li>
                         </ul>
-                        <div class="tab-panel">
-                            <div class="firstNews">
-                                <a href="#"><img class="img" src="img/upload/1.jpg" alt=""></a>
-                                <div class="text">
-                                    <h3><a href="#">刀客金属4G-LTE超极本</a></h3>
-                                    <p>今天的酷站两连发，一个是专为工程师打造的极客风音乐网站，用音乐帮你集中精神，高效工作，设计师当然也适用。</p>
-                                    <div class="tag"><span class="m-tag">O2O</span><span class="m-tag">移动互联网</span><span class="m-tag">公众平台</span></div>
-                                    <div class="fx">
-                                        <ul>
-                                            <li class="xin1">143</li>
-                                            <li class="xin2">39</li>
-                                            <li><a href="#">分享</a></li>
-                                        </ul>
-                                        所在地：重庆市
+                    </div>
+                </div>
+                <div class="user-news r x">消息<img class="news-icon y" src="images/g-icon2.png"><a href="#" class="news-tips box-sh y">投融资消息</a></div>
+            </div>
+        </div>
+    </div>
+    <!--首页导航-->
+    <div class="nav">
+        <div class="nav-m center s x">
+            <img src="images/logo.png" class="logo y" width="164" height="40">
+            <ul class="y w">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">创业大赛</a></li>
+                <li><a href="javascript:;">众创先锋榜</a></li>
+                <li class="x z5">
+                    <a href="javascript:;">我是创业者</a>
+                    <div class="pop-up y box-sh" id="pop-up1">
+                        <a href="javascript:;">知识产权保护</a>
+                        <a href="javascript:;">在线估值</a>
+                        <a href="javascript:;">融资委托</a>
+                        <a href="javascript:;">工商咨询</a>
+                    </div>
+                </li>
+                <li class="x z5">
+                    <a href="javascript:;">我是投资人</a>
+                    <div class="pop-up y box-sh" id="pop-up2">
+                        <a href="javascript:;">投资委托</a>
+                        <a href="javascript:;">创业项目</a>
+                    </div>
+                </li>
+                <li><a href="javascript:;">孵化器</a></li>
+                <li><a href="javascript:;">创业学院</a></li>
+                <li class="li-t z5 x">
+                    搜索
+                    <div class="pop-up-search y box-sh" id="pop-up-search">
+                        <div class="serarch x s s14 bt4">
+                            <input class="l serarch_input" type="text" value="请输入要查找的内容">
+                            <div class="y sign fte">
+                                <a href="javascript:;"><span>O2O</span></a>
+                                <a href="javascript:;"><span>微信</span></a>
+                                <a href="javascript:;"><span>投资</span></a>
+                            </div>
+                            <a href="#" class="serarch_btn l"><img class="l" src="images/search.png" width="18" height="18"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--banner-->
+    <div class="d-bn-box f-ff1">
+        <div class="d-bn-con f-cb d-bs">
+            <div class="d-bn-l f-fl">
+                <h2>创青春&nbsp;&nbsp;创未来</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                    <br/> laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </p>
+                <div class="btn-box f-cb">
+                    <a class="a1" href="#">立即参赛</a>
+                    <a class="a2" href="#">参赛项目</a>
+                </div>
+            </div>
+            <div class="d-bn-r f-fr d-bs">
+                <h4>大赛动态<a href="#">更多</a></h4>
+                <ul>
+                    <li><a href="#">2015年12月12日创业大赛正式创开始创业大赛正式创开始</a></li>
+                    <li><a href="#">大赛动态新闻，重庆市政府为众创揭牌大赛动态新闻，重庆市政府为众创揭牌</a></li>
+                    <li><a href="#">大赛准备已经完成，报名接口开放。</a></li>
+                    <li><a href="#"> 大赛动态新闻，时间排序2015.10.10。</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- S 主体内容 -->
+    <div class="m-wrap">
+        <div class="f-cb mt30">
+            <!-- S 众创先锋榜 -->
+            <div class="ty-zcxfb">
+                <div class="m-msgBox">
+                    <div class="hd">
+                        <h2><img src="images/tit1.png">众创先锋榜</h2>
+                    </div>
+                    <div class="bd">
+                        <div class="f-cb">
+                            <ul class="tabs-nav" id="tabs-nav1">
+                                <li class="item active"><a href="javascript:;">互联网+</a></li>
+                                <li class="item"><a href="javascript:;">智能制造</a></li>
+                                <li class="item"><a href="javascript:;">旅游度假</a></li>
+                                <li class="item"><a href="javascript:;">广告传媒</a></li>
+                                <li class="item"><a href="javascript:;">生活服务</a></li>
+                                <li class="item"><a href="javascript:;">食品领域</a></li>
+                                <li class="item"><a href="javascript:;">工业4.0</a></li>
+                                <li><a href="javascript:;">更多++</a></li>
+                            </ul>
+                            <div class="tabs-box" id="tabs-panel1">
+                                <div class="tab-panel" style="display: block;">
+                                    <div class="firstNews">
+                                        <a href="#"><img class="img" src="images/upload/1.jpg" alt=""></a>
+                                        <div class="text">
+                                            <h3><a href="#">刀客金属4G-LTE超极本1</a></h3>
+                                            <p>今天的酷站两连发，一个是专为工程师打造的极客风音乐网站，用音乐帮你集中精神，高效工作，设计师当然也适用。</p>
+                                            <div class="tag"><span class="m-tag">O2O</span><span class="m-tag">移动互联网</span><span class="m-tag">公众平台</span></div>
+                                            <div class="fx">
+                                                <ul>
+                                                    <li class="xin1">143</li>
+                                                    <li class="xin2">39</li>
+                                                    <li><a href="#">分享</a></li>
+                                                </ul>
+                                                所在地：重庆市
+                                            </div>
+                                        </div>
                                     </div>
+                                    <ul class="list2">
+                                        <li><a href="#"><span>2</span>BONACO电动助力自行车</a></li>
+                                        <li><a href="#"><span>3</span>LIVALL智能自行车</a></li>
+                                        <li><a href="#"><span>4</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>5</span>索罗门自行车皮艺工匠款</a></li>
+                                        <li><a href="#"><span>6</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>7</span>索罗门自行车皮艺工匠款</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-panel">
+                                    <div class="firstNews">
+                                        <a href="#"><img class="img" src="images/upload/1.jpg" alt=""></a>
+                                        <div class="text">
+                                            <h3><a href="#">刀客金属4G-LTE超极本2</a></h3>
+                                            <p>今天的酷站两连发，一个是专为工程师打造的极客风音乐网站，用音乐帮你集中精神，高效工作，设计师当然也适用。</p>
+                                            <div class="tag"><span class="m-tag">O2O</span><span class="m-tag">移动互联网</span><span class="m-tag">公众平台</span></div>
+                                            <div class="fx">
+                                                <ul>
+                                                    <li class="xin1">143</li>
+                                                    <li class="xin2">39</li>
+                                                    <li><a href="#">分享</a></li>
+                                                </ul>
+                                                所在地：重庆市
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list2">
+                                        <li><a href="#"><span>2</span>BONACO电动助力自行车</a></li>
+                                        <li><a href="#"><span>3</span>LIVALL智能自行车</a></li>
+                                        <li><a href="#"><span>4</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>5</span>索罗门自行车皮艺工匠款</a></li>
+                                        <li><a href="#"><span>6</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>7</span>索罗门自行车皮艺工匠款</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-panel">
+                                    <div class="firstNews">
+                                        <a href="#"><img class="img" src="images/upload/1.jpg" alt=""></a>
+                                        <div class="text">
+                                            <h3><a href="#">刀客金属4G-LTE超极本3</a></h3>
+                                            <p>今天的酷站两连发，一个是专为工程师打造的极客风音乐网站，用音乐帮你集中精神，高效工作，设计师当然也适用。</p>
+                                            <div class="tag"><span class="m-tag">O2O</span><span class="m-tag">移动互联网</span><span class="m-tag">公众平台</span></div>
+                                            <div class="fx">
+                                                <ul>
+                                                    <li class="xin1">143</li>
+                                                    <li class="xin2">39</li>
+                                                    <li><a href="#">分享</a></li>
+                                                </ul>
+                                                所在地：重庆市
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list2">
+                                        <li><a href="#"><span>2</span>BONACO电动助力自行车</a></li>
+                                        <li><a href="#"><span>3</span>LIVALL智能自行车</a></li>
+                                        <li><a href="#"><span>4</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>5</span>索罗门自行车皮艺工匠款</a></li>
+                                        <li><a href="#"><span>6</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>7</span>索罗门自行车皮艺工匠款</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-panel">
+                                    <div class="firstNews">
+                                        <a href="#"><img class="img" src="images/upload/1.jpg" alt=""></a>
+                                        <div class="text">
+                                            <h3><a href="#">刀客金属4G-LTE超极本4</a></h3>
+                                            <p>今天的酷站两连发，一个是专为工程师打造的极客风音乐网站，用音乐帮你集中精神，高效工作，设计师当然也适用。</p>
+                                            <div class="tag"><span class="m-tag">O2O</span><span class="m-tag">移动互联网</span><span class="m-tag">公众平台</span></div>
+                                            <div class="fx">
+                                                <ul>
+                                                    <li class="xin1">143</li>
+                                                    <li class="xin2">39</li>
+                                                    <li><a href="#">分享</a></li>
+                                                </ul>
+                                                所在地：重庆市
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list2">
+                                        <li><a href="#"><span>2</span>BONACO电动助力自行车</a></li>
+                                        <li><a href="#"><span>3</span>LIVALL智能自行车</a></li>
+                                        <li><a href="#"><span>4</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>5</span>索罗门自行车皮艺工匠款</a></li>
+                                        <li><a href="#"><span>6</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>7</span>索罗门自行车皮艺工匠款</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-panel">
+                                    <div class="firstNews">
+                                        <a href="#"><img class="img" src="images/upload/1.jpg" alt=""></a>
+                                        <div class="text">
+                                            <h3><a href="#">刀客金属4G-LTE超极本5</a></h3>
+                                            <p>今天的酷站两连发，一个是专为工程师打造的极客风音乐网站，用音乐帮你集中精神，高效工作，设计师当然也适用。</p>
+                                            <div class="tag"><span class="m-tag">O2O</span><span class="m-tag">移动互联网</span><span class="m-tag">公众平台</span></div>
+                                            <div class="fx">
+                                                <ul>
+                                                    <li class="xin1">143</li>
+                                                    <li class="xin2">39</li>
+                                                    <li><a href="#">分享</a></li>
+                                                </ul>
+                                                所在地：重庆市
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list2">
+                                        <li><a href="#"><span>2</span>BONACO电动助力自行车</a></li>
+                                        <li><a href="#"><span>3</span>LIVALL智能自行车</a></li>
+                                        <li><a href="#"><span>4</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>5</span>索罗门自行车皮艺工匠款</a></li>
+                                        <li><a href="#"><span>6</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>7</span>索罗门自行车皮艺工匠款</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-panel">
+                                    <div class="firstNews">
+                                        <a href="#"><img class="img" src="images/upload/1.jpg" alt=""></a>
+                                        <div class="text">
+                                            <h3><a href="#">刀客金属4G-LTE超极本6</a></h3>
+                                            <p>今天的酷站两连发，一个是专为工程师打造的极客风音乐网站，用音乐帮你集中精神，高效工作，设计师当然也适用。</p>
+                                            <div class="tag"><span class="m-tag">O2O</span><span class="m-tag">移动互联网</span><span class="m-tag">公众平台</span></div>
+                                            <div class="fx">
+                                                <ul>
+                                                    <li class="xin1">143</li>
+                                                    <li class="xin2">39</li>
+                                                    <li><a href="#">分享</a></li>
+                                                </ul>
+                                                所在地：重庆市
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list2">
+                                        <li><a href="#"><span>2</span>BONACO电动助力自行车</a></li>
+                                        <li><a href="#"><span>3</span>LIVALL智能自行车</a></li>
+                                        <li><a href="#"><span>4</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>5</span>索罗门自行车皮艺工匠款</a></li>
+                                        <li><a href="#"><span>6</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>7</span>索罗门自行车皮艺工匠款</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-panel">
+                                    <div class="firstNews">
+                                        <a href="#"><img class="img" src="images/upload/1.jpg" alt=""></a>
+                                        <div class="text">
+                                            <h3><a href="#">刀客金属4G-LTE超极本7</a></h3>
+                                            <p>今天的酷站两连发，一个是专为工程师打造的极客风音乐网站，用音乐帮你集中精神，高效工作，设计师当然也适用。</p>
+                                            <div class="tag"><span class="m-tag">O2O</span><span class="m-tag">移动互联网</span><span class="m-tag">公众平台</span></div>
+                                            <div class="fx">
+                                                <ul>
+                                                    <li class="xin1">143</li>
+                                                    <li class="xin2">39</li>
+                                                    <li><a href="#">分享</a></li>
+                                                </ul>
+                                                所在地：重庆市
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list2">
+                                        <li><a href="#"><span>2</span>BONACO电动助力自行车</a></li>
+                                        <li><a href="#"><span>3</span>LIVALL智能自行车</a></li>
+                                        <li><a href="#"><span>4</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>5</span>索罗门自行车皮艺工匠款</a></li>
+                                        <li><a href="#"><span>6</span>九悦电动滑板车10寸轮胎版</a></li>
+                                        <li><a href="#"><span>7</span>索罗门自行车皮艺工匠款</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <ul class="list2">
-                                <li><a href="#"><span>2</span>BONACO电动助力自行车</a></li>
-                                <li><a href="#"><span>3</span>LIVALL智能自行车</a></li>
-                                <li><a href="#"><span>4</span>九悦电动滑板车10寸轮胎版</a></li>
-                                <li><a href="#"><span>5</span>索罗门自行车皮艺工匠款</a></li>
-                                <li><a href="#"><span>6</span>九悦电动滑板车10寸轮胎版</a></li>
-                                <li><a href="#"><span>7</span>索罗门自行车皮艺工匠款</a></li>
-                            </ul>
-                        </div>                    
+                        </div>
+                        <div class="tijiao"><a href="#">提交您的项目&gt;&gt;</a></div>
                     </div>
-                    <div class="tijiao"><a href="#">提交您的项目&gt;&gt;</a></div>
+                </div>
+            </div>
+            <!-- S 先锋资讯 -->
+            <div class="ty-xfzx">
+                <div class="m-msgBox">
+                    <div class="hd">
+                        <h2><img src="images/tit2.png">先锋资讯</h2>
+                        <a class="more" href="#">更多</a>
+                    </div>
+                    <div class="bd">
+                        <div class="m-picText">
+                            <div class="pic">
+                                <img src="images/upload/2.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <a href="#">
+                                    <h3>创业资讯</h3>
+                                    <p>今天的酷站两连发，一个是专为工程师打造的极客风音Googl。</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ft">
+                        <ul>
+                            <li><a href="#">· 除了手表，苹果还打算出戒指来占领你的</a></li>
+                            <li><a href="#">· 不要听怪蜀黍的大道理，过好你自己</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- S 项目动态 -->
+            <div class="ty-xmdt">
+                <div class="m-msgBox">
+                    <div class="hd">
+                        <h2><img src="images/tit2.png">项目动态</h2>
+                        <a class="more" href="#">更多</a>
+                    </div>
+                    <div class="bd">
+                        <div class="scrollBox">
+                            <ul id="scroll1">
+                                <li>
+                                    <span class="dot"></span>
+                                    <p class="time">10分钟前</p>
+                                    <p class="text">除了手表，苹戒指来占领你的戒指来占领你的来占领你的。</p>
+                                </li>
+                                <li>
+                                    <span class="dot"></span>
+                                    <p class="time">11分钟前</p>
+                                    <p class="text">不要听怪蜀黍的大道理，过好你自己</p>
+                                </li>
+                                <li>
+                                    <span class="dot"></span>
+                                    <p class="time">12分钟前</p>
+                                    <p class="text">不要听怪蜀黍的大道理，过好你自己</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="ty-xfzx">
-            <div class="m-msgBox">
-                <div class="hd">
-                    <h2><img src="img/tit2.png">先锋资讯</h2>
-                    <a class="more" href="#">更多</a>
+        <!--创投服务-->
+        <div class="mt30">
+            <div class="d-fw f-ff1">
+                <div class="d-fw-tit">
+                    <em></em>创投服务
                 </div>
-                <div class="bd">
-                    <div class="m-picText">
-                        <div class="pic">
-                            <img src="img/upload/2.jpg" alt="">
-                        </div>
-                        <div class="text">
+                <div class="d-fw-box f-cb">
+                    <div class="d-fw-l f-fl d-bs">
+                        <img src="images/d-fw-img1.png" />
+                        <span>我是创业者</span>
+                    </div>
+                    <div class="d-fw-c f-fl d-bs">
+                        <img src="images/d-fw-img2.png" />
+                    </div>
+                    <div class="d-fw-r f-fl d-bs">
+                        <img src="images/d-fw-img3.png" />
+                        <span>我是投资人</span>
+                    </div>
+                </div>
+                <div class="d-fw-tc d-fw-tc1">
+                    <div class="d-fw-a f-cb d-bs">
+                        <div class="v1">
                             <a href="#">
-                                <h3>创业资讯</h3>
-                                <p>今天的酷站两连发，一个是专为工程师打造的极客风音Googl。</p>
+                                <em></em>
+                                <span>在线估值</span>
+                            </a>
+                        </div>
+                        <div class="v2">
+                            <a href="#">
+                                <em></em>
+                                <span>申请匹配导师</span>
+                            </a>
+                        </div>
+                        <div class="v3">
+                            <a href="#">
+                                <em></em>
+                                <span>资金筹备</span>
+                            </a>
+                        </div>
+                        <div class="v4">
+                            <a href="#">
+                                <em></em>
+                                <span>入住孵化器</span>
+                            </a>
+                        </div>
+                        <div class="v5">
+                            <a href="#">
+                                <em></em>
+                                <span>智囊团</span>
+                            </a>
+                        </div>
+                        <div class="v6 active">
+                            <a href="#">
+                                <em></em>
+                                <span>代办事宜</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#">申请加入未来企业家培养青峰计划</a>
+                </div>
+                <div class="d-fw-tc d-fw-tc2">
+                    <div class="d-fw-a f-cb d-bs">
+                        <div class="v1">
+                            <a href="#">
+                                <em></em>
+                                <span>大赛榜单</span>
+                            </a>
+                        </div>
+                        <div class="v2">
+                            <a href="#">
+                                <em></em>
+                                <span>行业政策</span>
+                            </a>
+                        </div>
+                        <div class="v3">
+                            <a href="#">
+                                <em></em>
+                                <span>投资委托</span>
+                            </a>
+                        </div>
+                        <div class="v4">
+                            <a href="#">
+                                <em></em>
+                                <span>认证导师</span>
+                            </a>
+                        </div>
+                        <div class="v5">
+                            <a href="#">
+                                <em></em>
+                                <span>行业研究报告</span>
+                            </a>
+                        </div>
+                        <div class="v6 active">
+                            <a href="#">
+                                <em></em>
+                                <span>先锋定制</span>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="ft">
-                    <ul>
-                        <li><a href="#">· 除了手表，苹果还打算出戒指来占领你的</a></li>
-                        <li><a href="#">· 不要听怪蜀黍的大道理，过好你自己</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
-
-
-        <div class="ty-xmdt">
+        <!-- S 合作伙伴 -->
+        <div class="ty-hzhb mt30">
             <div class="m-msgBox">
-                <div class="hd">
-                    <h2><img src="img/tit2.png">项目动态</h2>
-                    <a class="more" href="#">更多</a>
+                <div class="hd f-cb" id="tabs-nav2">
+                    <h2 class="active"><img src="images/tit3.png" alt="">合作伙伴</h2>
+                    <h2 class=""><img src="images/tit4.png" alt="">友情链接</h2>
                 </div>
-                <div class="bd">
-                    <ul>
-                        <li>
-                            <span class="dot"></span>
-                            <p class="time">10分钟前</p>
-                            <p class="text">除了手表，苹戒指来占领你的戒指来占领你的来占领你的。</p>
-                        </li>
-                        <li>
-                            <span class="dot"></span>
-                            <p class="time">15分钟前</p>
-                            <p class="text">不要听怪蜀黍的大道理，过好你自己</p>
-                        </li>
-                        <li>
-                            <span class="dot"></span>
-                            <p class="time">15分钟前</p>
-                            <p class="text">不要听怪蜀黍的大道理，过好你自己</p>
-                        </li>
-                    </ul>
+                <div class="bd" id="tabs-panel2">
+                    <div class="item" style="display: block;">
+                        <ul>
+                            <li><img src="images/hb1.jpg" alt=""></li>
+                            <li><img src="images/hb2.jpg" alt=""></li>
+                            <li><img src="images/hb3.jpg" alt=""></li>
+                            <li><img src="images/hb4.jpg" alt=""></li>
+                            <li><img src="images/hb5.jpg" alt=""></li>
+                            <li><img src="images/hb6.jpg" alt=""></li>
+                            <li><img src="images/hb7.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="link item">
+                        <a href="">中恒玖联</a>
+                        <a href="">微务宝</a>
+                        <a href="">创业宝</a>
+                        <a href="">数据中国</a>
+                        <a href="">淘宝UED</a>
+                        <a href="">Alibaba国际站</a>
+                        <a href="">UEDAlibaba中文站</a>
+                        <a href="">UED 支付宝UED</a>
+                        <a href="">天猫UED</a>
+                        <a href="">优秀网页设计</a>
+                        <a href="">Bootstrap中文网</a>
+                        <a href="">微博UDC</a>
+                        <a href="">理上网来</a>
+                        <a href="">前端测试服务</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        
-
-
-        <div class="hzhb">fdsf</div>
     </div>
+    <!-- E 主体内容 -->
 
 
+    <!--二维码、返回顶部-->
+    <div class="toolbar">
+        <a href="javascript:;" id="backTop" style="display: none;" class="toolbar-item toolbar-item-top"></a>
+        <a href="javascript:;" class="toolbar-item toolbar-item-weixin"><span class="toolbar-layer"></span></a>
+    </div>
+    <!--底部-->
+    <div class="foot">
+        <div class="foot-m center">
+            <div class="db-tit x l">
+                <img class="y" src="images/logo1.png" width="164" height="40">
+                <div class="y">
+                    <a class="a-wx a-item" href="javascript:;"></a>
+                    <a class="a-tx a-item" href="javascript:;"></a>
+                    <a class="a-sina a-item" href="javascript:;"></a>
+                </div>
+            </div>
+            <div class="db-con l">
+                <div class="db-con-l l">
+                    <ul class="ul-1 s s14">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                    <ul class="ul-2 s">
+                        <li>地址：重庆市大渡口区春晖路街道春晖路91号1-1号</li>
+                        <li>反馈建议：CQC@youth-maker.com</li>
+                        <li>客服电话：023-68249040</li>
+                    </ul>
+                </div>
+                <div class="db-con-r r s"><img src="images/erweima.png" width="92" height="92">
+                    <p>扫码关注微信公众平台</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-m center s s12">重庆青春实业有限公司<span class="ml15">渝ICP备13010370号-1</span><span class="ml15">渝B-20120039</span><span class="ml45">技术开发：重庆中恒玖联科技有限公司</span><span class="ml50">支持单位：共青团重庆市委</span></div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        cqc.app.index();
+    </script>
 </body>
 
 </html>

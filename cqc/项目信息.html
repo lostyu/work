@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>完善项目信息</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link href="css/myBase.css" rel="stylesheet" type="text/css">
+    <style>
+    .myDialog-Warpper{ left: 0; right: 0; top: 0; bottom: 0; position:fixed; background:rgba(0,0,0,.8); z-index:9;}
+    .myDialog{ width:300px; height:150px; z-index:99; position:fixed; margin:auto; left:0; right:0; bottom:0; top:0;}
+    
+    .tab{ border:1px solid #e1e1e1; padding:5px; margin:5px 10px; height:20px; line-height:20px; display:inline-block; float:left; cursor:pointer; float:left;}
+    .tab .tab-del{ float:right; display:none; color:#78c5df; margin-left:5px; font-size:.8em;}
+    .tab:hover{ border:1px solid #9ec7ff;}
+    .tab:hover .tab-del{ display:block;}
+    
+    </style>
+</head>
+
+<body>
+    <div class="myDialog-Warpper hidden"></div>
+    <!--顶部-->
+    <div class="head">
+        <div class="head-m center">
+            <!--登录前-->
+            <div class="bf-login s s12 r">
+                您好，欢迎登录众创空间！
+                <span class="sp-login">
+                        <a class="s14" href="19.login.html">登录</a>
+                    </span>
+                <span class="sp-reg">
+                        <a class="s14" href="#">注册</a>
+                    </span>
+            </div>
+            <!--登录后-->
+            <div class="af-login w r" style="display: none;">
+                <div class="user-info r x">
+                    <img class="head" src="images/head.png">
+                    <div class="info-tips box-sh y">
+                        <ul>
+                            <li><a href="#">李达兆</a></li>
+                            <li><a href="#">我的主页</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-news r x">消息<img class="news-icon y" src="images/g-icon2.png"><a href="#" class="news-tips box-sh y">投融资消息</a></div>
+            </div>
+        </div>
+    </div>
+    <!--首页导航-->
+    <div class="nav">
+        <div class="nav-m center s x">
+            <img src="images/logo.png" class="logo y" width="164" height="40">
+            <ul class="y w">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">创业大赛</a></li>
+                <li><a href="javascript:;">众创先锋榜</a></li>
+                <li class="x z5">
+                    <a href="javascript:;">我是创业者</a>
+                    <div class="pop-up y box-sh" id="pop-up1">
+                        <a href="javascript:;">知识产权保护</a>
+                        <a href="javascript:;">在线估值</a>
+                        <a href="javascript:;">融资委托</a>
+                        <a href="javascript:;">工商咨询</a>
+                    </div>
+                </li>
+                <li class="x z5">
+                    <a href="javascript:;">我是投资人</a>
+                    <div class="pop-up y box-sh" id="pop-up2">
+                        <a href="javascript:;">投资委托</a>
+                        <a href="javascript:;">创业项目</a>
+                    </div>
+                </li>
+                <li><a href="javascript:;">孵化器</a></li>
+                <li><a href="javascript:;">创业学院</a></li>
+                <li class="li-t z5 x">
+                    搜索
+                    <div class="pop-up-search y box-sh" id="pop-up-search">
+                        <div class="serarch x s s14 bt4">
+                            <input class="l serarch_input" type="text" value="请输入要查找的内容">
+                            <div class="y sign fte">
+                                <a href="javascript:;"><span>O2O</span></a>
+                                <a href="javascript:;"><span>微信</span></a>
+                                <a href="javascript:;"><span>投资</span></a>
+                            </div>
+                            <a href="#" class="serarch_btn l"><img class="l" src="images/search.png" width="18" height="18"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- S 主体内容 -->
+    <div class="m-wrap m-bgwhite">
+        <div class="mt30">
+            
+            <div class="myDialog bor-gray bor-solid-1a warpper-white hidden">
+                <div class="wb94 pal3per par3per h35px lh35px Fgray-3 F150em bor-gray bor-solid-1b ">
+                    添加标签
+                    <img src="images/icon-close.png" class="fr mat5 pointer close-dialog">
+                </div>
+                <div class="wb100 F125em">
+                    <div class="clear1"></div>
+                    <div class="wb30 fl text-right lh30px Fgray-3">
+                        标签名
+                    </div>
+                    <div class="wb68 fr">
+                        <input type="text" class="h30px lh30px bor-gray bor-solid-1a radius5 wb78 Fgray-3 pal2per tab-name" placeholder="标签名">
+                    </div>
+                    <div class="clear1"></div>
+                    <div class="wb68 fr">
+                        <a href="javascript:;" class="display-inline warpper-blue h30px lh30px wb80 bor-none pointer text-center radius5 F125em white add-tab">确定</a>
+                    </div>
+                    <div class="clear1"></div>
+                </div>
+            </div>
+            <div class="wb100">
+                <div class="w1200px center bor-gray bor-solid-1a">
+                    <div class="wb100">
+                        <div class="wb96 pal2per par2per h50px lh50px Fgray-3 bor-gray bor-solid-1b">
+                            <span class="h50px lh50px bor-blue bor-solid-2b F225em mar20 display-inline">
+                        <img src="images/icon-title.png">
+                        完善项目信息
+                    </span>
+                            <span class="Fgray-2 F150em">为保障众创先锋网参与者的权益，请按照实际情况完善项目及公司信息</span>
+                        </div>
+                        <div class="clear h30px"></div>
+                        <div class="wb60 center lh40px Fgray-3 F150em">
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>项目名称
+                            </div>
+                            <div class="wb68 fr">
+                                <input type="text" class="h40px lh40px bor-gray bor-solid-1a radius5 wb78 Fgray-3 pal2per pro-name" placeholder="请填写您的项目名称">
+                            </div>
+                            <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>营业收入
+                            </div>
+                            <div class="wb68 fr">
+                                <input type="text" class="h40px lh40px bor-gray bor-solid-1a radius5 wb23 Fgray-3 pal2per pro-income" placeholder="50W以下">
+                            </div>
+                            <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>从业人员
+                            </div>
+                            <div class="wb68 fr">
+                                <input type="text" class="h40px lh40px bor-gray bor-solid-1a radius5 wb23 Fgray-3 pal2per pro-staff" placeholder="10人以下">
+                            </div>
+                            <div class="clear1"></div>
+                            <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>所在地
+                            </div>
+                            <div class="wb68 fr">
+                                <select class="h40px lh40px bor-gray bor-solid-1a radius5 wb24 mar3per pal2per Fgray-3 area-1">
+                                    <option>请选择</option>
+                                </select>
+                                <select class="h40px lh40px bor-gray bor-solid-1a radius5 wb24 mar3per pal2per Fgray-3 area-2">
+                                    <option>请选择</option>
+                                </select>
+                                <select class="h40px lh40px bor-gray bor-solid-1a radius5 wb24 mar3per pal2per Fgray-3 area-3">
+                                    <option>请选择</option>
+                                </select>
+                            </div>
+                            <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>标签
+                            </div>
+                            <div class="wb68 fr">
+                                <img src="images/icon-add.png" class="fl mat5 open-dialog pointer pro-tab">
+                                <div class="mal10 tab-area fl"></div>
+                                <input type="hidden" name="tab-param" class="tab-param">
+                            </div>
+                            <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>项目封面图
+                            </div>
+                            <div class="wb68 fr">
+                                <div class="w160px h120px lh120px bor-gray bor-solid-1a text-center radius15 fl">
+                                    <img src="images/icon-upload-img.png" class="middle file-btn-1">
+                                </div>
+                                <p class="fl ma20">请上传项目封面图</p>
+                                <div class="clear"></div>
+                                <p class="Fgray-2">格式为JPG、JPEG、PNG，小于5MB </p>
+                                <input type="file" class="file-img-1 hidden">
+                            </div>
+                            <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>一句话简介
+                            </div>
+                            <div class="wb68 fr">
+                                <textarea placeholder="请简单描述项目的核心优势，用户群体，及市场" class="h140px wb96 pal2per par2per pat5 pab5 lh20px bor-gray bor-solid-1a radius5 textarea-col Fgray-3 pro-info-1"></textarea>
+                                <div class="clear"></div>
+                                <span class="fr lh20px Fgray-2"><span class="current-length">0</span>/<span class="max-length">120</span></span>
+                            </div>
+                            <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>项目详细描述
+                            </div>
+                            <div class="wb68 fr">
+                                <textarea placeholder="请简单描述项目的核心优势，用户群体，及市场" class="h140px wb96 pal2per par2per pat5 pab5 lh20px bor-gray bor-solid-1a radius5 pro-info-2"></textarea>
+                            </div>
+                            <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                上传商业计划书
+                            </div>
+                            <div class="wb68 fr">
+                                <a href="javascript:;" class="lightBlue fileBtn">立即上传</a>
+                                <input type="file" class="hidden fileObj">
+                            </div>
+                            <div class="clear h30px"></div>
+                        </div>
+                    </div>
+                    <div class="clear1"></div>
+                    <div class="wb95 bor-gray bor-solid-1b center"></div>
+                    <div class="clear1"></div>
+                    <div class="wb100">
+                        <div class="wb95 center h50px lh50px Fgray-3 bor-gray bor-solid-1b">
+                            <span class="h50px lh50px bor-blue bor-solid-2b F225em mar20 display-inline">
+                        <img src="images/icon-title.png">
+                        完善公司信息
+                    </span>
+                        </div>
+                        <div class="clear h30px"></div>
+                        <div class="wb60 center lh40px Fgray-3 F150em">
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>公司名称
+                            </div>
+                            <div class="wb68 fr">
+                                <input type="text" class="h40px lh40px bor-gray bor-solid-1a radius5 wb78 Fgray-3 pal2per com-name" placeholder="请填写公司真实姓名">
+                            </div>
+                            <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>公司注册时间
+                            </div>
+                            <div class="wb68 fr">
+                                <input type="text" class="h40px lh40px bor-gray bor-solid-1a radius5 wb23 Fgray-3 pal2per com-date" placeholder="请选择日期">
+                            </div>
+                            <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>公司一句话简介
+                            </div>
+                            <div class="wb68 fr">
+                                <textarea placeholder="如：众创空间先锋网是全国最大的创业投资服务平台" class="h140px wb96 pal2per par2per pat5 pab5 lh20px bor-gray bor-solid-1a radius5 textarea-col Fgray-3 com-info"></textarea>
+                                <div class="clear"></div>
+                                <span class="fr lh20px Fgray-2"><span class="current-length">0</span>/<span class="max-length">30</span></span>
+                            </div>
+                            <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>上传证明材料
+                            </div>
+                            <div class="wb68 fr">
+                                <div class="w160px h120px lh120px bor-gray bor-solid-1a text-center radius15 fl">
+                                    <img src="images/icon-upload-img.png" class="middle file-btn-2 pointer">
+                                </div>
+                                <p class="fl ma20">营业执照电子版</p>
+                                <div class="clear1"></div>
+                                <div class="w160px h120px lh120px bor-gray bor-solid-1a text-center radius15 fl">
+                                    <img src="images/icon-upload-img.png" class="middle file-btn-3 pointer">
+                                </div>
+                                <p class="fl ma20">组织机构代码证电子版</p>
+                                <div class="clear"></div>
+                                <input type="file" class="file-img-2 hidden">
+                                <input type="file" class="file-img-3 hidden">
+                                <p class="Fgray-2">格式为JPG、JPEG、PNG，小于5MB </p>
+                            </div>
+                            <div class="clear1"></div>
+                        </div>
+                    </div>
+                    <div class="clear1"></div>
+                    <div class="wb95 bor-gray bor-solid-1b center"></div>
+                    <div class="clear h30px"></div>
+                    <div class="wb100 text-center Fgray-3 F150em">
+                        <input type="checkbox" class="mar10 agree">我同意参加创业大赛
+                        <div class="clear1"></div>
+                        <input type="button" class="warpper-blue Fwhite h50px w140px bor-none pointer text-center radius5 F125em my-sub" value="提交审核">
+                    </div>
+                    <div class="clear h50px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E 主体内容 -->
+    <!--底部-->
+    <div class="foot">
+        <div class="foot-m center">
+            <div class="db-tit x l">
+                <img class="y" src="images/logo1.png" width="164" height="40">
+                <div class="y">
+                    <a class="a-wx a-item" href="javascript:;"></a>
+                    <a class="a-tx a-item" href="javascript:;"></a>
+                    <a class="a-sina a-item" href="javascript:;"></a>
+                </div>
+            </div>
+            <div class="db-con l">
+                <div class="db-con-l l">
+                    <ul class="ul-1 s s14">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                    <ul class="ul-2 s">
+                        <li>地址：重庆市大渡口区春晖路街道春晖路91号1-1号</li>
+                        <li>反馈建议：CQC@youth-maker.com</li>
+                        <li>客服电话：023-68249040</li>
+                    </ul>
+                </div>
+                <div class="db-con-r r s"><img src="images/erweima.png" width="92" height="92">
+                    <p>扫码关注微信公众平台</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-m center s s12">重庆青春实业有限公司<span class="ml15">渝ICP备13010370号-1</span><span class="ml15">渝B-20120039</span><span class="ml45">技术开发：重庆中恒玖联科技有限公司</span><span class="ml50">支持单位：共青团重庆市委</span></div>
+    </div>
+    <!--二维码、返回顶部-->
+    <div class="toolbar">
+        <a href="javascript:;" id="backTop" style="display: none;" class="toolbar-item toolbar-item-top"></a>
+        <a href="javascript:;" class="toolbar-item toolbar-item-weixin"><span class="toolbar-layer"></span></a>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.js"></script>
+    <script src="js/myBase.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(function() {
+
+        $(".open-dialog").click(function() {
+            $(".myDialog").show(0);
+            $(".myDialog-Warpper").show(0);
+            $(".tab-name").val("");
+        })
+
+        $(".close-dialog,.myDialog-Warpper").click(function() {
+            $(".myDialog").hide(0);
+            $(".myDialog-Warpper").hide(0);
+            $(".tab-name").val("");
+        })
+
+        $(".fileBtn").click(function() {
+            $(".fileObj").click();
+        })
+
+        $(".add-tab").click(function() {
+
+            var flag = true;
+
+            var val = $(".tab-name").val();
+            var temp = "";
+            var _target = $(".tab-area");
+            if (val != "" && val != null && val != undefined) {
+                temp = '<p class="tab">' + val + '<span class="tab-del">X</span></p>';
+            }
+
+            $(".tab-area .tab").each(function(index, element) {
+                var val2 = $(this).text();
+                val2 = val2.substring(val2, val2.length - 1);
+
+                if (val2 == val) {
+                    flag = false;
+                }
+            });
+
+            if (flag) {
+                _target.append(temp);
+            }
+
+            bindEvent();
+            updateParam();
+
+            $(".myDialog").hide(0);
+            $(".myDialog-Warpper").hide(0);
+
+        })
+
+        $(".textarea-col").keyup(function() {
+            var _this = $(this);
+            var length = _this.val().length;
+            var _max = parseInt(_this.parent().find(".max-length").text());
+            _this.parent().find(".current-length").text(length);
+            if (length >= _max) {
+                var temp = _this.val();
+                _temp = temp.substring(0, _max);
+                _this.val(_temp);
+            }
+        }).keydown(function() {
+            var _this = $(this);
+            var length = _this.val().length;
+            var _max = parseInt(_this.parent().find(".max-length").text());
+            _this.parent().find(".current-length").text(length);
+            if (length >= _max) {
+                var temp = _this.val();
+                _temp = temp.substring(0, _max);
+                _this.val(_temp);
+            }
+        }).change(function() {
+            var _this = $(this);
+            var length = _this.val().length;
+            var _max = parseInt(_this.parent().find(".max-length").text());
+            _this.parent().find(".current-length").text(length);
+            if (length >= _max) {
+                var temp = _this.val();
+                _temp = temp.substring(0, _max);
+                _this.val(_temp);
+            }
+        })
+
+    })
+
+    function bindEvent() {
+        $(".tab").unbind("click").click(function() {
+            $(this).remove();
+        })
+        updateParam();
+    }
+
+    function updateParam() {
+
+        var temp = new Array();
+
+        $(".tab-area .tab").each(function(index, element) {
+            var val = $(this).text();
+            val = val.substring(val, val.length - 1);
+            temp.push(val);
+        });
+
+        $(".tab-param").val(temp.join(","));
+    }
+
+    $(function() {
+
+        $(".file-btn").click(function() {
+            $(".file-img").click();
+        })
+
+        $(".file-btn-1").click(function() {
+            $(".file-img-1").click();
+        })
+        $(".file-btn-2").click(function() {
+            $(".file-img-2").click();
+        })
+        $(".file-btn-3").click(function() {
+            $(".file-img-3").click();
+        })
+
+
+        $(".my-sub").click(function() {
+
+            var proName = $.trim($(".pro-name").val());
+            var proIncome = $.trim($(".pro-income").val());
+            var proStaff = $.trim($(".pro-staff").val());
+            var area1 = $.trim($(".area-1").val());
+            var area2 = $.trim($(".area-2").val());
+            var area3 = $.trim($(".area-3").val());
+            var proInfo1 = $.trim($(".pro-info-1").val());
+            var proInfo2 = $.trim($(".pro-info-2").val());
+            var tabParam = $.trim($(".tab-param").val());
+            var img1 = $.trim($(".file-img-1").val());
+            var img2 = $.trim($(".file-img-2").val());
+            var img3 = $.trim($(".file-img-3").val());
+            var comName = $.trim($(".com-name").val());
+            var comDate = $.trim($(".com-date").val());
+            var comInfo = $.trim($(".com-info").val());
+            var agree = $(".agree").attr("checked");
+
+            //项目名称
+            if (proName == null || proName == "") {
+                layer.tips('请填写您的项目名称', '.pro-name', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".pro-name").focus();
+                return false;
+            }
+
+            //营业收入
+            if (proIncome == null || proIncome == "") {
+                layer.tips('请填写营业收入', '.pro-income', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".pro-income").focus();
+                return false;
+            }
+
+            //公司员工
+            if (proStaff == null || proStaff == "") {
+                layer.tips('请填写公司规模', '.pro-staff', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".pro-staff").focus();
+                return false;
+            }
+            //所在地
+            if (area1 == null || area1 == "") {
+                layer.tips('请选择所在地', '.area-1', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".area-1").focus();
+                return false;
+            }
+            if (area2 == null || area2 == "") {
+                layer.tips('请选择所在地', '.area-2', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".area-2").focus();
+                return false;
+            }
+            if (area3 == null || area3 == "") {
+                layer.tips('请选择所在地', '.area-3', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".area-3").focus();
+                return false;
+            }
+
+            //公司介绍
+
+            if (proInfo1 == null || proInfo1 == "") {
+                layer.tips('请填写公司简介', '.pro-info-1', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".pro-info-1").focus();
+                return false;
+            }
+            if (proInfo2 == null || proInfo2 == "") {
+                layer.tips('请填写公司简介', '.pro-info-2', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".pro-info-2").focus();
+                return false;
+            }
+
+            //公司标签
+
+            if (tabParam == null || tabParam == "") {
+                layer.tips('请添加一个标签', '.pro-tab', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                return false;
+            }
+
+            //公司名称
+
+            if (comName == null || comName == "") {
+                layer.tips('请填写公司名称', '.com-name', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".com-name").focus();
+                return false;
+            }
+            if (comDate == null || comDate == "") {
+                layer.tips('请填写公司注册时间', '.com-date', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".com-date").focus();
+                return false;
+            }
+            if (comInfo == null || comInfo == "") {
+                layer.tips('请填写公司介绍', '.com-info', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".com-info").focus();
+                return false;
+            }
+
+
+            //图片
+            if (img1 == null || img1 == "") {
+                layer.tips('请上传项目封面图', '.file-btn-1', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                return false;
+            }
+            if (img2 == null || img2 == "") {
+                layer.tips('营业执照电子版', '.file-btn-2', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                return false;
+            }
+            if (img3 == null || img3 == "") {
+                layer.tips('组织机构代码证电子版', '.file-btn-3', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                return false;
+            }
+
+
+            if (agree == undefined || agree == "" || agree == null) {
+                layer.tips('请同意众创空间先锋网协议', '.agree', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                return false;
+            }
+
+        });
+    })
+    </script>
+</body>
+
+</html>
