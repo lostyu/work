@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -8,20 +9,391 @@
     <title>众创先锋-首页</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+    <style>
+    .m-picText{}
+    .m-picText .pic{
+        float: left;
+        margin-right: 10px;
+    }
+    .m-picText .text{
+        overflow: hidden;
+    }
+
+    .m-tag {
+        padding: 4px 5px;
+        min-width: 62px;
+        height: 20px;
+        line-height: 20px;
+        margin-right: 6px;
+        border: 1px solid #d0d0d0;
+        color: #939a9a;
+        font-size: 12px;
+    }
+    
+    .m-msgBox {
+        
+        border: 1px solid #e2e3e3;
+        border-radius: 2px;
+        background-color: #fff;
+    }
+    
+    .m-msgBox .hd {
+        line-height: 39px;
+        position: relative;
+        padding: 0 15px;
+        border-bottom: 1px solid #e2e3e3;
+    }
+    
+    .m-msgBox .hd h2 {
+        font-size: 18px;
+        color: #616161;
+        font-weight: normal;
+    }
+    
+    .m-msgBox .hd h2 img {
+        position: relative;
+        top: 2px;
+        margin-right: 8px;
+    }
+    
+    .m-msgBox .hd .more {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        color: #949a9a;
+    }
+    
+    .ty-zcxfb {
+        float: left;
+        width: 843px;
+        height: 445px;
+    }
+    
+    .ty-zcxfb .m-msgBox .bd {
+        padding-top: 30px;
+        padding-right: 30px;
+        height: 373px;
+    }
+    
+    .ty-zcxfb .tabs-nav {
+        margin-right: 26px;
+        float: left;
+        width: 124px;
+        border-right: 1px solid #d0d0d0;
+    }
+    
+    .ty-zcxfb .tabs-nav li {
+        position: relative;
+    }
+    
+    .ty-zcxfb .tabs-nav a {
+        position: relative;
+        right: -1px;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        text-align: center;
+        border-right: 4px solid transparent;
+        color: #616161;
+    }
+    .ty-zcxfb .tabs-nav a:hover, .ty-zcxfb .tabs-nav .active a{
+        border-right: 4px solid #4285f4;
+        color: #4285f4;
+    }
+    
+    .ty-zcxfb .tab-panel {
+        float: left;
+        width: 660px;
+    }
+    
+    .ty-zcxfb .tab-panel .firstNews {
+        height: 140px;
+        margin-bottom: 36px;
+    }
+    
+    .ty-zcxfb .tab-panel .firstNews .img {
+        float: left;
+        margin-right: 18px;
+    }
+    
+    .ty-zcxfb .tab-panel .firstNews .text {
+        overflow: hidden;
+    }
+    
+    .ty-zcxfb .tab-panel .firstNews .text h3 {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: normal;
+    }
+    
+    .ty-zcxfb .tab-panel .firstNews .text h3 a {
+        color: #2c2d32;
+    }
+    
+    .ty-zcxfb .tab-panel .firstNews .text p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #616161;
+    }
+    
+    .ty-zcxfb .tab-panel .list2 {}
+    
+    .ty-zcxfb .tab-panel .list2 li {
+        float: left;
+        width: 50%;        
+    }
+    
+    .ty-zcxfb .tab-panel .list2 a {
+        display: block;
+        height: 46px;
+        line-height: 46px;        
+        font-size: 16px;
+        color: #2c2d32;
+        border-left: 4px solid transparent;
+    }
+    .ty-zcxfb .tab-panel .list2 a:hover{
+        border-left: 4px solid #349aff;
+        color: #349aff;
+    }
+    .ty-zcxfb .tab-panel .list2 li span{
+        display: inline-block;
+        padding: 0 30px 0 14px;
+        font-size: 22px;
+        font-style: italic;
+    }
+    
+    .ty-zcxfb .firstNews .text .tag {
+        line-height: 26px;
+        margin-top: 15px;
+    }
+    
+    .ty-zcxfb .firstNews .text .fx {
+        line-height: 30px;
+        font-size: 14px;
+        color: #939a9a;
+    }
+    
+    .ty-zcxfb .firstNews .text .fx ul {
+        float: right;
+    }
+    
+    .ty-zcxfb .firstNews .text .fx ul li {
+        float: left;
+        text-align: right;
+    }
+    
+    .ty-zcxfb .firstNews .text .fx ul li a {
+        color: #939a9a;
+    }
+    
+    .ty-zcxfb .firstNews .text .fx .xin1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        background: url(img/xin.png) left center no-repeat;
+    }
+    
+    .ty-zcxfb .firstNews .text .fx .xin2 {
+        padding-left: 20px;
+        background: url(img/xin2.png) left 6px no-repeat;
+        padding-right: 24px;
+    }
+    .ty-zcxfb .tijiao{
+        margin-top: 10px;
+        text-align: right;    
+    }
+    .ty-zcxfb .tijiao a{
+        font-size: 16px;
+        color: #349aff;
+    }
+
+
+    .ty-xfzx {
+        float: right;
+        width: 330px;
+        margin-bottom: 20px;
+        color: #616161;
+    }
+    .ty-xfzx .m-msgBox .bd{
+        padding: 10px;
+        border-bottom: 1px dotted #d4d8e0;
+    }
+    .ty-xfzx .m-msgBox .ft{
+        padding: 10px;
+    }
+    .ty-xfzx .m-msgBox .ft li{
+        line-height: 28px;
+        overflow:hidden;word-wrap:normal;white-space:nowrap;text-overflow:ellipsis;
+    }
+    .ty-xfzx .m-msgBox .ft li a{
+        color: #616161;
+    }
+    .ty-xfzx .m-picText{
+        height: 80px;
+    }
+    .ty-xfzx .m-picText .text h3{
+        font-size: 16px;
+    }
+
+
+    .ty-xmdt{
+        float: right;
+        width: 330px;        
+        background-color: #fff;        
+        color: #616161;
+    }
+    .ty-xmdt .m-msgBox .bd{
+        padding: 10px;
+        height: 144px;
+        overflow: hidden;
+    }
+    .ty-xmdt ul{
+        margin-left: 8px;
+        border-left: 1px solid #e9ebef;
+    }
+    .ty-xmdt li{
+        position: relative;
+        height: 77px;
+        padding-left: 15px;                
+    }
+    .ty-xmdt .dot{
+        position: absolute;
+        left: -5px;
+        top: 4px;
+        width: 10px;
+        height: 10px;
+        background: url(img/dot.png) no-repeat;
+    }
+    .ty-xmdt .time{
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: #949a9a;
+    }
+    .ty-xmdt .text{
+        font-size: 14px;
+        color: #616161;
+    }
+    </style>
 </head>
 
 <body>
-    <!-- S 头部 -->
-    <div id="header"></div>
-    <!-- E 头部 -->
-    
-    <!-- S 底部 -->
-    <div id="footer"></div>
-    <!-- E 底部 -->
+    <div class="m-wrap f-cb">
 
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/main.js"></script>
+        
+        <div class="ty-zcxfb">
+            <div class="m-msgBox">
+                <div class="hd">
+                    <h2><img src="img/tit1.png">众创先锋榜</h2>                    
+                </div>
+                <div class="bd">
+                    <div class="f-cb">
+                        <ul class="tabs-nav">
+                            <li class="active"><a href="javascript:;">互联网+</a></li>
+                            <li><a href="javascript:;">智能制造</a></li>
+                            <li><a href="javascript:;">旅游度假</a></li>
+                            <li><a href="javascript:;">广告传媒</a></li>
+                            <li><a href="javascript:;">生活服务</a></li>
+                            <li><a href="javascript:;">食品领域</a></li>
+                            <li><a href="javascript:;">工业4.0</a></li>
+                            <li><a href="javascript:;">更多++</a></li>
+                        </ul>
+                        <div class="tab-panel">
+                            <div class="firstNews">
+                                <a href="#"><img class="img" src="img/upload/1.jpg" alt=""></a>
+                                <div class="text">
+                                    <h3><a href="#">刀客金属4G-LTE超极本</a></h3>
+                                    <p>今天的酷站两连发，一个是专为工程师打造的极客风音乐网站，用音乐帮你集中精神，高效工作，设计师当然也适用。</p>
+                                    <div class="tag"><span class="m-tag">O2O</span><span class="m-tag">移动互联网</span><span class="m-tag">公众平台</span></div>
+                                    <div class="fx">
+                                        <ul>
+                                            <li class="xin1">143</li>
+                                            <li class="xin2">39</li>
+                                            <li><a href="#">分享</a></li>
+                                        </ul>
+                                        所在地：重庆市
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list2">
+                                <li><a href="#"><span>2</span>BONACO电动助力自行车</a></li>
+                                <li><a href="#"><span>3</span>LIVALL智能自行车</a></li>
+                                <li><a href="#"><span>4</span>九悦电动滑板车10寸轮胎版</a></li>
+                                <li><a href="#"><span>5</span>索罗门自行车皮艺工匠款</a></li>
+                                <li><a href="#"><span>6</span>九悦电动滑板车10寸轮胎版</a></li>
+                                <li><a href="#"><span>7</span>索罗门自行车皮艺工匠款</a></li>
+                            </ul>
+                        </div>                    
+                    </div>
+                    <div class="tijiao"><a href="#">提交您的项目&gt;&gt;</a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ty-xfzx">
+            <div class="m-msgBox">
+                <div class="hd">
+                    <h2><img src="img/tit2.png">先锋资讯</h2>
+                    <a class="more" href="#">更多</a>
+                </div>
+                <div class="bd">
+                    <div class="m-picText">
+                        <div class="pic">
+                            <img src="img/upload/2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <a href="#">
+                                <h3>创业资讯</h3>
+                                <p>今天的酷站两连发，一个是专为工程师打造的极客风音Googl。</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft">
+                    <ul>
+                        <li><a href="#">· 除了手表，苹果还打算出戒指来占领你的</a></li>
+                        <li><a href="#">· 不要听怪蜀黍的大道理，过好你自己</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ty-xmdt">
+            <div class="m-msgBox">
+                <div class="hd">
+                    <h2><img src="img/tit2.png">项目动态</h2>
+                    <a class="more" href="#">更多</a>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <span class="dot"></span>
+                            <p class="time">10分钟前</p>
+                            <p class="text">除了手表，苹戒指来占领你的戒指来占领你的来占领你的。</p>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                            <p class="time">15分钟前</p>
+                            <p class="text">不要听怪蜀黍的大道理，过好你自己</p>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                            <p class="time">15分钟前</p>
+                            <p class="text">不要听怪蜀黍的大道理，过好你自己</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <div class="hzhb">fdsf</div>
+    </div>
+
+
 </body>
 
 </html>
