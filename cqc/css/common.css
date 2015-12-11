@@ -892,3 +892,52 @@ body {
 }
 
 .m-bgwhite{background: #fff;}
+
+
+/*pages*/
+.y-pages{padding-top: 55px;text-align: center;}
+.y-pages a{display: inline-block;color: #898989;padding: 0 9px;line-height: 13px;}
+.y-pages a:hover{text-decoration: none;}
+.y-pages a.no:hover{/*background: #fff;*/color: #898989; background: none;}
+.y-pages a.active{color: #349aff;}
+.y-pages a.active:hover{background: transparent;color: #898989;}
+.y-pages a:hover{background: #349aff;color: #fff;padding-top: 2px;padding-bottom: 2px;}
+.y-pages a.previous, .y-pages a.next{width: 73px;height: 29px;line-height: 29px;border: 1px solid #d0d0d0;background: #fff;border-radius: 5px;padding: 0;color: #616161;font-size: 12px;background:#ffffff url(../images/y-ico3.png) no-repeat 10px center;text-indent: 10px;}
+.y-pages a.next{background:#ffffff url(../images/y-ico4.png) no-repeat 55px center;text-indent: -10px;}
+
+
+/* 底部漂浮工具条 */
+.m-btTool{
+    position: fixed;
+    bottom: 0;   
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+}
+.m-btTool .t1{
+    height: 4px;
+    background-color: rgba(5,29,53, .2);
+}
+.m-btTool .t2{
+    height: 2px;
+    background-color: rgba(255,255,255, .2);
+}
+.m-btTool .t3{
+    height: 68px;
+    background-color: rgba(52,154,255, .9);
+}
+
+.m-btn-l{    
+    margin: 0 auto;    
+    margin-top: 10px;
+    display: block;
+    width: 223px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 22px;
+    color: #fff;
+    background: url(../images/ty/bg-btn1.png) no-repeat;
+}
+.m-btn-l:hover{
+    color: #fff;
+}

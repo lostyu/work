@@ -1,0 +1,108 @@
+/* 青锋计划 */
+.ty-qfjh-banner{
+	height: 360px;
+	border-bottom: 1px solid #d0d0d0;
+	background: url(../images/ty/qfjh-banner-bg.jpg) center no-repeat;
+}
+.ty-qfjh-banner .count{
+	position: absolute;
+	top: 82px;
+	right: 20px;
+	width: 330px;
+}
+.ty-qfjh-banner p{
+	font-size: 16px;
+	color: #fff;
+}
+.ty-qfjh-banner ul{
+	overflow: hidden;
+	margin: 10px 0;
+}
+.ty-qfjh-banner li{
+	float: left;
+	margin-right: 5px;
+	width: 40px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 50px;
+	background-color: #fff;
+	border: 1px solid #798085;
+	border-radius: 5px;
+	text-align: center;
+	font-family: tahoma;
+	font-weight: 500;
+}
+
+.ty-qfjh-mod1{
+	padding: 70px 0;
+	border-bottom: 1px solid #d0d0d0;
+}
+.ty-qfjh-mod1 .title{	
+	width: 493px;	
+	height: 32px;
+	padding-left: 35px;
+	border-bottom: 1px solid #f3f3f3;	
+}
+.ty-qfjh-mod1 .img{ float: left;}
+.ty-qfjh-mod1 .text{ 
+	float: left;
+	width: 670px;
+	padding-right: 10px;
+}
+.ty-qfjh-mod1 .text h2{
+	position: relative;
+	top: 1px;
+	padding-bottom: 10px;
+	padding-left: 28px;
+	color: #000;
+	font-size: 22px;
+	line-height: 22px;
+	float: left;	
+	background: url(../images/ty/bg-title.png) no-repeat;
+}
+.ty-qfjh-mod1 .text p{
+	color: #616161;
+	font-size: 16px;
+	line-height: 28px;
+	margin-top: 10px;
+	padding-left: 35px;
+}
+.ty-qfjh-mod1 .xmList{	
+	margin-top: 56px;
+	text-align: left;
+	overflow: hidden;
+}
+.ty-qfjh-mod1 .xmList li{
+	float: left;
+	margin-left: 32px;
+	margin-top: 32px;
+	padding: 8px;
+	border: 1px solid #e4e9ef;
+}
+.ty-qfjh-mod1 .xmList li:hover{
+	border: 1px solid #25b2da;
+}
+.ty-qfjh-mod1 .xmList li a:hover{
+	text-decoration: none;
+}
+.ty-qfjh-mod1 .xmList p{
+	color: #949a9a;
+	font-size: 14px;
+}
+.ty-qfjh-mod1 .xmList .txt{
+	position: relative;
+	padding: 10px 0 20px 0;
+	line-height: 22px;
+}
+.ty-qfjh-mod1 .xmList .txt img{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.ty-qfjh-mod1 .xmList .txt .dz{
+	position: absolute;
+	right: 0;
+	top: 18px;
+}
+.ty-qfjh-mod1 .mtag{
+	padding-bottom: 20px;
+}
