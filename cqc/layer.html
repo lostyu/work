@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>common</title>
+    <title>layer</title>
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
-    <!-- 你的样式表 -->
-    <link rel="stylesheet" type="text/css" href="css/你的样式表.css">
 </head>
+
 <body>
     <!--顶部-->
     <div class="head">
@@ -19,10 +19,10 @@
             <!--登录前-->
             <div class="bf-login s s12 r">
                 您好，欢迎登录众创空间！
-                    <span class="sp-login">
+                <span class="sp-login">
                         <a class="s14" href="19.login.html">登录</a>
                     </span>
-                    <span class="sp-reg">
+                <span class="sp-reg">
                         <a class="s14" href="#">注册</a>
                     </span>
             </div>
@@ -72,7 +72,7 @@
                 <li class="li-t z5 x">
                     搜索
                     <div class="pop-up-search y box-sh" id="pop-up-search">
-                        <div class="serarch x s s14 bt4" >
+                        <div class="serarch x s s14 bt4">
                             <input class="l serarch_input" type="text" value="请输入要查找的内容">
                             <div class="y sign fte">
                                 <a href="javascript:;"><span>O2O</span></a>
@@ -86,19 +86,13 @@
             </ul>
         </div>
     </div>
-
-
     <!-- S 主体内容 -->
-    <div class="m-wrap">
-        
-        <div class="mt30">主体内容</div>
-
-
+    <div class="m-wrap" style="height: 2000px;">
+        <div class="mt30">
+            <button id="btn1">open</button>
+        </div>
     </div>
     <!-- E 主体内容 -->
-    
-
-
     <!--底部-->
     <div class="foot">
         <div class="foot-m center">
@@ -124,20 +118,75 @@
                         <li>客服电话：023-68249040</li>
                     </ul>
                 </div>
-                <div class="db-con-r r s"><img src="images/erweima.png" width="92" height="92"><p>扫码关注微信公众平台</p></div>
+                <div class="db-con-r r s"><img src="images/erweima.png" width="92" height="92">
+                    <p>扫码关注微信公众平台</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="bottom"><div class="bottom-m center s s12">重庆青春实业有限公司<span class="ml15">渝ICP备13010370号-1</span><span class="ml15">渝B-20120039</span><span class="ml45">技术开发：重庆中恒玖联科技有限公司</span><span class="ml50">支持单位：共青团重庆市委</span></div></div>
+    <div class="bottom">
+        <div class="bottom-m center s s12">重庆青春实业有限公司<span class="ml15">渝ICP备13010370号-1</span><span class="ml15">渝B-20120039</span><span class="ml45">技术开发：重庆中恒玖联科技有限公司</span><span class="ml50">支持单位：共青团重庆市委</span></div>
+    </div>
     <!--二维码、返回顶部-->
     <div class="toolbar">
         <a href="javascript:;" id="backTop" style="display: none;" class="toolbar-item toolbar-item-top"></a>
         <a href="javascript:;" class="toolbar-item toolbar-item-weixin"><span class="toolbar-layer"></span></a>
     </div>
-
-
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
-    <!-- 你的js -->
+    <script src="js/main.js"></script>
+    <script>
+    // http://layer.layui.com/api.html#content
+    $('#btn1').click(function() {
+
+        layer.open({
+            type: 0, // 0（信息框，默认）1（页面层）2（iframe层）3（加载层）4（tips层）
+            title: '我是标题', // false隐藏标题
+            content: '我是内容', // 类型：String/DOM/Array，默认：'' content可传入的值是灵活多变的，不仅可以传入普通的html内容，还可以指定DOM，更可以随着type的不同而不同。
+            skin: '', // layui-layer-lan  layui-layer-molv
+            area: '500px',	// 默认auto, area: '500px' 定义宽高area: ['500px', '300px']
+            offset: 'auto',	// offset: ['100px', '200px']	offset: 'rb'
+            icon: -1, // 认-1息框默认不显示图标。当你想显示图标时，默认皮肤可以传入0-6如果是加载层，可以传入0-2
+            btn: ['按钮1', '按钮2', '按钮3'], // btn: ['按钮1', '按钮2', '按钮3', …]
+            yes: function(index, layero) {
+            	console.log(layero);
+            },
+            cancel: function(index) {
+            	console.log(index);
+            },
+            btn3: function(index, layero) {
+            	console.log(layero);
+            },
+            closeBtn: 1, // 1,2 不显示为0
+            shade: [0.8, '#393D49'], // 默认是0.3透明度的黑色背景（'#000'） 0为不显示
+            shadeClose: true, // 是否点击遮罩关闭
+            time: 0, // time - 自动关闭所需毫秒 5000
+            shift: 0, // shift - 动画 0-6
+            maxmin: false, // 最大最小化
+            fix: true, // 固定
+            scrollbar: false, // 是否允许浏览器出现滚动条
+            maxWidth: '500px', // 最大宽度
+            // zIndex: '',   
+            // move - 触发拖动的元素    默认：'.layui-layer-title'     
+            moveType: 1 ,// 拖拽风格
+            moveOut: true, // 是否允许拖拽到窗口外
+            moveEnd: function() {	// 拖动完毕后的回调方法
+        		// alert();
+            },
+            tips: 2, // tips方向和颜色 tips: [1, '#c00']
+            tipsMore: false, // 是否允许多个tips
+            success: function() { // 层弹出后的成功回调方法
+        		// alert('success');
+            },
+            end: function() { // 层销毁后触发的回调
+            	// alert('end');
+            },
+        });
+
+
+    });
+    </script>
 </body>
+
 </html>

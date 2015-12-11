@@ -7,6 +7,7 @@ body {
     font-size: 16px;
     background: #eceded;
 }
+
 a:hover {
     text-decoration: underline;
 }
@@ -95,8 +96,12 @@ body {
     width: 50px !important;
 }
 
+
 /*顶部公用样式*/
+
+
 /**/
+
 .head {
     width: 100%;
     height: 40px;
@@ -188,20 +193,15 @@ body {
     height: auto;
     border: solid 1px #d5d5d5;
     background: #fff;
-
     opacity: 0;
     filter: alpha(opacity=0);
     transform-origin: 85% 0;
     transform: scale(0.01);
     transition: all .3s;
-
 }
 
 .box-sh {
-    box-shadow: 1px 0px 1px #e9e9e9,
-    0px -1px 1px #e9e9e9,
-    0px 1px 1px #e9e9e9,
-    -1px 0px 1px #e9e9e9;
+    box-shadow: 1px 0px 1px #e9e9e9, 0px -1px 1px #e9e9e9, 0px 1px 1px #e9e9e9, -1px 0px 1px #e9e9e9;
 }
 
 .af-login .info-tips ul {
@@ -292,7 +292,6 @@ body {
     text-align: center;
     border: solid 1px #d5d5d5;
     background: #fff;
-
     opacity: 0;
     filter: alpha(opacity=0);
     transform-origin: top center;
@@ -300,7 +299,9 @@ body {
     transition: all .3s;
 }
 
+
 /**/
+
 .h107 {
     height: 107px;
 }
@@ -392,11 +393,11 @@ body {
     margin-top: 10px;
 }
 
-.serarch div a{
+.serarch div a {
     padding: 0!important;
 }
 
-.serarch div a span{
+.serarch div a span {
     margin-left: 0!important;
 }
 
@@ -493,7 +494,7 @@ body {
     cursor: pointer;
     float: right;
     width: 34px;
-    height:50px;
+    height: 50px;
     background: url(../images/icon-search-black.png) no-repeat 0px 6px;
     padding-left: 23px;
 }
@@ -528,12 +529,14 @@ body {
     background: none !important;
 }
 
-#pop-up1 a:hover, #pop-up2 a:hover {
+#pop-up1 a:hover,
+#pop-up2 a:hover {
     color: #349aff !important;
     background: none !important;
 }
 
-#pop-up1 a:last-child, #pop-up2 a:last-child {
+#pop-up1 a:last-child,
+#pop-up2 a:last-child {
     border-bottom: none;
 }
 
@@ -546,13 +549,11 @@ body {
     left: 0px;
     top: 40px;
     background: #fff;
-
     opacity: 0;
     filter: alpha(opacity=0);
     transform-origin: 40% 0;
     transform: scale(0.01);
     transition: all .3s;
-
 }
 
 .pop-up:before {
@@ -590,13 +591,11 @@ body {
     right: 0px;
     top: 40px;
     background: #fff;
-
     opacity: 0;
     filter: alpha(opacity=0);
     transform-origin: 93% 0;
     transform: scale(0.01);
     transition: all .3s;
-
 }
 
 .pop-up-search:before {
@@ -614,7 +613,9 @@ body {
     content: " ";
 }
 
+
 /*中部公用样式*/
+
 .pb50 {
     padding-bottom: 50px;
 }
@@ -624,7 +625,9 @@ body {
     height: auto;
 }
 
+
 /*底部公用样式*/
+
 .foot {
     width: 100%;
     height: 199px;
@@ -726,6 +729,7 @@ body {
     color: #888;
     font-size: 12px;
 }
+
 .db-con-r {
     width: 130px;
     padding-right: 0px;
@@ -736,7 +740,7 @@ body {
     height: 128px;
 }
 
-.db-con-r img{
+.db-con-r img {
     border: 4px #fff solid;
 }
 
@@ -757,8 +761,8 @@ body {
     line-height: 49px;
 }
 
-/*返回顶部*/
 
+/*返回顶部*/
 
 .toolbar {
     z-index: 49;
@@ -826,15 +830,18 @@ body {
     transition: all .6s;
 }
 
+
 /*  */
-.m-wrap{
+
+.m-wrap {
     width: 1200px;
     margin: 0 auto;
     position: relative;
 }
 
-.mt30{margin-top: 30px;}
-
+.mt30 {
+    margin-top: 30px;
+}
 
 .m-picText {}
 
@@ -891,44 +898,99 @@ body {
     font-size: 14px;
 }
 
-.m-bgwhite{background: #fff;}
+.m-bgwhite {
+    background: #fff;
+}
 
 
 /*pages*/
-.y-pages{padding-top: 55px;text-align: center;}
-.y-pages a{display: inline-block;color: #898989;padding: 0 9px;line-height: 13px;}
-.y-pages a:hover{text-decoration: none;}
-.y-pages a.no:hover{/*background: #fff;*/color: #898989; background: none;}
-.y-pages a.active{color: #349aff;}
-.y-pages a.active:hover{background: transparent;color: #898989;}
-.y-pages a:hover{background: #349aff;color: #fff;padding-top: 2px;padding-bottom: 2px;}
-.y-pages a.previous, .y-pages a.next{width: 73px;height: 29px;line-height: 29px;border: 1px solid #d0d0d0;background: #fff;border-radius: 5px;padding: 0;color: #616161;font-size: 12px;background:#ffffff url(../images/y-ico3.png) no-repeat 10px center;text-indent: 10px;}
-.y-pages a.next{background:#ffffff url(../images/y-ico4.png) no-repeat 55px center;text-indent: -10px;}
+
+.y-pages {
+    padding-top: 55px;
+    text-align: center;
+}
+
+.y-pages a {
+    display: inline-block;
+    color: #898989;
+    padding: 0 9px;
+    line-height: 13px;
+}
+
+.y-pages a:hover {
+    text-decoration: none;
+}
+
+.y-pages a.no:hover {
+    /*background: #fff;*/
+    color: #898989;
+    background: none;
+}
+
+.y-pages a.active {
+    color: #349aff;
+}
+
+.y-pages a.active:hover {
+    background: transparent;
+    color: #898989;
+}
+
+.y-pages a:hover {
+    background: #349aff;
+    color: #fff;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.y-pages a.previous,
+.y-pages a.next {
+    width: 73px;
+    height: 29px;
+    line-height: 29px;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0;
+    color: #616161;
+    font-size: 12px;
+    background: #ffffff url(../images/y-ico3.png) no-repeat 10px center;
+    text-indent: 10px;
+}
+
+.y-pages a.next {
+    background: #ffffff url(../images/y-ico4.png) no-repeat 55px center;
+    text-indent: -10px;
+}
 
 
 /* 底部漂浮工具条 */
-.m-btTool{
+
+.m-btTool {
     position: fixed;
-    bottom: 0;   
+    bottom: 0;
     width: 100%;
     z-index: 100;
     text-align: center;
 }
-.m-btTool .t1{
+
+.m-btTool .t1 {
     height: 4px;
-    background-color: rgba(5,29,53, .2);
-}
-.m-btTool .t2{
-    height: 2px;
-    background-color: rgba(255,255,255, .2);
-}
-.m-btTool .t3{
-    height: 68px;
-    background-color: rgba(52,154,255, .9);
+    background-color: rgba(5, 29, 53, .2);
 }
 
-.m-btn-l{    
-    margin: 0 auto;    
+.m-btTool .t2 {
+    height: 2px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.m-btTool .t3 {
+    height: 68px;
+    background-color: rgba(52, 154, 255, .9);
+}
+
+.m-btn-l {
+    margin: 0 auto;
     margin-top: 10px;
     display: block;
     width: 223px;
@@ -938,6 +1000,15 @@ body {
     color: #fff;
     background: url(../images/ty/bg-btn1.png) no-repeat;
 }
-.m-btn-l:hover{
+
+.m-btn-l:hover {
     color: #fff;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
 }

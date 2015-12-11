@@ -1,5 +1,5 @@
 $(function() {
-	
+
 });
 
 var cqc = {};
@@ -34,6 +34,7 @@ cqc.ui.scroll = function(obj) {
 		});
 	}, 10000);
 };
+
 
 cqc.app = {};
 cqc.app.index = function() {
