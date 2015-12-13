@@ -1132,6 +1132,10 @@
     padding: 40px;
     padding-top: 17px;
 }
+.ty-tzal .alListBox{
+    height: 600px;
+    overflow: hidden;
+}
 .ty-tzal .alList{}
 .ty-tzal .alList li{
     position: relative;

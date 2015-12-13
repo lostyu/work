@@ -1,12 +1,8 @@
-$(function() {
-
-});
-
 var cqc = {};
 
 cqc.ui = {};
 cqc.ui.tabs = function(objTabNav, objTabPanel, type) {
-	type = type || 'click';
+	type = type || 'click';	
 	objTabNav.on(type, function() {
 		var index = $(this).index();
 
@@ -37,6 +33,7 @@ cqc.ui.scroll = function(obj) {
 
 
 cqc.app = {};
+// 首页
 cqc.app.index = function() {
 
 	(function() {
@@ -64,6 +61,30 @@ cqc.app.index = function() {
 	(function() {
 		var $scroll1 = $('#scroll1');
 		cqc.ui.scroll($scroll1);
-	})();
+	})();	
+};
+// 个人主页
+cqc.app.grzy = function() {
+	var $tabsnav3 = $('#tabs-nav3 > h2'),
+		$tabspanel3 = $('#tabs-panel3 > ul');
+
+    cqc.ui.tabs($tabsnav3, $tabspanel3, 'mouseover');
+    
+    var $alListBox = $('#alListBox'),
+    	$alList = $('.alList'),
+    	oldH = $alListBox.height(),
+    	h = $alList.height(),
+    	bClick = false;
+
+    $('#btn-alToggle').click(function() {
+    	if(bClick){    		
+    		$alListBox.animate({'height': oldH});
+    		$(this).text('展开');
+    	}else{
+    		$alListBox.animate({'height': h});
+    		$(this).text('收起');
+    	}    	
+    	bClick = !bClick;
+    });
 };
 
