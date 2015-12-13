@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>个人主页</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/ty.css">
+</head>
+<body>
+    <!--顶部-->
+    <div class="head">
+        <div class="head-m center">
+            <!--登录前-->
+            <div class="bf-login s s12 r">
+                您好，欢迎登录众创空间！
+                    <span class="sp-login">
+                        <a class="s14" href="19.login.html">登录</a>
+                    </span>
+                    <span class="sp-reg">
+                        <a class="s14" href="#">注册</a>
+                    </span>
+            </div>
+            <!--登录后-->
+            <div class="af-login w r" style="display: none;">
+                <div class="user-info r x">
+                    <img class="head" src="images/head.png">
+                    <div class="info-tips box-sh y">
+                        <ul>
+                            <li><a href="#">李达兆</a></li>
+                            <li><a href="#">我的主页</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-news r x">消息<img class="news-icon y" src="images/g-icon2.png"><a href="#" class="news-tips box-sh y">投融资消息</a></div>
+            </div>
+        </div>
+    </div>
+    <!--首页导航-->
+    <div class="nav">
+        <div class="nav-m center s x">
+            <img src="images/logo.png" class="logo y" width="164" height="40">
+            <ul class="y w">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">创业大赛</a></li>
+                <li><a href="javascript:;">众创先锋榜</a></li>
+                <li class="x z5">
+                    <a href="javascript:;">我是创业者</a>
+                    <div class="pop-up y box-sh" id="pop-up1">
+                        <a href="javascript:;">知识产权保护</a>
+                        <a href="javascript:;">在线估值</a>
+                        <a href="javascript:;">融资委托</a>
+                        <a href="javascript:;">工商咨询</a>
+                    </div>
+                </li>
+                <li class="x z5">
+                    <a href="javascript:;">我是投资人</a>
+                    <div class="pop-up y box-sh" id="pop-up2">
+                        <a href="javascript:;">投资委托</a>
+                        <a href="javascript:;">创业项目</a>
+                    </div>
+                </li>
+                <li><a href="javascript:;">孵化器</a></li>
+                <li><a href="javascript:;">创业学院</a></li>
+                <li class="li-t z5 x">
+                    搜索
+                    <div class="pop-up-search y box-sh" id="pop-up-search">
+                        <div class="serarch x s s14 bt4" >
+                            <input class="l serarch_input" type="text" value="请输入要查找的内容">
+                            <div class="y sign fte">
+                                <a href="javascript:;"><span>O2O</span></a>
+                                <a href="javascript:;"><span>微信</span></a>
+                                <a href="javascript:;"><span>投资</span></a>
+                            </div>
+                            <a href="#" class="serarch_btn l"><img class="l" src="images/search.png" width="18" height="18"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- S 主体内容 -->
+    <div class="m-wrap">
+        
+        <div class="mt30">
+
+            <!-- S 投资人信息 -->
+            <div class="ty-tzrInfo">
+
+                <div class="m-box">
+                    <div class="bd nobd f-cb">
+                        <div class="m-picText f-cb f-fl">
+                            <div class="pic">
+                                <img class="f-br3" src="images/ty/upload/1.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="title f-cb"><h2>光源资本</h2><span>认证投资人</span><span>创业者</span><span>认证投资机构</span></div>
+                                <p>光源资本合伙人,关注消费升级、泛娱乐、海外移动互联网。</p>
+                                <div class="tag">互联网，电子商务，互联网，创业</div>
+                                <div class="m-fx">
+                                    <a class="wx" href="javascript:;"></a>
+                                    <a class="qq" href="javascript:;"></a>
+                                    <a class="wb" href="javascript:;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="f-cb">
+                                <p class="f-fl">3 关注 / 0 粉丝　　分享：</p>
+                                <ul class="m-fx2 f-cb">
+                                    <li><a class="wb" href="javascript:;"></a></li>
+                                    <li><a class="qq" href="javascript:;"></a></li>
+                                    <li><a class="wx" href="javascript:;"></a></li>
+                                    <li><a class="sx" href="javascript:;"></a></li>
+                                </ul>
+                            </div>
+                            <div class="f-tar btn">
+                                <a class="m-btn m-btn-primary" href="javascript:;">关注</a>
+                                <a class="m-btn m-btn-primary" href="javascript:;">私信</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- E 投资人信息 -->
+
+            <div class="f-cb f-mt30">
+                <div class="m-w840 fl">
+
+                    <!-- S 投资案例 -->
+                    <div class="ty-tzal">
+                        <div class="m-box">
+                            <div class="hd">
+                                <h2 class="tit">投资案例</h2><span class="num">6</span>
+                                <span class="c-gray">（数据以被投公司公开显示为准，如被投公司未披露则以你填写数据为准）</span>
+                            </div>
+                            <div class="bd">
+                                <ul class="alList">
+                                    <li>
+                                        <span class="date">2015-07</span>
+                                        <div class="m-picText">
+                                            <div class="pic">
+                                                <img src="images/ty/upload/2.jpg" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h2>精灵在线（百思不得姐）</h2>
+                                                <p>最大的视频图片娱乐社区</p>
+                                                <div class="tag">
+                                                    A轮　|　总投资金额　$1000万　合投方：光源资本　红杉资本　成为资本
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="blue">
+                                        <span class="date">2015-07</span>
+                                        <div class="m-picText">
+                                            <div class="pic">
+                                                <img src="images/ty/upload/2.jpg" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h2>精灵在线（百思不得姐）</h2>
+                                                <p>最大的视频图片娱乐社区</p>
+                                                <div class="tag">
+                                                    A轮　|　总投资金额　$1000万　合投方：光源资本　红杉资本　成为资本
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="green">
+                                        <span class="date">2015-07</span>
+                                        <div class="m-picText">
+                                            <div class="pic">
+                                                <img src="images/ty/upload/2.jpg" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h2>精灵在线（百思不得姐）</h2>
+                                                <p>最大的视频图片娱乐社区</p>
+                                                <div class="tag">
+                                                    A轮　|　总投资金额　$1000万　合投方：光源资本　红杉资本　成为资本
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="yellow">
+                                        <span class="date">2015-07</span>
+                                        <div class="m-picText">
+                                            <div class="pic">
+                                                <img src="images/ty/upload/2.jpg" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h2>精灵在线（百思不得姐）</h2>
+                                                <p>最大的视频图片娱乐社区</p>
+                                                <div class="tag">
+                                                    A轮　|　总投资金额　$1000万　合投方：光源资本　红杉资本　成为资本
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="open"><a href="javascript:;">展开</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 投资案例 -->
+
+                    <!-- S 创业经历 -->
+                    <div class="ty-cyjl">
+                        <div class="m-box f-mt30">
+                            <div class="hd">
+                                <h2 class="tit">创业经历</h2><span class="num">1</span>
+                            </div>
+                            <div class="bd">
+                                <div class="m-picText">
+                                    <div class="pic">
+                                        <img src="images/ty/upload/3.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h2>酷比云服务科技有限公司 </h2>
+                                        <p>移动互联网时代最先进的运输管理解决方案</p>
+                                        <div class="tag">创始人：马云      2015.07 - 至今</div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 创业经历 -->
+
+                    <!-- S 工作经历 -->
+                    <div class="ty-gzjl">
+                        <div class="m-box f-mt30">
+                            <div class="hd">
+                                <h2 class="tit">工作经历</h2><span class="num">1</span>
+                            </div>
+                            <div class="bd">
+                                <div class="m-picText">
+                                    <div class="pic">
+                                        <img src="images/ty/upload/3.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h2>Amazon.com </h2>
+                                        <p>技术 软件工程师       2011.07 - 2015.03</p>                                
+                                    </div>
+                                </div>   
+                                <div class="m-picText">
+                                    <div class="pic">
+                                        <img src="images/ty/upload/3.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h2>Amazon.com </h2>
+                                        <p>技术 软件工程师       2011.07 - 2015.03</p>                                
+                                    </div>
+                                </div>  
+                                <div class="m-picText">
+                                    <div class="pic">
+                                        <img src="images/ty/upload/3.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h2>Amazon.com </h2>
+                                        <p>技术 软件工程师       2011.07 - 2015.03</p>                                
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 工作经历 -->
+                </div>
+                <div class="m-w320 fr">
+                    <!-- S 重要信息 -->
+                    <div class="ty-zyxx">
+                        <div class="m-box">
+                            <div class="hd p20">
+                                <h2 class="tit">重要信息</h2>
+                            </div>
+                            <div class="bd">
+                                <ul>
+                                    <li>
+                                        <div class="tit">单笔可投</div>
+                                        <div class="cnt">￥10万-￥500万（个人）</div>
+                                    </li>
+                                    <li>
+                                        <div class="tit">主投币种</div>
+                                        <div class="cnt">人民币</div>
+                                    </li>
+                                    <li>
+                                        <div class="tit">投资阶段</div>
+                                        <div class="cnt">天使轮  PreA轮  A轮</div>
+                                    </li>
+                                    <li class="last">
+                                        <div class="tit">所在地</div>
+                                        <div class="cnt">广东省   深圳市</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 重要信息 -->
+
+                    <!-- S 正在辅导的项目 -->
+                    <div class="m-box f-mt30">
+                        <div class="hd p20">
+                            <h2 class="tit">正在辅导的项目</h2>
+                        </div>
+                        <div class="bd">
+                            <ul class="ty-fdxmList">
+                                <li>
+                                    <a href=""><img src="images/ty/upload/4.jpg" alt=""><p>项目名称</p></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/ty/upload/4.jpg" alt=""><p>项目名称</p></a>
+
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/ty/upload/4.jpg" alt=""><p>项目名称</p></a>
+
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/ty/upload/4.jpg" alt=""><p>项目名称</p></a>
+
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/ty/upload/4.jpg" alt=""><p>项目名称</p></a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- E 正在辅导的项目 -->
+
+                    <!-- S 成功辅导的项目 -->
+                    <div class="m-box f-mt30">
+                        <div class="hd p20">
+                            <h2 class="tit">成功辅导的项目</h2>
+                        </div>
+                        <div class="bd">
+                            <ul class="ty-fdxmList">
+                                <li>
+                                    <a href=""><img src="images/ty/upload/4.jpg" alt=""><p>项目名称</p></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/ty/upload/4.jpg" alt=""><p>项目名称</p></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/ty/upload/4.jpg" alt=""><p>项目名称</p></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/ty/upload/4.jpg" alt=""><p>项目名称</p></a>
+                                    
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/ty/upload/4.jpg" alt=""><p>项目名称</p></a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- E 成功辅导的项目 -->
+
+                    <!-- S 关注 -->
+                    <div class="m-box tab f-mt30">
+                        <div class="hd">
+                            <h2 class="tit active">关注<span class="f-fs12 f-lhn">(20)</span></h2><h2 class="tit">粉丝<span class="f-fs12 f-lhn">(100)</span></h2>
+                        </div>
+                        <div class="bd">2</div>
+                    </div>
+                    <!-- E 关注 -->
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- E 主体内容 -->
+    
+
+
+    <!--底部-->
+    <div class="foot">
+        <div class="foot-m center">
+            <div class="db-tit x l">
+                <img class="y" src="images/logo1.png" width="164" height="40">
+                <div class="y">
+                    <a class="a-wx a-item" href="javascript:;"></a>
+                    <a class="a-tx a-item" href="javascript:;"></a>
+                    <a class="a-sina a-item" href="javascript:;"></a>
+                </div>
+            </div>
+            <div class="db-con l">
+                <div class="db-con-l l">
+                    <ul class="ul-1 s s14">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                    <ul class="ul-2 s">
+                        <li>地址：重庆市大渡口区春晖路街道春晖路91号1-1号</li>
+                        <li>反馈建议：CQC@youth-maker.com</li>
+                        <li>客服电话：023-68249040</li>
+                    </ul>
+                </div>
+                <div class="db-con-r r s"><img src="images/erweima.png" width="92" height="92"><p>扫码关注微信公众平台</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"><div class="bottom-m center s s12">重庆青春实业有限公司<span class="ml15">渝ICP备13010370号-1</span><span class="ml15">渝B-20120039</span><span class="ml45">技术开发：重庆中恒玖联科技有限公司</span><span class="ml50">支持单位：共青团重庆市委</span></div></div>
+    <!--二维码、返回顶部-->
+    <div class="toolbar">
+        <a href="javascript:;" id="backTop" style="display: none;" class="toolbar-item toolbar-item-top"></a>
+        <a href="javascript:;" class="toolbar-item toolbar-item-weixin"><span class="toolbar-layer"></span></a>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/ty.js"></script>
+</body>
+</html>

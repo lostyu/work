@@ -1012,3 +1012,171 @@ body {
 .fr {
     float: right;
 }
+
+
+
+/* 登录注册 */
+/*login*/
+.row:after {
+    width: 100%;
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.t_rela{
+    position: relative;
+}
+.t_cen{
+    text-align: center;
+}
+.t_marT{
+    margin-top: 15px;
+}
+/*登录界面  S*/
+.inp-yj{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.L-body {    
+    width: 100%;
+    height: 100%;
+    background: url("../images/L-Bg.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: top;
+}
+.login-bg{
+    width: 100%;
+    min-height: 800px;
+}
+
+/*.L-con2{
+    top: 50%;
+    margin-top: -153px;
+    left: 50%;
+    margin-left: -241px;
+}*/
+
+.login-box {
+    width: 100%;
+}
+.login-con{
+    width: 400px;
+    padding: 32px 40px 60px 40px;
+    margin: 200px auto 0;
+    background: #fff;
+    border: 1px solid #00a2e9;
+    box-shadow: 0 0 2px #00a2e9;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.l-logo{
+    width: 47%;
+    height: 40px;
+    margin: 0 auto;
+    background: url("../images/L-logo.png") no-repeat;
+    background-size: 100% 100%;
+}
+.login-con form{
+    width: 100%;
+    padding-top: 30px;
+    position: relative;
+}
+.login-con .item{
+    width: 100%;
+    padding-top: 27px;
+}
+.login-con .item2{
+    width: 100%;
+    padding-top: 30px;
+}
+.login-con .L-inp{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 0.6em;
+    font-size: 18px;
+    color: #616161;
+    border: 1px solid #d0d0d0;
+    webkit-transition: border 0.30s ease-in-out;
+    -moz-transition:  border 0.30s ease-in-out;
+}
+.login-con input:focus{
+    background-color:#fff;
+    outline:none;
+    border:1px solid #00a2e9;
+    box-shadow: 0 0 5px #00a2e9;
+}
+.L-btn{
+    width: 100%;
+    padding-top: 30px;
+    *padding-left: 3%;
+}
+.L-loginBtn{
+    display: block;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    background: #00a2e9;
+    text-align: center;
+    color: #fff;
+}
+.L-goLogin{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    font-size: 18px;
+    color: #717d97;
+}
+.L-returnII{
+    display: inline-block;
+    background: url("../images/L-icon1.png") no-repeat;
+    background-size: 100% 100%;
+    width: 18px;
+    height: 18px;
+    vertical-align: -2px;
+    *vertical-align: 2px;
+    margin-left: 8px;
+}
+.login-con .in-yz{
+    width: 60%;
+    float: left;
+    *width: 56%;
+    *margin-left: 3%;
+}
+.login-con .hqyz-btn{
+    display: inline-block;
+    float: left;
+    width: 34%;
+    *width: 35%;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 5%;
+    color: #2c2d32;
+    text-align: center;
+    font-size: 18px;
+    background-color:#fff;
+    border: 1px solid #d0d0d0;
+}
+/*.login-con .hqyz-btn:focus{
+    background: #d0d0d0;
+    outline:none;
+    border:1px solid #d0d0d0;
+    box-shadow: 0 0 5px #d0d0d0;
+}*/
+.errorMsg{
+    font-size: 12px;
+    color: #ff0000;
+    position: absolute;
+    left: 3%;;
+    top: 5px;
+}
+/*去掉 input type= number默认样式*/
+.L-inp {
+    -moz-appearance: textfield;
+}
+.L-inp::-webkit-inner-spin-button, .L-inp::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*登录界面  E*/

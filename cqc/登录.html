@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>common</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body class="L-body">
+    <!--顶部-->
+    <div class="head">
+        <div class="head-m center">
+            <!--登录前-->
+            <div class="bf-login s s12 r">
+                您好，欢迎登录众创空间！
+                    <span class="sp-login">
+                        <a class="s14" href="19.login.html">登录</a>
+                    </span>
+                    <span class="sp-reg">
+                        <a class="s14" href="#">注册</a>
+                    </span>
+            </div>
+            <!--登录后-->
+            <div class="af-login w r" style="display: none;">
+                <div class="user-info r x">
+                    <img class="head" src="images/head.png">
+                    <div class="info-tips box-sh y">
+                        <ul>
+                            <li><a href="#">李达兆</a></li>
+                            <li><a href="#">我的主页</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-news r x">消息<img class="news-icon y" src="images/g-icon2.png"><a href="#" class="news-tips box-sh y">投融资消息</a></div>
+            </div>
+        </div>
+    </div>
+    <!--首页导航-->
+    <div class="nav">
+        <div class="nav-m center s x">
+            <img src="images/logo.png" class="logo y" width="164" height="40">
+            <ul class="y w">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">创业大赛</a></li>
+                <li><a href="javascript:;">众创先锋榜</a></li>
+                <li class="x z5">
+                    <a href="javascript:;">我是创业者</a>
+                    <div class="pop-up y box-sh" id="pop-up1">
+                        <a href="javascript:;">知识产权保护</a>
+                        <a href="javascript:;">在线估值</a>
+                        <a href="javascript:;">融资委托</a>
+                        <a href="javascript:;">工商咨询</a>
+                    </div>
+                </li>
+                <li class="x z5">
+                    <a href="javascript:;">我是投资人</a>
+                    <div class="pop-up y box-sh" id="pop-up2">
+                        <a href="javascript:;">投资委托</a>
+                        <a href="javascript:;">创业项目</a>
+                    </div>
+                </li>
+                <li><a href="javascript:;">孵化器</a></li>
+                <li><a href="javascript:;">创业学院</a></li>
+                <li class="li-t z5 x">
+                    搜索
+                    <div class="pop-up-search y box-sh" id="pop-up-search">
+                        <div class="serarch x s s14 bt4" >
+                            <input class="l serarch_input" type="text" value="请输入要查找的内容">
+                            <div class="y sign fte">
+                                <a href="javascript:;"><span>O2O</span></a>
+                                <a href="javascript:;"><span>微信</span></a>
+                                <a href="javascript:;"><span>投资</span></a>
+                            </div>
+                            <a href="#" class="serarch_btn l"><img class="l" src="images/search.png" width="18" height="18"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- S 主体内容 -->
+    <div class="m-wrap">
+        
+        <!--未注册过账号-->
+<div class="L-con2" id="L-con2">
+    <div class="login-bg">
+        <div class="login-box">
+            <div class="login-con">
+                <!--logo-->
+                <div class="l-logo"></div>
+                <form>
+                    <div class="item">
+                        <input type="number" class="L-inp inp-yj L-num" id="inputPhone"  placeholder="请输入手机号">
+                    </div>
+                    <div class="item2 row" id="yzm" style="display: none;">
+                        <input type="number" class="L-inp inp-yj in-yz" placeholder="短信验证码" value="短信验证码">
+                        <a type="button" class="hqyz-btn" id="yzNum" value="获取验证码" >获取验证码</a>
+                    </div>
+                    <div class="item2" id="inputPassword" style="display: none;">
+                        <input type="number" class="L-inp inp-yj L-passw" placeholder="请输入密码，不少于6位" value="请输入密码，不少于6位">
+                    </div>
+                    <div class="L-btn t_rela">
+                        <!--填写信息错误提示<p class="errorMsg">请输入密码</p>-->
+                        <a href="#" class="L-loginBtn inp-yj login-a2" id="loginBtn">登录/注册</a>
+                        <a href="#" class="L-loginBtn inp-yj login-a2" id="registerBtn" style="display: none;">注册</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+    <!-- E 主体内容 -->
+    
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+
+    $(function(){
+
+//        页面切换
+        $('.login-a1').click(function(){
+            $('.L-con1').hide();
+            $('.L-con2').show();
+        });
+        $('.L-goLogin').click(function(){
+            $('.L-con1').show();
+            $('.L-con2').hide();
+        });
+        //    input焦点（IE7）
+        $(".L-inp").focus(function(){
+            $(this).css("border","1px solid #00a2e9");
+        });
+        $(".L-inp").blur(function(){
+            $(this).css("border","1px solid #d0d0d0");
+        });
+        //    input输入提示文字
+
+        $(".L-num").focusin(function() {
+            if($(this).val() =="请输入手机号"){
+                $(this).val("");
+            }
+        });
+        $(".L-num").focus();
+        $(".L-num").focus(function() {
+            if($(this).val() ==""){
+                $(this).val("请输入手机号");
+            }
+        });
+        $(".L-num").focusin(function() {
+            if($(this).val() =="请输入手机号"){
+                $(this).val("");
+            }
+        });
+        $(".L-num").focusout(function() {
+            if($(this).val() ==""){
+                $(this).val("请输入手机号");
+            }
+        });
+
+        $(".in-yz").focusin(function() {
+            if($(this).val() =="短信验证码"){
+                $(this).val("");
+            }
+        });
+        $(".in-yz").focusout(function() {
+            if($(this).val() ==""){
+                $(this).val("短信验证码");
+            }
+        });
+        $(".L-passw").focusin(function() {
+            if($(this).val() =="请输入密码，不少于6位"){
+                $(this).val("");
+            }
+        });
+        $(".L-passw").focusout(function() {
+            if($(this).val() ==""){
+                $(this).val("请输入密码，不少于6位");
+            }
+        });
+    })
+
+    //点击获取验证码
+    var wait=60;
+    function time(o) {
+        if (wait == 0) {
+            o.removeAttribute("disabled");
+            o.text = "重新发送";
+            document.getElementById("yzNum").innerText = "重新发送"
+            o.style.background = "#fff";
+            wait = 60;
+        } else {
+            o.setAttribute("disabled", true);
+            o.text = "已发送(" + wait + ")";
+            document.getElementById("yzNum").innerText = "已发送(" + wait + ")"
+            o.style.background = "#d0d0d0";
+            wait--;
+            setTimeout(function() {
+                        time(o)
+                    },
+                    1000)
+        }
+    }
+    document.getElementById("yzNum").onclick=function(){time(this);}
+
+    var tel = $("#inputPhone").val(); //获取手机号
+
+    //如果手机号码不能通过验证
+
+    var phone = 15178778601;
+    var $phone = $("#inputPhone");
+    var $password = $("#inputPassword");
+    var $yzm = $('#yzm');   //验证码
+    var $loginBtn = $("#loginBtn"); //登录按钮
+    var $registerBtn = $("#registerBtn");   //注册按钮
+    $phone.keyup(function (event) {
+        var tel = $(this).val();
+        var telReg = !!tel.match(/^[0-9]{11}$/);
+        if(telReg){
+            if(tel!=phone){
+                $yzm.fadeIn();
+                $loginBtn.hide();
+                $registerBtn.show();
+                $password.show(function(){
+                    var loginBox = document.getElementById("L-con2");
+                    var ks = $(window).height()-128;
+                    var lbH = loginBox.offsetHeight;
+                    $(".L-con2").removeClass("y");
+                    $(".L-con2").css({
+                        "marginTop":(ks-lbH)/2,
+                        "marginLeft":0
+                    });
+                });
+            }else{
+                $loginBtn.html("登录");
+                $password.fadeIn();
+            }
+        }else{
+            $loginBtn.show().html("登录/注册");
+            $registerBtn.hide();
+            $yzm.hide();
+            $password.hide();
+        }
+    });
+
+</script>
+</body>
+</html>
