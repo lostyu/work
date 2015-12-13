@@ -1,3 +1,94 @@
+/*================= S tony公共部分  =================*/
+
+
+.f-fs12{
+    font-size: 12px;
+}
+.f-lhn{
+    line-height: normal;
+}
+.f-mt30{
+    margin-top: 30px;
+}
+
+.m-w840{
+    width: 840px;
+}
+.m-w320{
+    width: 320px;
+}
+
+.m-box{
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+}
+.m-box .hd{
+    padding: 0 40px;
+    height: 45px;
+    line-height: 45px;
+}
+.m-box .hd .tit{
+    position: relative;
+    float: left;
+    padding-left: 32px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+    background: url(../images/ty/icon-bg.png) no-repeat;
+}
+.m-box .hd .tit:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    border-bottom: 2px solid #349aff;
+}
+.m-box .hd .tit.icon2{
+    background-position: 0 -45px;
+}
+.m-box .hd .tit.icon3{
+    background-position: 0 -90px;
+}
+.m-box .hd .num{
+    float: left;
+    display: inline-block;
+    line-height: normal;
+    padding:2px 6px;
+    border-radius: 3px;
+    margin: 12px 0 0 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ffad1d;
+
+}
+.m-box .hd .more{
+    float: right;
+}
+.m-box .bd{
+    padding: 20px;
+    border-top: 1px solid #d0d0d0;
+}
+.m-box.tab .hd{
+    padding: 0;
+}
+.m-box.tab .hd .tit{
+    padding: 0 20px;
+    background: none;
+    border-right: 1px solid #d0d0d0;
+    cursor: pointer;
+}
+.m-box.tab .hd :after{
+    border:none;
+}
+.m-box.tab .hd .active:after{
+    border-bottom: 1px solid #fff;
+}
+.m-box .nobd{border: none;}
+
+/*================= E tony公共部分  =================*/
+
+
 /*================= S 首页  =================*/
 
 
@@ -894,3 +985,13 @@
 
 
 /*================= E 青锋计划  =================*/
+
+
+
+/*================= S 个人中心  =================*/
+
+/* 投资人信息 */
+.ty-tzrInfo{
+
+}
+/*================= E 个人中心  =================*/
