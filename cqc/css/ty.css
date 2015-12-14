@@ -26,13 +26,23 @@
     display: inline-block;
     min-width: 64px;
     padding: 12px;
+    border: none;
     border-radius: 3px;
     font-size: 16px;    
     color: #fff;
     text-align: center;
 }
 .m-btn-primary{
+    color: #fff;
     background-color: #349aff;
+}
+.m-btn-default{
+    color: #fff;
+    background-color: #dadada;
+}
+.m-btn-lg{
+    min-width: 120px;
+    line-height: 30px;
 }
 .m-btn:hover{
     color: #fff;
@@ -40,6 +50,9 @@
 }
 .m-btn-primary:hover{
     background-color: #2e8ae5;
+}
+.m-btn-default:hover{
+    background-color: #bfbfbf;
 }
 
 
@@ -165,6 +178,62 @@
 }
 .m-fx2 .sx{
     background-position: 0 -120px;
+}
+
+
+/* 简易表单 */
+.m-form{line-height:29px;color:#555;}
+.m-form legend{font-size:14px;font-weight:bold;}
+.m-form .formitm{padding:20px 0 0;line-height:30px;}
+.m-form .formitm-1{padding-left:100px;}
+.m-form .lab{float:left;width:90px;margin-right:-90px;text-align:right;font-weight:bold;}
+.m-form .ipt{margin-left:100px;}
+.m-form .ipt *{vertical-align:middle;}
+.m-form .ipt a,.m-form .ipt a:hover{text-decoration:none;color:#3891eb;}
+.m-form .ipt img{height:32px;margin:0 15px 0 5px;}
+.m-form .ipt .domain{margin:0 0 0 5px;font-weight:bold;color:#777;}
+.m-form .ipt p{height:22px;line-height:22px;color:#999;}
+.m-form .tip{padding-top:10px;}
+.m-form .tip input{margin:0 5px 3px 0;}
+
+
+/* 通用自定义按钮-默认蓝色 */
+.u-btn{display:inline-block;*display:inline;*zoom:1;*overflow:visible;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;padding:0 12px;height:28px;line-height:28px;border:1px solid #2d88bf;font-size:12px;letter-spacing:1px;word-spacing:normal;text-align:center;vertical-align:middle;cursor:pointer;background:#54aede;}
+button.u-btn{*height:30px;_line-height:25px;}
+.u-btn,.u-btn:hover{color:#fff;text-decoration:none;}
+.u-btn:hover,.u-btn:focus{background:#399dd8;}
+.u-btn::-moz-focus-inner{padding:0;margin:0;border:0;}
+.u-btn .btntxt{margin-right:3px;_vertical-align:middle;}
+.u-btn .btnsel{display:inline-block;*display:inline;*zoom:1;width:0;height:0;overflow:hidden;vertical-align:middle;border-style:solid dashed dashed;border-width:4px 4px 0;border-color:#fff transparent transparent;}
+/* 较大 */
+.u-btn-lg{padding:0 15px;height:36px;line-height:36px;font-size:18px;}
+button.u-btn-lg{*height:38px;_line-height:33px;}
+.u-btn-lg .btnsel{border-width:5px 5px 0;}
+/* 较小 */
+.u-btn-sm{padding:0 10px;height:22px;line-height:22px;}
+button.u-btn-sm{*height:24px;_line-height:19px;}
+/* 红色 */
+.u-btn-c1{border-color:#9f161b;background:#de2027;}
+.u-btn-c1:hover,.u-btn-c1:focus{background:#cc1c23;}
+/* 黄色 */
+.u-btn-c2{border-color:#e1962d;background:#faa42b;}
+.u-btn-c2:hover,.u-btn-c2:focus{background:#f8960a;}
+/* 绿色 */
+.u-btn-c3{border-color:#52a552;background:#5cbc5c;}
+.u-btn-c3:hover,.u-btn-c3:focus{background:#50b150;}
+/* 灰色 */
+.u-btn-c4{border-color:#d0d0d0;background:#f3f3f3;}
+.u-btn-c4,.u-btn-c4:hover{color:#333;}
+.u-btn-c4:hover,.u-btn-c4:focus{background:#e7e7e7;}
+.u-btn-c4 .btnsel{border-top-color:#555;}
+.u-btn-c4:hover .btnsel,.u-btn-c4:focus .btnsel{border-top-color:#000;}
+
+input[type='text'], textarea{
+    padding: 0 10px;
+    line-height: 40px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 /*================= E tony公共部分  =================*/
@@ -1283,6 +1352,155 @@
     height: 122px;
     text-align: center;
     color: #616161;
+}
+
+
+
+.ty-edit {
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    background: url(../images/ty/edit.png) no-repeat;
+}
+.ty-tzrInfo .ty-edit{
+    position: relative;
+    top: 10px;
+}
+.ty-add{}
+.ty-add a{
+    display: block;
+    height: 73px;
+    line-height: 73px;
+    border: 1px dotted #bedfff;
+    background-color: #f3f9ff;
+    color: #8dc6ff;
+    text-align: center;
+}
+.ty-add span{
+    display: inline-block;
+    padding-left: 57px;
+    background: url(../images/ty/add.png) left center no-repeat;
+}
+.ty-zyxx .ty-edit{
+    position: relative;
+    top: 15px;
+}
+
+
+/* 编辑投资人信息 */
+.re-text{
+    color: #f08519;
+}
+.ty-tzrInfo-edit{
+    overflow: hidden;
+}
+.ty-tzrInfo-edit .lpic{
+    float: left;
+    margin-left: 106px;
+    width: 226px;
+}
+.ty-tzrInfo-edit .lpic img{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.ty-tzrInfo-edit .lpic .m-btn{
+    width: 118px;
+}
+.ty-tzrInfo-edit .rform{
+    float: left;
+    width: 638px;
+}
+.ty-tzrInfo-edit .rform input[type='text'], .ty-tzrInfo-edit .rform textarea{
+    box-sizing: border-box;
+    width: 100%;
+}
+.ty-tzrInfo-edit .m-form .lab{
+    width: 120px;
+    margin-right: -120px;
+    font-weight: 500;
+}
+.ty-tzrInfo-edit .m-form .formitm{
+    line-height: 40px;
+}
+.ty-tzrInfo-edit .m-form .ipt{
+    margin-left: 140px;
+}
+.ty-tzrInfo-edit .al{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+.ty-tzrInfo-edit .al .pic img{
+    width: 70px;
+    height: 70px;
+}
+.ty-tzrInfo-edit .checkboxList{
+    overflow: hidden;
+}
+.ty-tzrInfo-edit .checkboxList li{
+    float: left;
+    width: 20%;
+    font-size: 14px;
+}
+.ty-tzrInfo-edit .tijiao .m-btn{    
+    color: #fff;
+}
+
+
+.ty-zyxx-form input[type='text']{
+    display: inline-block;
+    width: 75px;
+}
+.ty-zyxx-form .item{
+    margin-bottom: 20px;
+}
+.ty-zyxx-form .rd{
+    line-height: 30px;
+    display: inline-block;
+    width: 40%;
+}
+.ty-zyxx-form .tit{
+    margin-top: 10px;
+    color: #616161;    
+}
+.ty-zyxx-form .cnt{
+    margin-top: 10px;
+}
+.ty-zyxx-form .szd select{
+    width: 30%;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.ty-select{
+    padding: 0 10px;    
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+
+.ty-cyjlForm .lab{
+    width: 120px;
+    margin-right: -120px;
+}
+.ty-cyjlForm .ipt{
+    margin-left: 140px;
+}
+.ty-cyjlForm a.m-btn{
+    color: #fff !important;
+}
+
+
+.ty-imgUpLoad{
+    width: 160px;
+    height: 120px;
+    background: url(../images/ty/bg-upload.jpg) no-repeat;
 }
 
 /*================= E 个人中心  =================*/
