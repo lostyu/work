@@ -1,0 +1,642 @@
+body {
+    background: #f6f6f6;
+}
+
+.t-clear {
+    display: block;
+    zoom: 1;
+}
+
+.t-clear:after, .t-clear:before {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/** html .t-clear{height:1%;*//*这是为了触发IEhaslayout*//*}*/
+
+.t-main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*表单*/
+.t-form-box {
+    border: #d0d0d0 solid 1px;
+    background-color: #ffffff;
+}
+
+.t-form-box-l {
+    width: 840px;
+    float: left;
+}
+
+.t-form-box-r {
+    width: 320px;
+    float: right;
+}
+
+.t-form-title-container {
+    border-bottom: #f3f3f3 solid 1px;
+    height: 52px;
+    line-height: 52px;
+    padding: 0 40px;
+}
+
+.t-form-title-box {
+    display: block;
+    border-bottom: #349aff solid 1px;
+    float: left;
+}
+
+.t-icon {
+    background-size: contain;
+    display: block;
+    float: left;
+}
+
+.t-icon-title {
+    width: 24px;
+    height: 24px;
+    margin-top: 14px;
+    margin-right: 10px;
+    background-image: url(../images/icon/icon-form-title.png);
+}
+
+.t-form-title-w {
+    display: block;
+    color: #2c2d32;
+    font-size: 22px;
+    float: left;
+}
+
+.t-form {
+    margin: auto;
+    padding: 32px 40px 60px;
+}
+
+.t-form-item {
+    line-height: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.t-form-item-label {
+    text-align: right;
+    float: left;
+    margin-right: 14px;
+}
+
+.t-icon-important {
+    width: 8px;
+    height: 7px;
+    background-image: url(../images/icon/icon-important.png);
+    float: right;
+    margin-top: 14px;
+    margin-right: 8px;
+}
+
+.t-form-item-lw {
+    float: right;
+    display: block;
+    color: #616161;
+}
+
+.t-form-item-con {
+    float: left;
+    position: relative;
+    *z-index: 1;
+    zoom: 1;
+}
+
+.t-form-input-box {
+    /*padding: 10px;*/
+    padding: 0px 0px 0px 0px;
+
+    border: #d0d0d0 solid 1px;
+    border-radius: 5px;
+    float: left;
+}
+
+.t-form-input-box input {
+
+    padding: 10px 0px 10px 10px;
+    box-sizing: border-box;
+
+    display: block;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #616161;
+    background: none;
+}
+
+.t-form-input-box input::-webkit-input-placeholder {
+    color: #939a9a;
+}
+
+.t-form-item-city {
+    *z-index: 2;
+}
+
+.t-unit {
+    color: #939a9a;
+    float: left;
+    margin: 0 16px;
+}
+
+/*计算结果*/
+.t-result-box {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.t-result {
+    color: #349aff;
+    font-size: 36px;
+    background: #f3f9ff;
+    text-align: center;
+    border: #8dc6ff dashed 1px;
+    height: 70px;
+    line-height: 70px;
+    max-width: 100%;
+}
+
+.t-line-one {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.t-result-box .t-unit {
+    color: #616161;
+    font-size: 16px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.t-button-box {
+    padding: 18px 0;
+}
+
+.t-button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.t-button-blue {
+    background-color: #349aff;
+}
+
+.t-button-yellow {
+    background-color: #ffad1d;
+}
+
+.t-apply {
+    display: none;
+}
+
+.t-apply-tips {
+    font-size: 14px;
+    color: #949a9a;
+    padding-bottom: 18px;
+    line-height: 20px;
+}
+
+.t-yellow {
+    color: #ffad1d;
+}
+
+.t-blue {
+    color: #349aff;
+}
+
+.t-pd-td {
+    padding: 40px 0 60px;
+}
+
+.t-textarea-tips {
+    color: #949a9a;
+    font-size: 14px;
+    display: block;
+    line-height: 1.5;
+    width: 506px;
+}
+
+.t-dotted-line {
+    border-bottom: #d0d0d0 dotted 1px;
+    margin-bottom: 20px;
+}
+
+.t-form-title-tips {
+    color: #939a9a;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+.t-fileCon {
+
+}
+
+.t-input-file {
+    width: 160px;
+    height: 120px;
+    border: #d0d0d0 solid 1px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    background: url("../images/t-file-upload.png") center no-repeat;
+}
+
+.t-input-file .t-upload {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: pink;
+    width: 100%;
+    height: 100%;
+}
+
+.t-file-tips1 {
+    color: #939a9a;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.t-file-tips2 {
+    margin-left: 20px;
+    color: #616161;
+    font-size: 16px;
+}
+
+.t-agree-box {
+    color: #616161;
+    position: relative;
+    padding-left: 24px;
+}
+
+.t-pd-t15{
+    padding-top: 15px;
+}
+
+.t-agree-box p{
+    line-height: 40px;
+    height: 40px;
+}
+
+.t-agree {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    *margin-top: 14px;
+    background: url("../images/icon/icon-check.png");
+}
+
+.t-agree.select {
+    background: url("../images/icon/icon-agree.png");
+}
+
+.t-w-content{
+    overflow: hidden;
+    zoom: 1;
+    display: block;
+}
+
+.t-owh{
+    overflow: hidden;
+}
+
+/*比例ratio 34:66*/
+.t-ratio1 {
+}
+
+.t-ratio1 .t-form-item-label {
+    width: 34%;
+}
+
+.t-ratio1 .t-form-item-con {
+}
+
+/*比例ratio 27:73*/
+.t-ratio2 {
+
+}
+
+.t-ratio2 .t-form-item-label {
+    width: 27%;
+}
+
+.t-ratio2 .t-form-item-con {
+
+}
+
+/*比例ratio 30:70*/
+.t-ratio3 {
+
+}
+
+.t-ratio3 .t-form-item-label {
+    width: 30%;
+}
+
+.t-ratio3 .t-form-item-con {
+    /*width: 70%;*/
+}
+
+/*比例ratio 21:79*/
+.t-ratio4 {
+
+}
+
+.t-ratio4 .t-form-item-label {
+    width: 21%;
+}
+
+.t-ratio4 .t-form-item-con {
+    /*width: 79%;*/
+}
+
+.t-ratio4 .t-w-content {
+    width: 79%;
+}
+
+.t-input-80 {
+    width: 80px;
+}
+
+.t-input-100 {
+    width: 100px;
+}
+
+.t-input-110 {
+    width: 110px;
+}
+
+.t-input-140 {
+    width: 140px;
+}
+
+.t-input-250 {
+    width: 250px;
+}
+
+.t-input-280 {
+    width: 280px;
+}
+
+.t-input-426 {
+    width: 426px;
+}
+
+.t-input-486 {
+    width: 486px;
+}
+
+.t-input-506 {
+    width: 506px;
+}
+
+.t-input-526 {
+    width: 526px;
+}
+
+.t-text-area-box textarea {
+    background: none;
+    display: block;
+    font-size: 16px;
+    color: #616161;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.t-text-area-box {
+    border: none;
+    padding: 0;
+}
+
+.t-textarea {
+    border: #d0d0d0 solid 1px;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.t-text-area-box textarea::-webkit-input-placeholder {
+    color: #939a9a;
+}
+
+.t-form-container1 .t-button-box {
+    padding: 0;
+}
+
+.t-form-container1 .t-button {
+    width: 140px;
+    margin: 0 auto;
+}
+
+.t-link-article {
+    display: block;
+    color: #616161;
+    font-size: 16px;
+    word-break: break-all;
+    position: relative;
+    padding-left: 24px;
+    padding-bottom: 20px;
+}
+
+.t-icon-question {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icon/icon-question.png") center no-repeat;
+}
+
+
+
+
+.t-question-box {
+
+}
+
+.t-question-box .t-form-title-container {
+    padding: 0 20px;
+}
+
+.t-question-box .t-form {
+    padding: 20px;
+}
+
+.t-mrg-left14 {
+    margin-left: 14px;
+}
+
+.t-check-item, .t-radio-item {
+    color: #616161;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+.t-check-item .t-check, .t-radio-item .t-radio {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -7px;
+}
+
+.t-check-item .t-check {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background: url("../images/icon/icon-check.png") center no-repeat;
+}
+
+.t-radio-item .t-radio {
+    width: 15px;
+    height: 15px;
+    background: url("../images/icon/icon-radio.png") center no-repeat;
+}
+
+.t-check-item .t-checked {
+    background: url("../images/icon/icon-checked.png") center no-repeat;
+}
+
+.t-radio-item .t-radio-on {
+    background: url("../images/icon/icon-radio2.png") center no-repeat;
+}
+
+.t-check-item .t-check-w, .t-radio-item .t-radio-w {
+    display: block;
+    margin-left: 26px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.t-four-child > div {
+    width: 25%;
+    *width: 24.9%;
+    float: left;
+}
+
+.t-f-1661 {
+    color: #616161;
+    font-size: 16px;
+}
+
+.t-button-sa {
+    width: 140px;
+    margin: 0 auto;
+}
+
+/*S select*/
+.t-simulate-select {
+    background-color: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    color: #616161;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.t-icon-arrow-down {
+    width: 10px;
+    height: 8px;
+    position: absolute;
+    right: 14px;
+    top: 16px;
+    background: url("../images/icon/icon-triangle-down.png");
+}
+
+.t-simulate-select:hover {
+    border: #349aff solid 1px;
+}
+
+.diy_select_btn {
+    height: 100%;
+    background: pink;
+    z-index: 10000;
+}
+
+.diy_select_txt {
+    color: #939a9a;
+    height: 38px;
+    line-height: 38px;
+}
+
+.diy_select_txt.has {
+    color: #616161;
+}
+
+.diy_select_txt, .diy_select_list li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.diy_select_txt {
+    margin-right: 25px;
+}
+
+.diy_select_list {
+    position: absolute;
+    top: 39px;
+    left: -1px;
+    border: #d0d0d0 solid 1px;
+    width: 100%;
+    display: none;
+    border-radius: 5px;
+    z-index: 1000;
+    background: #fff;
+    max-height: 270px;
+    overflow-y: auto;
+}
+
+.diy_select_list li {
+    padding: 0 14px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #616161;
+}
+
+.diy_select_list li.focus {
+    background: #3399FF;
+    color: #fff
+}
+
+/*E select*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

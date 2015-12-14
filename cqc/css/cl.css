@@ -20,6 +20,10 @@
 /*主体内容*/
 .boxS {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
 }
 
 .w1200 {
@@ -293,4 +297,217 @@
     top: -1px;
     line-height: 43px;
     background: url(../images/cl-icon4.png) no-repeat;
+}
+
+/*立即申报*/
+.cl-clear {
+    display: block;
+    zoom: 1;
+}
+
+.cl-clear:after, .cl-clear:before {
+    visibility: hidden;
+    display: block;
+    foncl-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.cl-main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.cl-form-container1 .cl-button-box {
+    padding: 0;
+}
+
+.cl-form-container1 .cl-button {
+    width: 140px;
+    margin: 0 auto;
+}
+
+.cl-pd-td {
+    padding: 40px 0 0;
+}
+.cl-form-box {
+    border: #d0d0d0 solid 1px;
+    background-color: #ffffff;
+}
+.cl-form-title-container {
+    border-bottom: #f3f3f3 solid 1px;
+    height: 52px;
+    line-height: 52px;
+    padding: 0 40px;
+}
+.cl-form-title-box {
+    display: block;
+    border-bottom: #349aff solid 1px;
+    float: left;
+}
+
+.cl-icon {
+    background-size: contain;
+    display: block;
+    float: left;
+}
+
+.cl-icon-title {
+    width: 24px;
+    height: 24px;
+    margin-top: 14px;
+    margin-right: 10px;
+    background-image: url(../images/cl/icon-form-title.png);
+}
+
+.cl-form-title-w {
+    display: block;
+    color: #2c2d32;
+    font-size: 22px;
+    float: left;
+}
+
+.cl-line-one {
+    overflow: hidden;
+    texcl-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cl-form-title-tips {
+    color: #939a9a;
+    foncl-size: 14px;
+    padding-left: 12px;
+}
+.cl-form-content{
+    padding: 0 40px;
+}
+.cl-ljS{
+    font-size: 14px;
+    color: #ffad1c;
+    background: #fff7ea;
+    border: solid 1px #ffd385;
+    padding: 30px;
+    margin-top: 22px;
+    width: 100%;
+}
+
+.cl-ljAn{
+    width: 100%;
+    height: auto;
+}
+.cl-ljAn .dv{
+    width: 720px;
+    margin-top: 108px;
+    height: 185px;
+    float: left;
+    margin-left: 199px;
+}
+.cl-ljAn .dv1{
+    width: 360px;
+    height: 185px;
+    float: left;
+    text-align: center;
+}
+
+.cl-ljAn .dv1 a{
+    font-size: 18px;
+    color: #349aff;
+    display: block;
+    margin-top: 14px;
+}
+.cl-ljAn .dv1 span{
+    font-size: 20px;
+    margin-top: 16px;
+    color: #2c2d32;
+    display: block;
+}
+
+.cl-ljBn{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.cl-ljBn div{
+    margin-top: 125px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.cl-ljBn a{
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    background: #349aff;
+}
+
+.cl-ljBn span{
+    font-size: 16px;
+    color: #616161;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 36px;
+}
+
+/*待办事宜*/
+.cl-dbsY{
+    height: auto;
+}
+.cl-dbsY .fv{
+    width: 100%;
+    height: 250px;
+    border:solid 1px #e2e3e3;
+    margin-top: 30px;
+}
+.cl-dbsY .b-d-r{
+    border-right: solid 1px #e2e3e3;
+}
+.cl-dbsY .fv1{
+    width: 306px;
+    height: 248px;
+    background: #f6f6f6;
+}
+.cl-dbsY .fv1 img{ width: 90px; height: 90px; top: 79px; left: 30px;}
+.cl-dbsY .fv1 span{font-size: 24px; color:#616161; top: 79px; left: 136px;}
+.cl-dbsY .fv1 a{ padding: 16px; font-size: 16px; color: #fff; border-radius: 4px; left: 136px;top: 117px;}
+.cl-dbsY .fv1 .a1{ background: #3d5175;}
+.cl-dbsY .fv1 .a2{ background: #cc9f33;}
+
+
+
+.cl-dbsY .fv2{
+    width: 892px;
+    height: 248px;
+    background: #fff;
+    padding-left: 120px;
+}
+
+.cl-dbsY .fv2 div{
+    width: 100%;
+    padding-right: 15px;
+}
+
+.cl-dbsY .fv2 .fv21{
+    font-size: 24px;
+    height: auto;
+    line-height: 30px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.cl-dbsY .fv2 .fv22{
+    font-size: 14px;
+    color: #616161;
+    margin-top: 18px;
+    line-height: 22px;
+    height: 88px;
+    overflow: hidden;
+}
+
+.cl-dbsY .fv2 .c1{
+    color: #3d5175;
+}
+
+.cl-dbsY .fv2 .c2{
+    color: #cc9f33;
 }

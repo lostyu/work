@@ -47,3 +47,19 @@
 .tab:hover .tab-del {
     display: block;
 }
+
+.myRadio{ width:10px; height:10px; padding:2px; -moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%; border:1px solid #e1e1e1; cursor:pointer;}
+.myRadio span{ background:none; width:10px; height:10px; display:inline-block; -moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%; float:left;}
+.myRadio:hover{ border:1px solid #349aff;}
+.myRadio:hover span{ background:#349aff;}
+.myRadio-hover{ border:1px solid #349aff;} 
+.myRadio-hover span{background:#349aff;} 
+
+.myCheckBox{ width:10px; height:10px; padding:2px; border:1px solid #e1e1e1; cursor:pointer;}
+.myCheckBox span{ background:none; width:10px; height:10px; display:inline-block; float:left;}
+.myCheckBox:hover{ border:1px solid #349aff;}
+.myCheckBox:hover span{ background:#349aff;}
+.myCheckBox-hover{ border:1px solid #349aff;} 
+.myCheckBox-hover span{background:#349aff;} 
+
+

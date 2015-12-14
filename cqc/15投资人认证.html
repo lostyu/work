@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>完善项目信息</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link href="css/myBase.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/cj.css">
+</head>
+
+<body>
+    <div class="myDialog-Warpper hidden"></div>
+    <!--顶部-->
+    <div class="head">
+        <div class="head-m center">
+            <!--登录前-->
+            <div class="bf-login s s12 r">
+                您好，欢迎登录众创空间！
+                <span class="sp-login">
+                        <a class="s14" href="19.login.html">登录</a>
+                    </span>
+                <span class="sp-reg">
+                        <a class="s14" href="#">注册</a>
+                    </span>
+            </div>
+            <!--登录后-->
+            <div class="af-login w r" style="display: none;">
+                <div class="user-info r x">
+                    <img class="head" src="images/head.png">
+                    <div class="info-tips box-sh y">
+                        <ul>
+                            <li><a href="#">李达兆</a></li>
+                            <li><a href="#">我的主页</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-news r x">消息<img class="news-icon y" src="images/g-icon2.png"><a href="#" class="news-tips box-sh y">投融资消息</a></div>
+            </div>
+        </div>
+    </div>
+    <!--首页导航-->
+    <div class="nav">
+        <div class="nav-m center s x">
+            <img src="images/logo.png" class="logo y" width="164" height="40">
+            <ul class="y w">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">创业大赛</a></li>
+                <li><a href="javascript:;">众创先锋榜</a></li>
+                <li class="x z5">
+                    <a href="javascript:;">我是创业者</a>
+                    <div class="pop-up y box-sh" id="pop-up1">
+                        <a href="javascript:;">知识产权保护</a>
+                        <a href="javascript:;">在线估值</a>
+                        <a href="javascript:;">融资委托</a>
+                        <a href="javascript:;">工商咨询</a>
+                    </div>
+                </li>
+                <li class="x z5">
+                    <a href="javascript:;">我是投资人</a>
+                    <div class="pop-up y box-sh" id="pop-up2">
+                        <a href="javascript:;">投资委托</a>
+                        <a href="javascript:;">创业项目</a>
+                    </div>
+                </li>
+                <li><a href="javascript:;">孵化器</a></li>
+                <li><a href="javascript:;">创业学院</a></li>
+                <li class="li-t z5 x">
+                    搜索
+                    <div class="pop-up-search y box-sh" id="pop-up-search">
+                        <div class="serarch x s s14 bt4">
+                            <input class="l serarch_input" type="text" value="请输入要查找的内容">
+                            <div class="y sign fte">
+                                <a href="javascript:;"><span>O2O</span></a>
+                                <a href="javascript:;"><span>微信</span></a>
+                                <a href="javascript:;"><span>投资</span></a>
+                            </div>
+                            <a href="#" class="serarch_btn l"><img class="l" src="images/search.png" width="18" height="18"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- S 主体内容 -->
+    <div class="m-wrap m-bgwhite">
+        <div class="mt30">
+            
+            <div class="wb100">
+                <div class="w1200px center bor-gray bor-solid-1a">
+                    <div class="wb100">
+                        <div class="wb96 pal2per par2per h50px lh50px Fgray-3 bor-gray bor-solid-1b">
+                            <span class="h50px lh50px bor-blue bor-solid-2b F225em mar20 display-inline">
+                        <img src="images/icon-title.png">
+                       投资人认证
+                    </span>
+                            <span class="Fgray-2 F150em">为保障众创先锋网参与者的权益，请按照实际情况完善项目及公司信息</span>
+                        </div>
+                        <div class="clear h30px"></div>
+                        
+                        <div class="wb95 center">
+                        
+                            <div class="pa30 warpper-yellow-6 bor-yellow2 bor-solid-1a Forange-3 F150em lh25px">
+                                <p>目前我们仅会对机构，公司投资部及个人投资人发放投资人身份。</p>
+                                <p>认证成功后将给予投资人身份标识，并出现在投资人列表中，可申请查看融资中公司相关BP信息。</p>
+                            </div>
+                        	
+                            <div class="clear1"></div>
+                            
+                            <div class="wb80 center lh40px Fgray-3 F150em">
+                                <div class="wb28 fl text-right">
+                                   姓名
+                                </div>
+                                <div class="wb70 fr">
+                                   <p>奔波儿灞</p>
+                                </div>
+                                <div class="clear1"></div>
+                                <div class="wb28 fl text-right">
+                                	投资身份
+                                </div>
+                                <div class="wb70 fr myRadio-area">
+                                    <div class="mar5per fl lh40px">
+                                    	<p class="myRadio myRadio-hover fl mat125 type-btn" data-index="0"><span></span></p>
+                                        <span class="fl mal10">机构投资人</span>
+                                   	</div>
+                                    <div class="mar5per fl lh40px">
+                                    	<p class="myRadio fl mat125 type-btn" data-index="1"><span></span></p>
+                                        <span class="fl mal10">公司投资并购部</span>
+                                   	</div>
+                                    <div class="mar5per fl lh40px">
+                                    	<p class="myRadio fl mat125 type-btn" data-index="2"><span></span></p>
+                                        <span class="fl mal10">专业天使投资人</span>
+                                   	</div>
+                                </div>
+                                
+                                <div class="clear1"></div>
+                                
+                                <div class="type-area">
+                                    <div class="wb28 fl text-right">任职机构</div>
+                                    <div class="wb70 fr">
+                                        <div class="bor-gray bor-solid-1a radius5 wb88 pal2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="请输入机构名称">
+                                        </div>
+                                    </div>
+                                    <div class="clear1"></div>
+                                    <div class="wb28 fl text-right">职位</div>
+                                    <div class="wb70 fr">
+                                        <div class="bor-gray bor-solid-1a radius5 wb88 pal2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="请输入职位名称，如：总经理">
+                                        </div>
+                                    </div>
+                                    <div class="clear1"></div>
+                                    <div class="wb28 fl text-right">任职时间段</div>
+                                    <div class="wb70 fr">
+                                        <div class="wb185 fl bor-gray bor-solid-1a radius5 pal2per mar2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="年">
+                                        </div>
+                                        <div class="wb185 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="年">
+                                        </div>
+                                        <span class="h40px lh40px display-inline pal7 par7 fl Fgray-2">-</span>
+                                        <div class="wb185 fl bor-gray bor-solid-1a radius5 pal2per mar2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="年">
+                                        </div>
+                                        <div class="wb185 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="年">
+                                        </div>
+                                        <div class="fr lh40px">
+                                            <p class="myCheckBox myCheckBox-hover fl mat125"><span></span></p>
+                                            <span class="fl mal5">至今</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="type-area hidden">
+                                    <div class="wb28 fl text-right">任职公司</div>
+                                    <div class="wb70 fr">
+                                        <div class="bor-gray bor-solid-1a radius5 wb88 pal2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="请输入公司名称">
+                                        </div>
+                                    </div>
+                                    <div class="clear1"></div>
+                                    <div class="wb28 fl text-right">职位</div>
+                                    <div class="wb70 fr">
+                                        <div class="bor-gray bor-solid-1a radius5 wb88 pal2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="请输入职位名称，如：总经理">
+                                        </div>
+                                    </div>
+                                    <div class="clear1"></div>
+                                    <div class="wb28 fl text-right">任职时间段</div>
+                                    <div class="wb70 fr">
+                                        <div class="wb185 fl bor-gray bor-solid-1a radius5 pal2per mar2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="年">
+                                        </div>
+                                        <div class="wb185 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="年">
+                                        </div>
+                                        <span class="h40px lh40px display-inline pal7 par7 fl Fgray-2">-</span>
+                                        <div class="wb185 fl bor-gray bor-solid-1a radius5 pal2per mar2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="年">
+                                        </div>
+                                        <div class="wb185 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                            <input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input" placeholder="年">
+                                        </div>
+                                        <div class="fr lh40px">
+                                            <p class="myCheckBox myCheckBox-hover fl mat125"><span></span></p>
+                                            <span class="fl mal5">至今</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="type-area hidden"></div>
+                                
+                                <div class="clear1"></div>
+                                <div class="wb28 fl text-right">一句换简介</div>
+                                <div class="wb70 fr">
+                               		<div class="wb96 pal2per par2per pat5 pab5 lh20px bor-gray bor-solid-1a radius5 over-hidden">
+                                        <textarea placeholder="简单介绍你的经历，个人优势及关注领域等。" class="h120px wb100 bor-none textarea-col Fgray-3 com-info t-form-input"></textarea>
+                                    </div>
+                                </div>
+                                <div class="clear1"></div>
+                                <div class="wb28 fl text-right">投资阶段</div>
+                                <div class="wb70 fr">
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox myCheckBox-hover fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                </div>
+                                <div class="clear1"></div>
+                                
+                                <div class="wb28 fl text-right">关注领域</div>
+                                <div class="wb70 fr">
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox myCheckBox-hover fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">天使轮</span>
+                                   	</div>
+                                </div>
+                                <div class="clear1"></div>
+                                
+                                <div class="wb28 fl text-right">关注创业阶段</div>
+                                <div class="wb70 fr">
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox myCheckBox-hover fl mat125"><span></span></p>
+                                        <span class="fl mal5">种子期</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">苗圃期</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">成长期</span>
+                                   	</div>
+                                    <div class="fl lh40px mal10 mar10">
+                                    	<p class="myCheckBox fl mat125"><span></span></p>
+                                        <span class="fl mal5">加速期</span>
+                                   	</div>
+                                </div>
+                                <div class="clear1"></div>
+                                
+                                <div class="wb28 fl text-right">任职时间段</div>
+                                <div class="wb70 fr">
+                                	
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">个人</span>
+                                    <div class="wb20 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                    	<input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input">
+                                    </div>
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">至</span>
+                                    <div class="wb20 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                    	<input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input">
+                                    </div>
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">美元</span>
+                                    <div class="clear1"></div>
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">个人</span>
+                                    <div class="wb20 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                    	<input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input">
+                                    </div>
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">至</span>
+                                    <div class="wb20 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                    	<input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input">
+                                    </div>
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">人民币</span>
+                                    <div class="clear1"></div>
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">个人</span>
+                                    <div class="wb20 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                    	<input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input">
+                                    </div>
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">至</span>
+                                    <div class="wb20 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                    	<input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input">
+                                    </div>
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">美元</span>
+                                    <div class="clear1"></div>
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">个人</span>
+                                    <div class="wb20 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                    	<input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input">
+                                    </div>
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">至</span>
+                                    <div class="wb20 fl bor-gray bor-solid-1a radius5 pal2per over-hidden">
+                                    	<input type="text" class="h40px lh40px bor-none inp-name Fgray-3 wb100 t-form-input">
+                                    </div>
+                                    <span class="h40px lh40px display-inline pal10 par10 fl Fgray-2">人民币</span>
+                                    <div class="clear1"></div>
+                                    
+                                </div>
+                                
+                                <div class="clear1"></div>
+                                
+                                <div class="wb28 fl text-right">
+                                	主投币种
+                                </div>
+                                <div class="wb78 fr myRadio-area">
+                                    <div class="mar5per fl lh40px">
+                                    	<p class="myRadio myRadio-hover fl mat125"><span></span></p>
+                                        <span class="fl mal15">人民币</span>
+                                   	</div>
+                                    <div class="mar5per fl lh40px">
+                                    	<p class="myRadio fl mat125"><span></span></p>
+                                        <span class="fl mal15">美元</span>
+                                   	</div>
+                                </div>
+                                
+                                <div class="clear1"></div>
+                                
+                                <div class="wb28 fl text-right">
+                                	上传名片
+                                </div>
+                                <div class="wb70 fr">
+                                    <div class="w160px h120px lh120px bor-gray bor-solid-1a text-center radius15 fl">
+                                        <img src="images/icon-upload-img.png" class="middle file-btn pointer">
+                                    </div>
+                                    <p class="fl ma20">仅提供认证使用，平台不会暴露您的个人信息</p>
+                                    <div class="clear"></div>
+                                    <p class="Fgray-2">格式为JPG、JPEG、PNG，小于5MB </p>
+                                    <input type="file" class="file-img hidden">
+                                </div>
+                                
+                                <div class="clear1"></div>
+                                
+                                
+                                <div class="clear1"></div>
+                                
+                                
+                                <div class="wb100 text-center">
+                                    <input type="button" class="warpper-blue Fwhite h50px w140px bor-none pointer text-center radius5 F125em my-sub" value="下一步">
+                                </div>
+                                <div class="clear h30px"></div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E 主体内容 -->
+    <!--底部-->
+    <div class="foot">
+        <div class="foot-m center">
+            <div class="db-tit x l">
+                <img class="y" src="images/logo1.png" width="164" height="40">
+                <div class="y">
+                    <a class="a-wx a-item" href="javascript:;"></a>
+                    <a class="a-tx a-item" href="javascript:;"></a>
+                    <a class="a-sina a-item" href="javascript:;"></a>
+                </div>
+            </div>
+            <div class="db-con l">
+                <div class="db-con-l l">
+                    <ul class="ul-1 s s14">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                    <ul class="ul-2 s">
+                        <li>地址：重庆市大渡口区春晖路街道春晖路91号1-1号</li>
+                        <li>反馈建议：CQC@youth-maker.com</li>
+                        <li>客服电话：023-68249040</li>
+                    </ul>
+                </div>
+                <div class="db-con-r r s"><img src="images/erweima.png" width="92" height="92">
+                    <p>扫码关注微信公众平台</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-m center s s12">重庆青春实业有限公司<span class="ml15">渝ICP备13010370号-1</span><span class="ml15">渝B-20120039</span><span class="ml45">技术开发：重庆中恒玖联科技有限公司</span><span class="ml50">支持单位：共青团重庆市委</span></div>
+    </div>
+    <!--二维码、返回顶部-->
+    <div class="toolbar">
+        <a href="javascript:;" id="backTop" style="display: none;" class="toolbar-item toolbar-item-top"></a>
+        <a href="javascript:;" class="toolbar-item toolbar-item-weixin"><span class="toolbar-layer"></span></a>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script src="js/myBase.js"></script>
+    <script>
+    $(function() {
+		
+		$(".myRadio-area .myRadio").click(function(){
+			$(this).parent().parent().find(".myRadio").removeClass("myRadio-hover");
+			$(this).addClass("myRadio-hover");
+			
+			if($(this).hasClass("type-btn")){
+				$(".type-area").addClass("hidden");
+				$(".type-area").eq($(this).attr("data-index")).removeClass("hidden");
+			}
+			
+		})
+		
+        $(".open-dialog").click(function() {
+            $(".myDialog").show(0);
+            $(".myDialog-Warpper").show(0);
+            $(".tab-name").val("");
+        })
+
+        $(".close-dialog,.myDialog-Warpper").click(function() {
+            $(".myDialog").hide(0);
+            $(".myDialog-Warpper").hide(0);
+            $(".tab-name").val("");
+        })
+
+        $(".fileBtn").click(function() {
+            $(".fileObj").click();
+        })
+
+        $(".add-tab").click(function() {
+
+            var flag = true;
+
+            var val = $(".tab-name").val();
+            var temp = "";
+            var _target = $(".tab-area");
+            if (val != "" && val != null && val != undefined) {
+                temp = '<p class="tab">' + val + '<span class="tab-del">X</span></p>';
+            }
+
+            $(".tab-area .tab").each(function(index, element) {
+                var val2 = $(this).text();
+                val2 = val2.substring(val2, val2.length - 1);
+
+                if (val2 == val) {
+                    flag = false;
+                }
+            });
+
+            if (flag) {
+                _target.append(temp);
+            }
+
+            bindEvent();
+            updateParam();
+
+            $(".myDialog").hide(0);
+            $(".myDialog-Warpper").hide(0);
+
+        })
+
+        $(".textarea-col").keyup(function() {
+            var _this = $(this);
+            var length = _this.val().length;
+            var _max = parseInt(_this.parent().parent().find(".max-length").text());
+            _this.parent().parent().find(".current-length").text(length);
+            if (length >= _max) {
+                var temp = _this.val();
+                _temp = temp.substring(0, _max);
+                _this.val(_temp);
+            }
+        }).keydown(function() {
+            var _this = $(this);
+            var length = _this.val().length;
+            var _max = parseInt(_this.parent().parent().find(".max-length").text());
+            _this.parent().parent().find(".current-length").text(length);
+            if (length >= _max) {
+                var temp = _this.val();
+                _temp = temp.substring(0, _max);
+                _this.val(_temp);
+            }
+        }).change(function() {
+            var _this = $(this);
+            var length = _this.val().length;
+            var _max = parseInt(_this.parent().parent().find(".max-length").text());
+            _this.parent().parent().find(".current-length").text(length);
+            if (length >= _max) {
+                var temp = _this.val();
+                _temp = temp.substring(0, _max);
+                _this.val(_temp);
+            }
+        })
+
+    })
+
+    function bindEvent() {
+        $(".tab").unbind("click").click(function() {
+            $(this).remove();
+        })
+        updateParam();
+    }
+
+    function updateParam() {
+
+        var temp = new Array();
+
+        $(".tab-area .tab").each(function(index, element) {
+            var val = $(this).text();
+            val = val.substring(val, val.length - 1);
+            temp.push(val);
+        });
+
+        $(".tab-param").val(temp.join(","));
+    }
+
+    $(function() {
+
+        $(".file-btn").click(function() {
+            $(".file-img").click();
+        })
+
+        $(".file-btn-1").click(function() {
+            $(".file-img-1").click();
+        })
+        $(".file-btn-2").click(function() {
+            $(".file-img-2").click();
+        })
+        $(".file-btn-3").click(function() {
+            $(".file-img-3").click();
+        })
+		
+		
+		// http://layer.layui.com/api.html#content
+		
+		//-- ajax callback Dialog
+		$('#btn1').click(function() {
+	
+			layer.open({
+				type: 0, // 0（信息框，默认）1（页面层）2（iframe层）3（加载层）4（tips层）
+				title: '我是标题', // false隐藏标题
+				content: '我是内容', // 类型：String/DOM/Array，默认：'' content可传入的值是灵活多变的，不仅可以传入普通的html内容，还可以指定DOM，更可以随着type的不同而不同。
+				skin: '', // layui-layer-lan  layui-layer-molv
+				area: '500px',	// 默认auto, area: '500px' 定义宽高area: ['500px', '300px']
+				offset: 'auto',	// offset: ['100px', '200px']	offset: 'rb'
+				icon: -1, // 认-1息框默认不显示图标。当你想显示图标时，默认皮肤可以传入0-6如果是加载层，可以传入0-2
+				btn: ['按钮1', '按钮2', '按钮3'], // btn: ['按钮1', '按钮2', '按钮3', …]
+				yes: function(index, layero) {
+					console.log(layero);
+				},
+				cancel: function(index) {
+					console.log(index);
+				},
+				btn3: function(index, layero) {
+					console.log(layero);
+				},
+				closeBtn: 1, // 1,2 不显示为0
+				shade: [0.8, '#393D49'], // 默认是0.3透明度的黑色背景（'#000'） 0为不显示
+				shadeClose: true, // 是否点击遮罩关闭
+				time: 0, // time - 自动关闭所需毫秒 5000
+				shift: 0, // shift - 动画 0-6
+				maxmin: false, // 最大最小化
+				fix: true, // 固定
+				scrollbar: false, // 是否允许浏览器出现滚动条
+				maxWidth: '500px', // 最大宽度
+				// zIndex: '',   
+				// move - 触发拖动的元素    默认：'.layui-layer-title'     
+				moveType: 1 ,// 拖拽风格
+				moveOut: true, // 是否允许拖拽到窗口外
+				moveEnd: function() {	// 拖动完毕后的回调方法
+					// alert();
+				},
+				tips: 2, // tips方向和颜色 tips: [1, '#c00']
+				tipsMore: false, // 是否允许多个tips
+				success: function() { // 层弹出后的成功回调方法
+					// alert('success');
+				},
+				end: function() { // 层销毁后触发的回调
+					// alert('end');
+				},
+			});
+	
+		});
+
+        $(".my-sub").click(function() {
+
+            var proName = $.trim($(".pro-name").val());
+            var proIncome = $.trim($(".pro-income").val());
+            var proStaff = $.trim($(".pro-staff").val());
+            var area1 = $.trim($(".area-1").val());
+            var area2 = $.trim($(".area-2").val());
+            var area3 = $.trim($(".area-3").val());
+            var proInfo1 = $.trim($(".pro-info-1").val());
+            var proInfo2 = $.trim($(".pro-info-2").val());
+            var tabParam = $.trim($(".tab-param").val());
+            var img1 = $.trim($(".file-img-1").val());
+            var img2 = $.trim($(".file-img-2").val());
+            var img3 = $.trim($(".file-img-3").val());
+            var comName = $.trim($(".com-name").val());
+            var comDate = $.trim($(".com-date").val());
+            var comInfo = $.trim($(".com-info").val());
+            var agree = $(".agree").attr("checked");
+
+            //项目名称
+            if (proName == null || proName == "") {
+                layer.tips('请填写您的项目名称', '.pro-name', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".pro-name").focus();
+                return false;
+            }
+
+            //营业收入
+            if (proIncome == null || proIncome == "") {
+                layer.tips('请填写营业收入', '.pro-income', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".pro-income").focus();
+                return false;
+            }
+
+            //公司员工
+            if (proStaff == null || proStaff == "") {
+                layer.tips('请填写公司规模', '.pro-staff', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".pro-staff").focus();
+                return false;
+            }
+            //所在地
+            if (area1 == null || area1 == "") {
+                layer.tips('请选择所在地', '.area-1', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".area-1").focus();
+                return false;
+            }
+            if (area2 == null || area2 == "") {
+                layer.tips('请选择所在地', '.area-2', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".area-2").focus();
+                return false;
+            }
+            if (area3 == null || area3 == "") {
+                layer.tips('请选择所在地', '.area-3', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".area-3").focus();
+                return false;
+            }
+
+            //公司介绍
+
+            if (proInfo1 == null || proInfo1 == "") {
+                layer.tips('请填写公司简介', '.pro-info-1', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".pro-info-1").focus();
+                return false;
+            }
+            if (proInfo2 == null || proInfo2 == "") {
+                layer.tips('请填写公司简介', '.pro-info-2', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".pro-info-2").focus();
+                return false;
+            }
+
+            //公司标签
+
+            if (tabParam == null || tabParam == "") {
+                layer.tips('请添加一个标签', '.pro-tab', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                return false;
+            }
+
+            //公司名称
+
+            if (comName == null || comName == "") {
+                layer.tips('请填写公司名称', '.com-name', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".com-name").focus();
+                return false;
+            }
+            if (comDate == null || comDate == "") {
+                layer.tips('请填写公司注册时间', '.com-date', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".com-date").focus();
+                return false;
+            }
+            if (comInfo == null || comInfo == "") {
+                layer.tips('请填写公司介绍', '.com-info', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                $(".com-info").focus();
+                return false;
+            }
+
+
+            //图片
+            if (img1 == null || img1 == "") {
+                layer.tips('请上传项目封面图', '.file-btn-1', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                return false;
+            }
+            if (img2 == null || img2 == "") {
+                layer.tips('营业执照电子版', '.file-btn-2', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                return false;
+            }
+            if (img3 == null || img3 == "") {
+                layer.tips('组织机构代码证电子版', '.file-btn-3', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                return false;
+            }
+
+
+            if (agree == undefined || agree == "" || agree == null) {
+                layer.tips('请同意众创空间先锋网协议', '.agree', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                return false;
+            }
+
+        });
+    })
+    </script>
+</body>
+
+</html>
