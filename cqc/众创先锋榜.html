@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>完善项目信息</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link href="css/myBase.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/cj.css">
+    <link rel="stylesheet" href="css/kalendae.css">
+</head>
+
+<body>
+    <div class="myDialog-Warpper hidden"></div>
+    <!--顶部-->
+    <div class="head">
+        <div class="head-m center">
+            <!--登录前-->
+            <div class="bf-login s s12 r">
+                您好，欢迎登录众创空间！
+                <span class="sp-login">
+                        <a class="s14" href="19.login.html">登录</a>
+                    </span>
+                <span class="sp-reg">
+                        <a class="s14" href="#">注册</a>
+                    </span>
+            </div>
+            <!--登录后-->
+            <div class="af-login w r" style="display: none;">
+                <div class="user-info r x">
+                    <img class="head" src="images/head.png">
+                    <div class="info-tips box-sh y">
+                        <ul>
+                            <li><a href="#">李达兆</a></li>
+                            <li><a href="#">我的主页</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-news r x">消息<img class="news-icon y" src="images/g-icon2.png"><a href="#" class="news-tips box-sh y">投融资消息</a></div>
+            </div>
+        </div>
+    </div>
+    <!--首页导航-->
+    <div class="nav">
+        <div class="nav-m center s x">
+            <img src="images/logo.png" class="logo y" width="164" height="40">
+            <ul class="y w">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">创业大赛</a></li>
+                <li><a href="javascript:;">众创先锋榜</a></li>
+                <li class="x z5">
+                    <a href="javascript:;">我是创业者</a>
+                    <div class="pop-up y box-sh" id="pop-up1">
+                        <a href="javascript:;">知识产权保护</a>
+                        <a href="javascript:;">在线估值</a>
+                        <a href="javascript:;">融资委托</a>
+                        <a href="javascript:;">工商咨询</a>
+                    </div>
+                </li>
+                <li class="x z5">
+                    <a href="javascript:;">我是投资人</a>
+                    <div class="pop-up y box-sh" id="pop-up2">
+                        <a href="javascript:;">投资委托</a>
+                        <a href="javascript:;">创业项目</a>
+                    </div>
+                </li>
+                <li><a href="javascript:;">孵化器</a></li>
+                <li><a href="javascript:;">创业学院</a></li>
+                <li class="li-t z5 x">
+                    搜索
+                    <div class="pop-up-search y box-sh" id="pop-up-search">
+                        <div class="serarch x s s14 bt4">
+                            <input class="l serarch_input" type="text" value="请输入要查找的内容">
+                            <div class="y sign fte">
+                                <a href="javascript:;"><span>O2O</span></a>
+                                <a href="javascript:;"><span>微信</span></a>
+                                <a href="javascript:;"><span>投资</span></a>
+                            </div>
+                            <a href="#" class="serarch_btn l"><img class="l" src="images/search.png" width="18" height="18"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- S 主体内容 -->
+    <div class="m-wrap m-bgwhite">
+        <div class="mt30">
+            
+            <div class="wb100">
+                <div class="w1200px center bor-gray bor-solid-1a">
+                
+                    <div class="wb100 bor-gray bor-dashed-1b F150em">
+                        <div class="wb13 fl par1per text-right pat20 Fgray-3">
+                            行业分类：
+                        </div>
+                        <div class="wb86 fr warpper-white">
+                            <a href="javascript:void(0)" class="tabs tabs-hover">第一产业</a>
+                            <a href="javascript:void(0)" class="tabs">全部</a>
+                            <div class="clear"></div>
+                            <a href="javascript:void(0)" class="tabs tabs-hover">第二产业</a>
+                            <a href="javascript:void(0)" class="tabs">全部</a>
+                            <div class="clear"></div>
+                            <a href="javascript:void(0)" class="tabs tabs-hover">第三产业</a>
+                            <a href="javascript:void(0)" class="tabs">全部</a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                
+                    <div class="wb100 bor-gray bor-dashed-1b F150em">
+                        <div class="wb13 fl par1per text-right pat20 Fgray-3">
+                            创业阶段：
+                        </div>
+                        <div class="wb86 fr warpper-white">
+                            <a href="javascript:void(0)" class="tabs tabs-hover">全部</a>
+                            <a href="javascript:void(0)" class="tabs">全部</a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                
+                    <div class="wb100 bor-gray bor-dashed-1b F150em">
+                        <div class="wb13 fl par1per text-right pat20 Fgray-3">
+                            从业人员：
+                        </div>
+                        <div class="wb86 fr warpper-white">
+                            <a href="javascript:void(0)" class="tabs tabs-hover">全部</a>
+                            <a href="javascript:void(0)" class="tabs">全部</a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                
+                    <div class="wb100 bor-gray bor-dashed-1b F150em">
+                        <div class="wb13 fl par1per text-right pat20 Fgray-3">
+                            营业收入（年）：
+                        </div>
+                        <div class="wb86 fr warpper-white">
+                            <a href="javascript:void(0)" class="tabs tabs-hover">全部</a>
+                            <a href="javascript:void(0)" class="tabs">全部</a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear1"></div>
+                    
+                    <div class="wb100 F150em">
+                        <div class="wb13 fl par1per text-right pat20 Fgray-3">
+                            所在地：
+                        </div>
+                        <div class="wb86 fr warpper-white">
+                            <div class="wb40 fl">
+                                <div class="bor-gray bor-solid-1a radius5 wb30 Fgray-3 fl mar2per">
+                                    <div class="mySelect h40px lh40px wb100 bor-none area-1-area">
+                                     	<p class="select-text wb70 pal5per fl Fgray-3">重庆</p>
+                                        <input type="hidden" class="area-1 t-form-input">
+                                        <p class="select-btn fr mat15 mar5"></p>
+                                        <div class="wb100 hidden">
+                                            <ul class="myOption">
+                                                <li data-value="1">请选择</li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="bor-gray bor-solid-1a radius5 wb30 Fgray-3 fl mar2per">
+                                    <div class="mySelect h40px lh40px wb100 bor-none area-2-area">
+                                     	<p class="select-text wb70 pal5per fl Fgray-3">重庆</p>
+                                        <input type="hidden" class="area-2 t-form-input">
+                                        <p class="select-btn fr mat15 mar5"></p>
+                                        <div class="wb100 hidden">
+                                            <ul class="myOption">
+                                                <li data-value="1">请选择</li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="bor-gray bor-solid-1a radius5 wb30 Fgray-3 fl mar2per">
+                                    <div class="mySelect h40px lh40px wb100 bor-none area-3-area">
+                                     	<p class="select-text wb70 pal5per fl Fgray-3">重庆</p>
+                                        <input type="hidden" class="area-3 t-form-input">
+                                        <p class="select-btn fr mat15 mar5"></p>
+                                        <div class="wb100 hidden">
+                                            <ul class="myOption">
+                                                <li data-value="1">请选择</li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wb50 fr mat10 Fgray-3">
+                                搜索您想要找的项目：
+                                <input type="text" class="h40px lh40px bor-gray bor-solid-1a wb60">
+                            </div>
+                            <div class="clear1"></div>
+                            <a href="javascript:;" class="lightBlue fr mar5per">提交您的项目 >></a>
+                            <div class="clear1"></div>
+                            
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                      
+                    <!--<div class="wb94 pal3per par3per F150em Fgray-3 pat5 pab5">
+                        <span class="fl ma10 pa5">当前筛选条件：</span>
+                        <p class="tip">全部<span class="tip-del">X</span></p>
+                        
+                        <p class="tip-clear">清除全部</p>
+                        <div class="clear"></div>
+                    </div>
+                        -->
+                </div>
+                
+                <div class="clear h45px"></div>
+                
+                <div class="w1200px center">
+                    
+                    <div class="wb100 order-area">
+                        
+                        <div class="pa10 bor-gray bor-solid-1l bor-solid-1r bor-solid-1t F150em">
+                            <div class="w130px h40px lh40px warpper-blue Fwhite fl text-center">综合排名</div>
+                            
+                            <div class="Fgray-3 text-center fl wb85 fr">
+                                <div class="fl wb8 mar5per h40px lh40px bor-gray bor-solid-1r">
+                                    <p class=" h40px fl mar5">人气</p>
+                                    <p class="w15px lh10px fl mat10"><img src="images/arrow-up.png"><img src="images/arrow-down.png"></p>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="fl wb15 mar2per pal2per h40px lh40px bor-gray bor-solid-1a">
+                                    <p class=" h40px fl">营业收入(/年）</p>
+                                    <p class="w15px lh10px fl mat10"><img src="images/arrow-up.png"><img src="images/arrow-down.png"></p>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="fl wb15 pal2per mar2per h40px lh40px bor-gray bor-solid-1r">
+                                    <p class=" h40px fl mar5">投资者估值</p>
+                                    <p class="w15px lh10px fl mat10"><img src="images/arrow-up.png"><img src="images/arrow-down.png"></p>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="fl wb8 mar2per h40px lh40px bor-gray bor-solid-1r">
+                                    <p class=" h40px fl mar5">关注度</p>
+                                    <p class="w15px lh10px fl mat10"><img src="images/arrow-up.png"><img src="images/arrow-down.png"></p>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="fl wb8 mar2per h40px lh40px bor-gray bor-solid-1r">
+                                    <p class=" h40px fl mar5">行业</p>
+                                    <p class="w15px lh10px fl mat10"><img src="images/arrow-up.png"><img src="images/arrow-down.png"></p>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="fl wb8 mar2per h40px lh40px">
+                                    <p class="h40px fl mar5">所在地</p>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        
+                    </div>
+                      
+                    <div class="wb100">
+                       
+                        <div class="list-area">
+                            <div class="pa10 bor-gray bor-solid-1a">
+                                <div class="w80px h90px img-area bor-gray bor-solid-1a radius10 fl over-hidden">
+                                    <div class="wb100 h70px">
+                                        <img src="images/pro-img.jpg">
+                                    </div>
+                                    <div class="h20px wb100 warpper-blue lh20px text-center Fwhite F125em">
+                                        种 子 期
+                                    </div>
+                                </div>
+                                
+                                <div class="wb91 fr F125em Fgray-3 lh90px text-center">
+                                    <div class="wb20 fl text-left">
+                                        <p class="F150em lh30px">妈妈快厨</p>
+                                        <p class="Fgray-2 lh20px">中恒玖联科技有限公司中恒玖联科技有限公司中恒玖联科技有限公司中恒玖联科技有，...限公司，...</p>
+                                    </div>
+                                    
+                                    <div class="wb10 fl">暂无披露</div>
+                                    <div class="wb10 fl">暂无披露</div>
+                                    <div class="wb10 fl">100人</div>
+                                    <div class="wb10 fl">568912</div>
+                                    <div class="wb10 fl lh25px mat20">
+                                        <p>“ 互联网+</p>
+                                        <p>”生活服务</p>
+                                    </div>
+                                    <div class="wb10 fl lh25px mat20">
+                                        <p>重庆市</p>
+                                        <p>万州区</p>
+                                    </div>
+                                    <div class="wb20 fl">
+                                        <a href="javascript:void(0)" class="display-inline warpper-blue white h35px lh35px text-center w80px mar15 radius5">详情</a>
+                                        <a href="javascript:void(0)" class="display-inline warpper-blue white h35px lh35px text-center w80px radius5">约谈</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                       
+                        <div class="clear"></div>
+                        
+                    </div>
+                    
+                    <div class="clear1"></div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E 主体内容 -->
+    <!--底部-->
+    <div class="foot">
+        <div class="foot-m center">
+            <div class="db-tit x l">
+                <img class="y" src="images/logo1.png" width="164" height="40">
+                <div class="y">
+                    <a class="a-wx a-item" href="javascript:;"></a>
+                    <a class="a-tx a-item" href="javascript:;"></a>
+                    <a class="a-sina a-item" href="javascript:;"></a>
+                </div>
+            </div>
+            <div class="db-con l">
+                <div class="db-con-l l">
+                    <ul class="ul-1 s s14">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                    <ul class="ul-2 s">
+                        <li>地址：重庆市大渡口区春晖路街道春晖路91号1-1号</li>
+                        <li>反馈建议：CQC@youth-maker.com</li>
+                        <li>客服电话：023-68249040</li>
+                    </ul>
+                </div>
+                <div class="db-con-r r s"><img src="images/erweima.png" width="92" height="92">
+                    <p>扫码关注微信公众平台</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-m center s s12">重庆青春实业有限公司<span class="ml15">渝ICP备13010370号-1</span><span class="ml15">渝B-20120039</span><span class="ml45">技术开发：重庆中恒玖联科技有限公司</span><span class="ml50">支持单位：共青团重庆市委</span></div>
+    </div>
+    <!--二维码、返回顶部-->
+    <div class="toolbar">
+        <a href="javascript:;" id="backTop" style="display: none;" class="toolbar-item toolbar-item-top"></a>
+        <a href="javascript:;" class="toolbar-item toolbar-item-weixin"><span class="toolbar-layer"></span></a>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/layer/laydate/laydate.js"></script>
+    <script src="js/myBase.js"></script>
+    <script>
+    	$(function(){
+			$(".myRadio-area .myRadio").unbind("click").click(function(){
+				$(this).parent().parent().find(".myRadio").removeClass("myRadio-hover");
+				$(this).addClass("myRadio-hover");
+				
+				if($(this).hasClass("type-btn")){
+					$(".type-area").addClass("hidden");
+					$(".type-area").eq($(this).attr("data-index")).removeClass("hidden");
+				}
+				
+				$(this).parent().parent().find("input").val($(this).attr("data-value"));
+				
+			})
+			
+			$(".myCheckBox-area .myCheckBox").unbind("click").click(function(){
+				
+				var objs = $(this).parent().parent().find(".myCheckBox-hover");
+				
+				if($(this).hasClass("myCheckBox-hover")){
+					$(this).removeClass("myCheckBox-hover");
+					
+					var temp = new Array();
+					$(this).parent().parent().find(".myCheckBox-hover").each(function(index, element) {
+						temp.push($(this).attr("data-value"));
+					});
+					$(this).parent().parent().find("input").val(temp.join(","));
+					
+					return false;
+				}
+				var _max = parseInt($(this).parent(). parent().attr("data-max"));
+				
+				if(_max <= objs.length){
+					objs.first().removeClass("myCheckBox-hover");	
+				}
+				$(this).addClass("myCheckBox-hover");
+				
+				var temp = new Array();
+				$(this).parent().parent().find(".myCheckBox-hover").each(function(index, element) {
+					temp.push($(this).attr("data-value"));
+				});
+				$(this).parent().parent().find("input").val(temp.join(","));
+				
+			})
+			
+			$(".mySelect .select-btn").click(function(){
+				$(this).parent().find(".myOption").parent().show(0)
+			})
+			
+			$(".myOption li").click(function(){
+				
+				if($(this).hasClass("tab-add")){
+					$(".tab-text").val($(this).attr("data-value"));
+					$(".tab-text").attr("data-value",$(this).attr("data-value"));
+					addTab($(".tab-text").val());
+					$(this).parent().parent().hide(0);
+					return false;
+				}
+				
+				$(this).parent().parent().hide(0);
+				$(this).parent().parent().parent().find(".select-text").text($(this).text());
+				$(this).parent().parent().parent().find("input").val($(this).text());
+				
+				if($(this).parent().hasClass("tab-add-area")){
+					
+					$(".tab-text").val($(this).text());
+					
+					addTab($(this).text());	
+				}
+			
+			})	
+		})
+    </script>
+    <!--
+<script>
+	var param = {
+		
+		type : "",				//行业分类
+		stage : "",				//创业阶段
+		staff : "",				//从业人员
+		kg : "",				//克重
+		order : "",				//排序
+		page : 1,				//页码
+		pageSize : 15,			//每页条数
+		count : "",				//总条数
+		pageCount : ""			//总页数	
+	};
+	
+	var param2 = {
+		class : "",				//纸品
+		brand : "",				//品牌
+    	kg : "",				//克重
+    	spec : "",				//规格
+    	depot : ""				//城市
+	}
+	
+	var cache = {
+		class : "",
+		brand : "",
+		kg : "",
+		spec : "",
+		depot : "",
+	};
+	
+	var EventInfo = {
+		init : function(){
+			EventInfo.initParam();	
+			EventInfo.initTips();	
+			EventInfo.getData();
+			EventInfo.bindTags();
+			EventInfo.bindTips();
+			EventInfo.bindOrder();
+			EventInfo.gettabs();
+		},
+		initParam : function(){
+			param = {
+				type : "",				//行业分类
+				stage : "",				//创业阶段
+				staff : "",				//从业人员
+				kg : "",				//克重
+				order : "",				//排序
+				page : 1,				//页码
+				pageSize : 15,			//每页条数
+				count : "",				//总条数
+				pageCount : ""			//总页数	
+			};
+		},
+		initMyParam : function(){
+			param2 = {
+				class : "",				//纸品
+				brand : "",				//品牌
+				kg : "",				//克重
+				spec : "",				//规格
+				depot : ""				//城市
+			}
+		},
+		initCache : function(){
+			cache = {
+				class : "",
+				brand : "",
+				kg : "",
+				spec : "",
+				depot : "",
+			};
+		},
+		reDraw : function(data){
+			var myData = data.sql;
+			var _target = $(".list-area");
+			var dataCount = 0;
+			_target.html("");
+			
+			if(EventInfo.isNull(myData)){
+				EventInfo.closeLoader("未找到匹配数据");
+				return false;
+			}
+			var _item = "";
+			for(var i=0; i<myData.length; i++){
+				var _current = myData[i];
+																																
+				_item +='<tr><td>'+_current.class+'</td><td>'+_current.brand+'</td><td>'+_current.kg+'</td><td>'+_current.spec+'</td><td>'+_current.rank+'</td><td>'+_current.depot+'</td><td>'+_current.fornum+'吨</td><td class="Fred">'+_current.bprice+'</td><td><a href="/'+_current.url+'" class="display-inline h25px w50px radius5 warpper-orange-2 Fwhite lh25px text-center">购买</a></td></tr>';			
+				dataCount++;
+			}
+			
+			_target.append(_item);
+			$(".sum-count").text(dataCount);
+			
+			if(dataCount == 0){
+				EventInfo.closeLoader("未找到匹配数据");
+				return false;
+			}
+			
+			EventInfo.closeLoader();
+			EventInfo.bindTips(); 
+			EventInfo.bindTags();
+			EventInfo.creatPage(data);
+			
+		},
+		bindPage : function(){
+			$(".page-prev-btn").unbind("click").click(function(){
+				
+				param.page--;
+				if(param.page<1){
+					param.page = 1;
+					return false;
+				}
+				EventInfo.getData();
+			});
+			
+			$(".page-next-btn").unbind("click").click(function(){
+				
+				param.page++;
+				if(param.page > param.pageCount){
+					param.page = param.pageCount;
+					return false;
+				}
+				EventInfo.getData();
+			}); 
+			
+			$(".page-btn").unbind("click").click(function(){
+				
+				if(param.page == $(this).text())
+					return false;
+					
+				param.page = $(this).text();
+				
+				EventInfo.getData();
+			});
+		},
+		bindTags : function(){
+			$(".tips-area .tip").unbind("click").click(function(){
+				var text =  $(this).text();
+				text = text.substring(0,text.length-1);
+				$(this).fadeOut(500,function(){
+					$(this).remove();
+					$(".tabs-hover").each(function(index, element) {
+						var _this = $(this);
+                        var val = _this.text();
+						
+						if(val == text){
+							_this.siblings().removeClass("tabs-hover");
+							_this.removeClass("tabs-hover");
+							_this.parent().find(".tabs").eq(0).addClass("tabs-hover");	
+						}
+                    });
+					EventInfo.updateData();
+				})
+			})
+			
+			$(".tip-clear").unbind("click").click(function(){
+				$(".tips-area").html("");
+				
+				$(".tabs-col").each(function(index, element) {
+                    $(this).find(".tabs").removeClass("tabs-hover");
+                    $(this).find(".tabs").eq(0).addClass("tabs-hover");
+                });
+				EventInfo.initCache()
+				EventInfo.initParam();	
+				EventInfo.initMyParam();	
+				EventInfo.getData();	
+				EventInfo.gettabs();
+				EventInfo.bindTags();
+				EventInfo.bindTips();
+				EventInfo.bindOrder();
+			})
+			
+		},
+		bindTips :	function(){
+			
+			$(".tabss-area .tabs").unbind("click").click(function(){
+				var _this = $(this);
+			
+				if(_this.hasClass("tabs-hover")){
+					_this.siblings().removeClass("tabs-hover");
+					_this.removeClass("tabs-hover");
+					_this.parent().find(".tabs").eq(0).addClass("tabs-hover");
+				}else{
+					_this.siblings().removeClass("tabs-hover");	
+					_this.addClass("tabs-hover");
+				}
+			
+				EventInfo.updateData();
+				
+			});
+			
+		},
+		getData : function(){
+			
+			var _target = $(".list-area");
+			_target.html("");
+			EventInfo.openLoader();
+			
+			console.log(param);
+			
+			param.keywords = decodeURI(base.getParmar("keywords"));
+			
+			$.ajax({
+				 type: "post",
+				 url: "/Mall/checkSearch",
+				 data: param,
+				 dataType: "json",
+				 success: function(data){
+					 EventInfo.reDraw(data);
+				 }
+			});	
+		},
+		gettabs : function(){
+		
+			$.ajax({
+				 type: "post",
+				 url: "/Mall/sublist",
+				 data: param2,
+				 dataType: "json",
+				 success: function(data){
+					 EventInfo.reDrawtabs(data);
+				 }
+			});	
+		},
+		tabsRecursion : function(key,value){
+			var myData = value;
+			var _target = key;
+			
+			var item_all_hover = '<a href="javascript:void(0)" class="tabs tabs-hover">全部</a>';
+			var item_all = '<a href="javascript:void(0)" class="tabs">全部</a>';
+			var item_clear = '<div class="clear"></div>';
+			
+			_target = $(".tabss-area .select-"+key); 
+			
+			_target.html("");
+			
+			if(EventInfo.isNull(myData)){
+				_target.append(item_all);
+				_target.append(item_clear);
+			}else{
+				var tempArr = cache[key];
+				var myFlag = true;
+				var _item = "";
+				for(var i=0; i<myData.length; i++){
+					var _current = myData[i];
+					if(cache[key] == _current.code){
+						_item +='<a href="javascript:void(0)" data-value="'+_current.code+'" class="tabs tabs-hover">'+_current.name+'</a>';	
+						myFlag = false;			
+					}else{
+						_item +='<a href="javascript:void(0)" data-value="'+_current.code+'" class="tabs">'+_current.name+'</a>';				
+					}
+				}
+				
+				_target.append(_item);
+				if(myFlag){
+					_target.prepend(item_all_hover);
+				}else{
+					_target.prepend(item_all);
+				}
+				
+				_target.append(item_clear);	
+			}
+			
+		},
+		reDrawtabs : function(data){
+			var myData = data;
+			
+			$.each(data,function(key,value){
+				//- Recursion
+				
+				EventInfo.tabsRecursion(key,value);
+			});
+			
+			EventInfo.bindTags();
+			EventInfo.bindTips();
+			
+		},
+		initTips : function(){
+			param.class = base.getParmar("class");
+			param.brand = base.getParmar("brand");
+			param.kg = base.getParmar("kg");
+			param.spec = base.getParmar("spec");
+			param.depot = base.getParmar("depot");
+			param.length = base.getParmar("length");
+			
+			var _target = $(".tips-area");
+			_target.html("");
+						
+			$(".tabs-col").each(function(i, e) {
+                var _this = $(this);
+				if(_this.hasClass("select-class")){
+					var temp = $(this).find(".tabs[data-value="+param.class+"]");
+					if(temp && (param.class!="" && param.class!=undefined && param.class!=null)){
+						_this.siblings().removeClass("tabs-hover");
+						temp.addClass("tabs-hover");
+						_target.append('<p class="tip">'+ temp.text() +'<span class="tip-del">X</span></p>');
+					}
+				}
+				if(_this.hasClass("select-brand")){
+					var temp = $(this).find(".tabs[data-value="+param.brand+"]");
+					if(temp && (param.brand!="" && param.brand!=undefined && param.brand!=null)){
+						_this.siblings().removeClass("tabs-hover");
+						temp.addClass("tabs-hover");
+						_target.append('<p class="tip">'+ temp.text() +'<span class="tip-del">X</span></p>');
+					}
+				}
+				if(_this.hasClass("select-spec")){
+					var temp = $(this).find(".tabs[data-value="+param.spec+"]");
+					if(temp && (param.spec!="" && param.spec!=undefined && param.spec!=null)){
+						_this.siblings().removeClass("tabs-hover");
+						temp.addClass("tabs-hover");
+						_target.append('<p class="tip">'+ temp.text() +'<span class="tip-del">X</span></p>');
+					}
+				}
+				if(_this.hasClass("select-depot")){
+					var temp = $(this).find(".tabs[data-value="+param.depot+"]");
+					if(temp && (param.depot!="" && param.depot!=undefined && param.depot!=null)){
+						_this.siblings().removeClass("tabs-hover");
+						temp.addClass("tabs-hover");
+						_target.append('<p class="tip">'+ temp.text() +'<span class="tip-del">X</span></p>');
+					}
+				}
+				
+            });
+			
+		},
+		updateData : function(){
+			param.page = 1;
+			var _target = $(".tips-area");
+			_target.html("");
+			EventInfo.initParam();
+			
+		    EventInfo.initMyParam();
+			
+		    EventInfo.initCache();
+			
+			$(".tabs-hover").each(function(index, element) {
+				var _this = $(this);
+				var val = _this.attr("data-value");
+				
+				var val2 = _this.text();
+				
+				if(EventInfo.isNull(val2))
+					val = "";
+				if(val2 == "全部")
+					val = "";
+
+				if(val2!="全部"){
+					if(_this.parent().hasClass("select-brand")){ 
+						param.brand = val;
+						param2.brand = val;
+						cache.brand = val;
+					}
+					if(_this.parent().hasClass("select-spec")){ 
+						param.spec = val;
+						param2.spec = val;
+						cache.spec = val;
+					}
+					if(_this.parent().hasClass("select-depot")){ 
+						param.depot = val;
+						param2.depot = val;
+						cache.depot = val;
+					}
+					if(_this.parent().hasClass("select-class")){ 
+						param.class = val;
+						param2.class = val;
+						cache.class = val;
+					}
+					if(_this.parent().hasClass("select-kg")){ 
+						param.kg = val;
+						param2.kg = val;
+						cache.kg = val;
+					}
+           			_target.append('<p class="tip">'+ val2 +'<span class="tip-del">X</span></p>');
+				}
+				
+            });
+		
+			EventInfo.bindTags();
+			EventInfo.getData();
+			EventInfo.gettabs();
+			
+		},
+		creatPage : function(data){
+			
+			param.count = parseInt(data.count);
+			param.page = parseInt(data.page);
+			param.pageCount = Math.ceil(param.count/param.pageSize);
+		
+			
+			$(".data-totle-count").text(param.count);
+			var _item = '<div class="clear1"></div><div class="wb65 fr page-area"><div class="wb5 h25px lh25px F150em pointer bor-gray bor-solid-1a Fgray-2 fl mal1per mar1per page-prev-btn"><</div>';
+			
+			if(param.pageCount<=5){
+				for(var i=1;i<=param.pageCount;i++){
+					if(i == param.page)
+						_item +='<div class="wb5 h25px lh25px F150em pointer bor-gray bor-solid-1a Fgray-3 warpper-gray-1 fl mal1per mar1per page-btn">'+ i +'</div>';			
+					else
+						_item +='<div class="wb5 h25px lh25px F150em pointer bor-gray bor-solid-1a Fgray-2 fl mal1per mar1per page-btn">'+ i +'</div>';		
+				}	
+			}else{
+				if(param.page < 3){
+					for(var i=1;i<=5;i++){
+						if(i == param.page)
+							_item +='<div class="wb5 h25px lh25px F150em pointer bor-white bor-solid-1a Fgray-3 warpper-gray-1 fl mal1per mar1per page-btn">'+ i +'</div>';			
+						else
+							_item +='<div class="wb5 h25px lh25px F150em pointer bor-gray bor-solid-1a Fgray-2 fl mal1per mar1per page-btn">'+ i +'</div>';		
+					}
+				}else if((param.pageCount - param.page) <3 ){
+					for(var i= param.pageCount-4;i<=param.pageCount;i++){
+						if(i == param.page)
+							_item +='<div class="wb5 h25px lh25px F150em pointer bor-white bor-solid-1a Fgray-3 warpper-gray-1 fl mal1per mar1per page-btn">'+ i +'</div>';			
+						else
+							_item +='<div class="wb5 h25px lh25px F150em pointer bor-gray bor-solid-1a Fgray-2 fl mal1per mar1per page-btn">'+ i +'</div>';		
+					}
+				}else{
+					for(var i=param.page-2;i<=param.page+2;i++){
+						if(i == param.page)
+							_item +='<div class="wb5 h25px lh25px F150em pointer bor-white bor-solid-1a Fgray-3 warpper-gray-1 fl mal1per mar1per page-btn">'+ i +'</div>';			
+						else
+							_item +='<div class="wb5 h25px lh25px F150em pointer bor-gray bor-solid-1a Fgray-2 fl mal1per mar1per page-btn">'+ i +'</div>';		
+					}	
+				}
+			}
+			
+			_item +='<div class="wb5 h25px lh25px F150em pointer bor-gray bor-solid-1a Fgray-2 fl mal1per mar1per page-next-btn">></div></div><div class="clear1"></div>';
+			var _target = $(".list-area-page");
+			
+			_target.append(_item);
+			
+			EventInfo.bindPage();
+		},
+		isNull : function(obj){
+			if(obj == null || obj == "" || obj == undefined)
+				return true;
+			return false;
+		}
+		,openLoader : function(){
+			$(".loader").removeClass("hidden");
+			$(".loader-img").removeClass("hidden");
+			$(".loader-text").removeClass("hidden");
+			$(".list-area-page").html("");
+			$(".loader-text").text("数据加载中，请稍后...");
+		}
+		,closeLoader : function(text){
+			if(!EventInfo.isNull(text)){
+				$(".loader-img").addClass("hidden");
+				$(".loader-text").text(text);
+			}else{
+				$(".loader").addClass("hidden");	
+			}
+		}
+		,bindOrder : function(){
+			$(".order-area .order-btn").unbind("click").click(function(){
+				var _this = $(this);
+				var val = _this.attr("data-value");
+				
+				if(val == 0){
+						
+				}else{
+					if(val == 1){
+						_this.attr("data-value",2);	
+						_this.find("img").attr("src","/Public/ymz/images/arrow-high.png");
+					}
+					if(val == 2){
+						_this.attr("data-value",1);	
+						_this.find("img").attr("src","/Public/ymz/images/arrow-low.png");	
+					}
+					if(val == 3){
+						_this.attr("data-value",4);	
+						_this.find("img").attr("src","/Public/ymz/images/arrow-high.png");
+					}
+					if(val == 4){
+						_this.attr("data-value",3);	
+						_this.find("img").attr("src","/Public/ymz/images/arrow-low.png");	
+					}
+				}
+				
+				_this.find("img").attr("src");
+				
+				param.order = val;
+				EventInfo.getData();
+			})
+			
+			$("input[name=btn-price]").unbind("click").click(function(){
+				param.minprice = $("input[name=min-price]").val();
+				param.maxprice = $("input[name=max-price]").val();
+				EventInfo.getData();
+			})
+			
+		}
+		
+	}
+	$(function(){
+		// EventInfo.init();
+	});	
+	
+</script>-->
+</body>
+
+</html>

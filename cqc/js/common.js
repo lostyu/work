@@ -82,6 +82,27 @@
         }
     });
 
+
+    // 个人中心侧边导航
+    $('.center-nav > li').hover(function() {
+        $(this).addClass('hover');
+    }, function() {
+        $('.center-nav > li').removeClass('hover');
+    });
+
+    $('.center-nav .hasSub').click(function(){
+
+        $(this).siblings('.hasSub').removeClass('active');
+        if($(this).hasClass('active')){
+            $(this).removeClass('active');
+        }else{
+            $(this).addClass('active');
+        }
+
+
+        $(this).siblings().find('ul').slideUp();
+        $(this).find('ul').slideToggle();
+    });
 })();
 
 

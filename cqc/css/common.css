@@ -903,6 +903,19 @@ body {
     background: #fff;
 }
 
+.clearfix:after{
+	content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
 
 /*pages*/
 
@@ -1180,3 +1193,87 @@ body {
     margin: 0;
 }
 /*登录界面  E*/
+
+
+
+/* 个人中心 */
+.center-nav{
+    background: #f3f3f3;
+}
+.center-nav li{
+    border-bottom: 1px solid #d0d0d0;
+}
+.center-nav li.hover, .center-nav li.active, .center-nav li.hover.hasSub{
+    background-color: #fff;
+}
+.center-nav li.active{
+    border-left: 4px solid #349aff;
+}
+.center-nav li.active .tit{
+    color: #349aff;
+    font-weight: bold;
+}
+.center-nav li.active.hasSub, .center-nav li.hover.hasSub{
+    background: #fff url(../images/bg-arrow_02.png) 166px 0 no-repeat;
+}
+.center-nav li.hover.hasSub .tit{
+    font-weight: bold;
+    color: #349aff;
+}
+.center-nav li.hasSub{
+    background: url(../images/bg-arrow_01.png) 166px 0 no-repeat;
+}
+.center-nav li a{
+    display: block;
+    padding-left: 62px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #616161;
+    background: url(../images/bg-center-nav.png) 37px 12px no-repeat;
+}
+.center-nav li a:hover{
+    color: #349aff;
+}
+.center-nav .icon-zh{ background-position: 37px 12px;}
+.center-nav .icon-xx{ background-position: 37px -28px;}
+.center-nav .icon-xm{ background-position: 37px -68px;}
+.center-nav .icon-tz{ background-position: 37px -108px;}
+.center-nav .icon-fhq{ background-position: 37px -148px;}
+.center-nav .icon-gz{ background-position: 37px -188px;}
+.center-nav .icon-sc{ background-position: 37px -228px;}
+
+.center-nav .icon-zh:hover, .center-nav .active .icon-zh{ background-position: 37px -268px;}
+.center-nav .icon-xx:hover, .center-nav .active .icon-xx{ background-position: 37px -308px;}
+.center-nav .icon-xm:hover, .center-nav .active .icon-xm{ background-position: 37px -348px;}
+.center-nav .icon-tz:hover, .center-nav .active .icon-tz{ background-position: 37px -388px;}
+.center-nav .icon-fhq:hover, .center-nav .active .icon-fhq{ background-position: 37px -428px;}
+.center-nav .icon-gz:hover, .center-nav .active .icon-gz{ background-position: 37px -468px;}
+.center-nav .icon-sc:hover, .center-nav .active .icon-sc{ background-position: 37px -508px;}
+
+.center-nav .sub{
+    display: none;
+}
+.center-nav .sub li{
+    border: none;
+}
+.center-nav .sub li a{
+    background-image: none;
+}
+.center-nav .sub li.cur a{
+    color: #349aff;
+    font-weight: bold;
+}
+
+
+/* layout */
+.m-overlay{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}

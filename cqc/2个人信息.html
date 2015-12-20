@@ -102,6 +102,9 @@
                     </div>
                     <div class="clear h30px"></div>
                     <div class="wb60 center lh40px Fgray-3 F150em">
+                    	
+                        <form method="post" enctype="multipart/form-data" id="form1">
+                    
                         <div class="wb30 fl text-right">
                             <span class="Forange-1 mar5">*</span>姓名
                         </div>
@@ -143,6 +146,9 @@
                         </div>
                         <div class="clear h30px"></div>
                     </div>
+                    
+                    </form>
+                    
                 </div>
             </div>
         </div>
@@ -203,8 +209,12 @@
             var name = $.trim($(".inp-name").val());
             var code = $.trim($(".inp-code").val());
             var img = $.trim($(".file-img").val());
-            var agree = $(".agree").attr("checked");
+           
+		   //-- var agree = $(".agree").attr("checked");
+			
+			var agree = $(".agree").prop("checked");
 
+			
             //姓名
             if(name == null || name == ""){
                 layer.tips('请输入姓名', '.inp-name', {
@@ -225,15 +235,6 @@
                 return false;
             }
             
-            //身份证号码
-            if(img == null || img == ""){
-                layer.tips('请上传身份证', '.file-btn', {
-                    tips: [1, 'Red'],
-                    time: 3000
-                });
-                return false;
-            }
-            
             if(agree == undefined || agree == "" || agree == null){
                 layer.tips('请同意众创空间先锋网协议', '.agree', {
                     tips: [1, 'Red'],
@@ -241,7 +242,9 @@
                 });
                 return false;   
             }
-
+			
+			$("#form1").submit();
+			
         });
     })
 </script>

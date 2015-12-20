@@ -636,6 +636,9 @@ input{ outline: none;}*/
     height: 48px;
     margin-top: 27px;
 }
+.foot-m.center .db-tit {
+    margin-top: 0;
+}
 
 .db-tit img {
     left: 0px;

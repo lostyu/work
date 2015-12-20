@@ -1,0 +1,540 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <title>孵化器管理</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/d-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/myBase.css">
+    <link rel="stylesheet" type="text/css" href="../css/cj.css">
+
+</head>
+
+<body class="bg-e9eaee">
+
+
+<!--顶部-->
+<div class="head">
+    <div class="head-m center">
+        <!--登录前-->
+        <div class="bf-login s s12 r" style="display: none;">您好，欢迎登录众创空间！<span class="sp-login"><a class="s14" href="19.login.html">登录</a></span><span class="sp-reg"><a class="s14" href="#">注册</a></span></div>
+        <!--登录后-->
+        <div class="af-login w r">
+            <div class="user-info r x">
+                <img class="head" src="../images/head.png">
+                <div class="info-tips box-sh y">
+                    <ul>
+                        <li><a href="#">李达兆</a></li>
+                        <li><a href="#">我的主页</a></li>
+                        <li><a href="#">个人中心</a></li>
+                        <li><a href="javascript:;">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-news r x">消息<img class="news-icon y" src="../images/g-icon2.png">
+                <a href="#" class="news-tips box-sh y">投融资消息</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--首页导航-->
+<div class="nav h88">
+    <div class="nav-m h88 center s x">
+        <img src="../images/logo.png" class="logo y" width="238" height="50">
+        <ul class="y w">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;" class="active">创业大赛</a></li>
+            <li><a href="javascript:;">众创先锋网</a></li>
+            <li class="x z5">
+                <a href="javascript:;">我是创业者</a>
+                <div class="pop-up y box-sh" id="pop-up1">
+                    <a href="javascript:;">知识产权保护</a>
+                    <a href="javascript:;">在线估值</a>
+                    <a href="javascript:;">融资委托</a>
+                    <a href="javascript:;">工商咨询</a>
+                </div>
+            </li>
+            <li class="x z5">
+                <a href="javascript:;">我是投资人</a>
+                <div class="pop-up y box-sh" id="pop-up2">
+                    <a href="javascript:;">投资委托</a>
+                    <a href="javascript:;">创业项目</a>
+                </div>
+            </li>
+            <li><a href="javascript:;">孵化器</a></li>
+            <li><a href="javascript:;">创业学院</a></li>
+            <li class="li-t z5 x">
+                搜索
+                <div class="pop-up-search y box-sh" id="pop-up-search">
+                    <div class="serarch x s s14 bt4" >
+                        <input class="l serarch_input" type="text" value="请输入要查找的内容">
+                        <div class="y sign fte">
+                            <span>O2O</span>
+                            <span>微信</span>
+                            <span>投资</span>
+                        </div>
+                        <a href="25.search.html" class="serarch_btn l"><img src="../images/search.png" width="18" height="18"></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--main-->
+<div class="w1200">
+    <h2 class="d-center-title">个人中心</h2>
+    <div class="d-center-main">
+        <div class="slider-left">
+        <ul class="center-nav">
+            <li><a class="icon-zh" href="javascript:;">账号设置</a></li>
+            <li><a class="icon-xx" href="javascript:;">消息</a></li>
+            <li class="hasSub"><a class="icon-xm tit" href="javascript:;">我的项目</a>
+                <ul class="sub">
+                    <li><a href="">我创建的项目</a></li>
+                    <li><a href="">我辅导的项目</a></li>
+                </ul>
+            </li>
+            <li><a class="icon-tz" href="javascript:;">我的投资记录</a></li>
+            <li class="hasSub"><a class="icon-fhq tit" href="javascript:;">我的孵化器</a>
+                <ul class="sub">
+                    <li class="cur"><a href="javascript:;">孵化器管理</a></li>
+                    <li><a href="javascript:;">管理员</a></li>
+                    <li><a href="javascript:;">入驻项目管理</a></li>
+                </ul>
+            </li>
+            <li><a class="icon-gz" href="javascript:;">我的关注</a></li>
+            <li><a class="icon-sc" href="javascript:;">我的收藏</a></li>
+        </ul>
+    </div>
+        <div class="d-center-con">
+			<div class="wb100">
+            
+            	<div class="wb100 bor-gray2 bor-solid-1b h40px">
+                    <ul class="ul-user-nav wb50 fl mal2per">
+                        <li class="active">基本信息</li>
+                        <li>认证信息</li>
+                    </ul>
+                    
+                    <a href="javascript:void(0)" class=" display-inline warpper-blue w150px h40px lh40px text-center white F125em fr">返回孵化器管理首页</a>
+                </div>
+                
+                <div class="clear1"></div>
+                
+                <div class="pa10 warpper-white">
+                	<div class="wb100">
+                    	<ul class="ul-tab-control">
+                        	<li class="active">基地总览</li>
+                        	<li>政策及服务</li>
+                        	<li>功能区介绍</li>
+                        	<li>进出条件</li>
+                        	<li>收费标准</li>
+                        </ul>
+                        <div class="clear1"></div>
+                        
+                        <div class="wb75 center F150em lh40px Fgray-3">
+                       		<form id="form1" method="post">
+                        	<div class="wb15 fl text-right"><span class="Fred mar5">*</span>孵化器介绍：</div>
+                            <div class="wb84 fr">
+                            	<div class="bor-gray bor-solid-1a radius5 wb100 Fgray-3">
+                               		<textarea class="h70px pat5 pab5 pal1per par1per wb98 lh20px radius5 bor-none textarea-col Fgray-3 t-form-input my-inp-1"></textarea>
+                                </div>
+                            </div>
+                            <div class="clear1"></div>
+                        	<div class="wb15 fl text-right"><span class="Fred mar5">*</span>软设支持：</div>
+                            <div class="wb84 fr">
+                            	<div class="bor-gray bor-solid-1a radius5 wb100 Fgray-3">
+                               		<textarea class="h70px pat5 pab5 pal1per par1per wb98 lh20px radius5 bor-none textarea-col Fgray-3 t-form-input my-inp-2"></textarea>
+                                </div>
+                            </div>
+                            <div class="clear1"></div>
+                        	<div class="wb15 fl text-right"><span class="Fred mar5">*</span>硬设支持：</div>
+                            <div class="wb84 fr">
+                            	<div class="bor-gray bor-solid-1a radius5 wb100 Fgray-3">
+                               		<textarea class="h70px pat5 pab5 pal1per par1per wb98 lh20px radius5 bor-none textarea-col Fgray-3 t-form-input my-inp-3"></textarea>
+                                </div>
+                            </div>
+                            <div class="clear1"></div>
+                            
+                            <div class="wb15 fl text-right"><span class="Fred mar5">*</span>增值服务：</div>
+                            <div class="wb84 fr">
+                            	<div class="bor-gray bor-solid-1a radius5 wb50 Fgray-3 fl mar10">
+                                    <div class="mySelect h40px lh40px wb100 bor-none tab-col-area">
+                               			<input type="text" class="h40px lh40px Fgray-3 wb100 bor-none radius5 t-form-input tab-text" placeholder="标签">
+                                        <div class="wb100 hidden">
+                                            <ul class="myOption tab-add-area">
+                                                <li>行业分类1</li>
+                                                <li>行业分类2</li>
+                                                <li>行业分类3</li>
+                                                <li class="tab-add">添加“行业分类”</li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="tab-area fl"></div>
+                                <input type="hidden" name="tab-param" class="tab-param">
+                            </div>
+                            
+                            <div class="clear1"></div>
+                            
+                        	<div class="wb15 fl text-right"><span class="Fred mar5">*</span>基础服务：</div>
+                            <div class="wb84 fr">
+                            	<div class="bor-gray bor-solid-1a radius5 wb100 Fgray-3">
+                               		<textarea class="h70px pat5 pab5 pal1per par1per wb98 lh20px radius5 bor-none textarea-col Fgray-3 t-form-input my-inp-4"></textarea>
+                                </div>
+                            </div>
+                            <div class="clear h40px"></div>
+                            
+                            <div class="wb15 fl text-right"><span class="Fred mar5">*</span>位置条件：</div>
+                            <div class="wb84 fr myCheckBox-area my-inp-5-area" data-max="3">
+                                <div class="fl lh40px mal10 mar5">
+                                    <p class="myCheckBox fl mat125" data-value="1"><span></span></p>
+                                    <span class="fl mal5">紧邻商圈</span>
+                                </div>
+                                <div class="fl lh40px mal10 mar5">
+                                    <p class="myCheckBox fl mat125" data-value="2"><span></span></p>
+                                    <span class="fl mal5">紧邻轻轨</span>
+                                </div>
+                                <div class="fl lh40px mal10 mar5">
+                                    <p class="myCheckBox fl mat125" data-value="3"><span></span></p>
+                                    <span class="fl mal5">公交站旁</span>
+                                </div>
+                                <div class="fl lh40px mal10 mar5">
+                                    <p class="myCheckBox fl mat125" data-value="4"><span></span></p>
+                                    <span class="fl mal5">机场附近</span>
+                                </div>
+                                <div class="fl lh40px mal10 mar5">
+                                    <p class="myCheckBox fl mat125" data-value="5"><span></span></p>
+                                    <span class="fl mal5">医院附近</span>
+                                </div>
+                                <div class="fl lh40px mal10 mar5">
+                                    <p class="myCheckBox fl mat125" data-value="5"><span></span></p>
+                                    <span class="fl mal5">火车站附近</span>
+                                </div>
+                                <input type="hidden" class="my-inp-5">
+                            </div>
+                            
+                            <div class="clear h100px"></div>
+                            
+                            <div class="wb100 text-center Fgray-2 lh20px F80em">
+                                <input type="button" class="warpper-blue Fwhite h40px lh40px w110px bor-none pointer F125em text-center radius5 my-sub" value="提交">
+                           		<div class="clear1"></div>
+                                <p>注：同一平台账号，在未认证孵化器的情况下上传孵化器资料，</p>
+								<p>提交申请3次未通过的，则不可再次提交申请。</p>
+                                <div class="clear1"></div>
+                            </div>
+                           	</form>
+                        </div>
+                        
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                
+			</div>
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+<div class="foot">
+    <div class="foot-m center">
+        <div class="db-tit x l">
+            <img class="y" src="../images/logo1.png" width="217" height="48">
+            <div class="y">
+                <a class="a-wx a-item" href="javascript:;"></a>
+                <a class="a-tx a-item" href="javascript:;"></a>
+                <a class="a-sina a-item" href="javascript:;"></a>
+            </div>
+        </div>
+        <div class="db-con l">
+            <div class="db-con-l l">
+                <ul class="ul-1 s s14">
+                    <li><a href="aboutUs.html">关于我们</a></li>
+                    <li><a href="contactUs.html">联系我们</a></li>
+                    <li><a href="helpUs.html">帮助中心</a></li>
+                    <li><a href="joinUs.html">加入我们</a></li>
+                </ul>
+                <ul class="ul-2 s">
+                    <li>地址：重庆市南岸区区东华正街42号广电仕百达国际大厦25楼</li>
+                    <li>邮编：610000　Email：mail@zc.com</li>
+                    <li>反馈建议：894273483767@sina.com</li>
+                    <li>客服电话：023-321121212</li>
+                </ul>
+            </div>
+            <div class="db-con-m l">
+                <ul class="ul-1 s s14"><li>在线咨询</li></ul>
+                <ul class="ul-2 s">
+                    <li><a href="aboutUs.html">关于我们</a></li>
+                    <li><a href="article-guquan.html">股权咨询</a></li>
+                    <li><a href="article-zhengce.html">政策咨询</a></li>
+                    <li><a href="article-xiangmu.html">项目咨询</a></li>
+                    <li><a href="article-caiwu.html">财务咨询</a></li>
+                    <li><a href="article-falv.html">法律咨询</a></li>
+                    <li><a href="article-shuishou.html">税收咨询</a></li>
+                    <li><a href="article-qiye.html">企业管理咨询</a></li>
+                </ul>
+            </div>
+            <div class="db-con-r l s"><img src="../images/erweima.png" width="100" height="100"><p>扫码关注微信公众平台</p></div>
+        </div>
+        <div class="db-icons l">
+            <div class="db-icon db-icon1"></div>
+            <div class="db-icon db-icon2"></div>
+            <div class="db-icon db-icon3"></div>
+            <div class="db-icon db-icon4"></div>
+            <div class="db-icon db-icon5"></div>
+        </div>
+
+    </div>
+</div>
+<div class="bottom"><div class="bottom-m center s s12">重庆青春实业有限公司<span class="ml15">渝ICP备13010370号-1</span><span class="ml15">渝B-20120039</span><span class="ml45">技术开发：重庆中恒玖联科技有限公司</span><span class="ml50">支持单位：共青团重庆市委</span></div></div>
+<!--二维码、返回顶部-->
+<div class="toolbar">
+    <a id="backTop" style="display: none;" href="javascript:;" class="toolbar-item toolbar-item-top"></a>
+    <a href="javascript:;" style="margin-top: -1px;" class="toolbar-item toolbar-item-weixin"><span class="toolbar-layer"></span></a>
+</div>
+
+<script src="http://static.weiwubao.com/asset/lib/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../js/public.js" ></script>
+<script type="text/javascript" src="../js/layer/layer.js"></script>
+<script>
+    $('.slider-left a').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+    var $pop = $('.d-message-pop'), $menu = $('.d-center-menu li');
+    $('.close-this').click(function(){
+        $pop.fadeOut();
+    });
+    $('.d-message-mc li').click(function(){
+        $pop.fadeIn();
+        $(this).addClass('read');
+    });
+    $menu.click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        var _ind = $(this).index()+1;
+        $('.d-setting'+_ind).show().siblings().hide();
+    });
+	
+	$(function(){
+		
+		$(".myRadio-area .myRadio").unbind("click").click(function(){
+			$(this).parent().parent().find(".myRadio").removeClass("myRadio-hover");
+			$(this).addClass("myRadio-hover");
+			
+			if($(this).hasClass("type-btn")){
+				$(".type-area").addClass("hidden");
+				$(".type-area").eq($(this).attr("data-index")).removeClass("hidden");
+			}
+			
+			$(this).parent().parent().find("input").val($(this).attr("data-value"));
+			
+		})
+		
+		$(".myCheckBox-area .myCheckBox").unbind("click").click(function(){
+			
+			var objs = $(this).parent().parent().find(".myCheckBox-hover");
+			
+			if($(this).hasClass("myCheckBox-hover")){
+				$(this).removeClass("myCheckBox-hover");
+				
+				var temp = new Array();
+				$(this).parent().parent().find(".myCheckBox-hover").each(function(index, element) {
+					temp.push($(this).attr("data-value"));
+				});
+				$(this).parent().parent().find("input").val(temp.join(","));
+				
+				return false;
+			}
+			var _max = parseInt($(this).parent(). parent().attr("data-max"));
+			
+			if(_max <= objs.length){
+				objs.first().removeClass("myCheckBox-hover");	
+			}
+			$(this).addClass("myCheckBox-hover");
+			
+			var temp = new Array();
+			$(this).parent().parent().find(".myCheckBox-hover").each(function(index, element) {
+				temp.push($(this).attr("data-value"));
+			});
+			$(this).parent().parent().find("input").val(temp.join(","));
+			
+		})
+		
+		$(".mySelect .select-btn").click(function(){
+			$(this).parent().find(".myOption").parent().show(0)
+		})
+		
+		$(".myOption li").click(function(){
+			
+			if($(this).hasClass("tab-add")){
+				$(".tab-text").val($(this).attr("data-value"));
+				$(".tab-text").attr("data-value",$(this).attr("data-value"));
+				addTab($(".tab-text").val());
+				$(this).parent().parent().hide(0);
+				return false;
+			}
+			
+			$(this).parent().parent().hide(0);
+			$(this).parent().parent().parent().find(".select-text").text($(this).text());
+			$(this).parent().parent().parent().find("input").val($(this).text());
+			
+			if($(this).parent().hasClass("tab-add-area")){
+				
+				$(".tab-text").val($(this).text());
+				
+				addTab($(this).text());	
+			}
+		
+		})
+		
+		$(".tab-text").unbind("focus").unbind("blur").unbind("keyup").unbind("keydown").unbind("change").focus(function(){
+			var temp = $(this).val();
+			$(this).val("");
+			$(this).attr("data-cache",temp);
+		}).blur(function(){
+			var temp = $(this).attr("data-cache");
+			$(this).val(temp);
+		}).keyup(function(){
+			$(this).parent().find(".myOption").parent().show(0);
+			$(".tab-add").text("添加‘"+$(this).val()+"’").attr("data-value",$(this).val());
+		}).keydown(function(){
+			$(this).parent().find(".myOption").parent().show(0);
+			$(".tab-add").text("添加‘"+$(this).val()+"’").attr("data-value",$(this).val());
+		}).change(function(){
+			$(this).parent().find(".myOption").parent().show(0);
+			$(".tab-add").text("添加‘"+$(this).val()+"’").attr("data-value",$(this).val());
+		})
+			
+	})
+	
+	function addTab(val){
+		
+		var flag = true;
+		var temp = "";
+		var _target = $(".tab-area");
+		if (val != "" && val != null && val != undefined) {
+			temp = '<p class="tab">' + val + '<span class="tab-del">X</span></p>';
+		}
+
+		$(".tab-area .tab").each(function(index, element) {
+			var val2 = $(this).text();
+			val2 = val2.substring(val2, val2.length - 1);
+
+			if (val2 == val) {
+				flag = false;
+			}
+			
+		});
+
+		if (flag && $(".tab-area .tab").length<3) {
+			_target.append(temp);
+		}
+		
+		if($(".tab-area .tab").length>=3){
+			$(".tab-text").attr("disabled","disabled");
+		}
+		
+		bindEvent();
+		updateParam();
+	}
+
+    function bindEvent() {
+        $(".tab").unbind("click").click(function() {
+            $(this).remove();
+			
+			if($(".tab-area .tab").length<3){
+				$(".tab-text").removeAttr("disabled");
+			}
+			
+        })
+        updateParam();
+    }
+
+    function updateParam() {
+
+        var temp = new Array();
+
+        $(".tab-area .tab").each(function(index, element) {
+            var val = $(this).text();
+            val = val.substring(val, val.length - 1);
+            temp.push(val);
+        });
+
+        $(".tab-param").val(temp.join(","));
+    }
+	
+	$(function(){
+		
+		$(".my-sub").click(function() {
+			
+            var mi1 = $.trim($(".my-inp-1").val());
+            var mi2 = $.trim($(".my-inp-2").val());
+            var mi3 = $.trim($(".my-inp-3").val());
+            var mi4 = $.trim($(".my-inp-4").val());
+            var mi5 = $.trim($(".my-inp-5").val());
+			var tabParams = $.trim($(".tab-param").val());
+			
+			var flag = false;
+			
+			if (mi1 == null || mi1 == "") {
+				layer.tips('请填写您的孵化器介绍', '.my-inp-1', {
+					tips: [1, 'Red'],
+					time: 3000
+				});
+				$(".my-inp-1").focus();
+				return false;
+			}
+			if (mi2 == null || mi2 == "") {
+				layer.tips('请填写您的软设支持', '.my-inp-2', {
+					tips: [1, 'Red'],
+					time: 3000
+				});
+				$(".my-inp-2").focus();
+				return false;
+			}
+			if (mi3 == null || mi3 == "") {
+				layer.tips('请填写您的硬设支持', '.my-inp-3', {
+					tips: [1, 'Red'],
+					time: 3000
+				});
+				$(".my-inp-3").focus();
+				return false;
+			}
+			if (tabParams == null || tabParams == "") {
+				layer.tips('请添加一个标签', '.tab-text', {
+					tips: [1, 'Red'],
+					time: 3000
+				});
+				$(".tab-text").focus();
+				return false;
+			}
+			if (mi4 == null || mi4 == "") {
+				layer.tips('请填写您的基础服务', '.my-inp-4', {
+					tips: [1, 'Red'],
+					time: 3000
+				});
+				$(".my-inp-4").focus();
+				return false;
+			}
+			if (mi5 == null || mi5 == "") {
+				layer.tips('请选择您的位置条件', '.my-inp-5-area', {
+					tips: [1, 'Red'],
+					time: 3000
+				});
+				$(".my-inp-5").focus();
+				return false;
+			}
+			
+			
+			
+			$("#form1").submit();
+
+        });
+		
+	})
+		
+</script>
+</body>
+</html>

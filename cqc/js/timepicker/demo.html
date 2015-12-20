@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>demo</title>
+<link type="text/css" rel="stylesheet" href="css/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-timepicker-addon.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/jquery-ui-sliderAccess.js"></script>
+<script src="js/jquery-ui-timepicker-addon.js"></script>
+<script src="js/jquery-ui-timepicker-zh-CN.js"></script>
+<script>
+	$(function(){
+		$('.jq-datetime').datetimepicker({
+			timeFormat: "HH:mm",
+			dateFormat: "yy-mm-dd",
+			showTime: true,
+			minDateTime: new Date()
+		});
+	})
+</script>
+</head>
+
+<body>
+	<input type="text" class="jq-datetime">
+</body>
+</html>

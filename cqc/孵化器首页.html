@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>孵化器-首页</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/cl.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+</head>
+<body>
+    <!--顶部-->
+    <div class="head">
+        <div class="head-m center">
+            <!--登录前-->
+            <div class="bf-login s s12 r">
+                您好，欢迎登录众创空间！
+                                        <span class="sp-login">
+                                            <a class="s14" href="19.login.html">登录</a>
+                                        </span>
+                                        <span class="sp-reg">
+                                            <a class="s14" href="#">注册</a>
+                                        </span>
+            </div>
+            <!--登录后-->
+            <div class="af-login w r" style="display: none;">
+                <div class="user-info r x">
+                    <img class="head" src="images/head.png">
+                    <div class="info-tips box-sh y">
+                        <ul>
+                            <li><a href="#">李达兆</a></li>
+                            <li><a href="#">我的主页</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-news r x">消息<img class="news-icon y" src="images/g-icon2.png"><a href="#" class="news-tips box-sh y">投融资消息</a></div>
+            </div>
+        </div>
+    </div>
+    <!--首页导航-->
+    <div class="nav">
+        <div class="nav-m center s x">
+            <img src="images/logo.png" class="logo y" width="164" height="40">
+            <ul class="y w">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">创业大赛</a></li>
+                <li><a href="javascript:;">众创先锋榜</a></li>
+                <li class="x z5">
+                    <a href="javascript:;">我是创业者</a>
+                    <div class="pop-up y box-sh" id="pop-up1">
+                        <a href="javascript:;">知识产权保护</a>
+                        <a href="javascript:;">在线估值</a>
+                        <a href="javascript:;">融资委托</a>
+                        <a href="javascript:;">工商咨询</a>
+                    </div>
+                </li>
+                <li class="x z5">
+                    <a href="javascript:;">我是投资人</a>
+                    <div class="pop-up y box-sh" id="pop-up2">
+                        <a href="javascript:;">投资委托</a>
+                        <a href="javascript:;">创业项目</a>
+                    </div>
+                </li>
+                <li><a href="javascript:;">孵化器</a></li>
+                <li><a href="javascript:;">创业学院</a></li>
+                <li class="li-t z5 x">
+                    搜索
+                    <div class="pop-up-search y box-sh" id="pop-up-search">
+                        <div class="serarch x s s14 bt4" >
+                            <input class="l serarch_input" type="text" value="请输入要查找的内容">
+                            <div class="y sign fte">
+                                <a href="javascript:;"><span>O2O</span></a>
+                                <a href="javascript:;"><span>微信</span></a>
+                                <a href="javascript:;"><span>投资</span></a>
+                            </div>
+                            <a href="#" class="serarch_btn l"><img class="l" src="images/search.png" width="18" height="18"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--banner-->
+    <div class="d-bn-box f-ff1">
+        <div class="d-bn-con f-cb d-bs">
+            <div class="d-bn-l f-fl">
+                <h2>创青春&nbsp;&nbsp;创未来</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                    <br> laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </p>
+                <div class="btn-box f-cb">
+                    <a class="a1" href="#">上传孵化器</a>
+                    <!--<a class="a2" href="#">参赛项目</a>-->
+                </div>
+            </div>
+            <div class="d-bn-r f-fr d-bs">
+                <h4>孵化器动态<!--<a href="#">更多</a>--></h4>
+                <ul>
+                    <li><a href="#">2015年12月12日创业大赛正式创开始创业大赛正式创开始</a></li>
+                    <li><a href="#">大赛动态新闻，重庆市政府为众创揭牌大赛动态新闻，重庆市政府为众创揭牌</a></li>
+                    <li><a href="#">大赛准备已经完成，报名接口开放。</a></li>
+                    <li><a href="#"> 大赛动态新闻，时间排序2015.10.10。</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--content-->
+    <div class="cl-fhq-tit">
+        <button class="f-all f-all1 f-ff1 l">全部</button>
+        <div class="t-form-item-con t-clear dte">
+            <div class="t-form-input-box t-simulate-select bor-none">
+                <input type="hidden" name="" class="diy_select_input" value="">
+                <div class="diy_select_txt has has has has">选择行业属性</div>
+                <ul class="diy_select_list" style="display: none;">
+                    <li>农业</li>
+                    <li>移动互联网</li>
+                    <li>产品</li>
+                </ul>
+                <i class="t-icon t-icon-arrow-down"></i>
+            </div>
+            <!--单位-->
+            <div class="t-unit"></div>
+        </div>
+    </div>
+
+    <div class="cl-fhq-con w1200 center boxS clearfix">
+        <div class="swiper-container x">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="width: 100%; height: auto">
+                    <img src="images/cl/img-fhq.jpg" class="fhq-img l">
+                    <div class="cl-fhq-con-con">
+                        <div class="dv1 l x">
+                            <span class="sp1 fte">重庆渝中孵化器基地1</span>
+                            <span class="sp2 fte">重庆渝中区龙湖时代天街32-1</span>
+                            <div class="y">
+                                <img src="images/cl/cl-hot.png" width="32" height="38">
+                                <span><i>99999</i>人关注</span>
+                            </div>
+                            <img class="y yrz" src="images/cl/cl-icon-yyz.png" width="130" height="105">
+                        </div>
+                        <div class="dv2 l fte w75">国家级孵化器</div>
+                        <div class="dv3 l fte w75">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</div>
+                        <div class="dv4 l">
+                            <div class="dv41 l boxS">增值<br />服务</div>
+                            <div class="dv42 l boxS"><span>移动互联网</span><span>公众平台</span><span>移动互联网</span><span>公众平台</span><span>移动互联网</span></div>
+                        </div>
+                        <div class="dv5 l">行业属性：<span>公众平台</span><span>移动互联网</span></div>
+                        <div class="dv5 l">位置条件：<span>公众平台</span><span>移动互联网</span><span>公众平台</span><span>移动互联网</span></div>
+                        <div class="dv3 l fte w100">优惠政策：享受政府补贴，项目扶持及税收减免等政策。</div>
+                        <div class="dv6 l"><a href="#">我要入驻</a></div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="width: 100%; height: auto">
+                    <img src="images/cl/img-fhq.jpg" class="fhq-img l">
+                    <div class="cl-fhq-con-con">
+                        <div class="dv1 l x">
+                            <span class="sp1 fte">重庆渝中孵化器基地2</span>
+                            <span class="sp2 fte">重庆渝中区龙湖时代天街32-1</span>
+                            <div class="y">
+                                <img src="images/cl/cl-hot.png" width="32" height="38">
+                                <span><i>99999</i>人关注</span>
+                            </div>
+                            <img class="y yrz" src="images/cl/cl-icon-yyz.png" width="130" height="105">
+                        </div>
+                        <div class="dv2 l fte w75">国家级孵化器</div>
+                        <div class="dv3 l fte w75">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</div>
+                        <div class="dv4 l">
+                            <div class="dv41 l boxS">增值<br />服务</div>
+                            <div class="dv42 l boxS"><span>移动互联网</span><span>公众平台</span><span>移动互联网</span><span>公众平台</span><span>移动互联网</span></div>
+                        </div>
+                        <div class="dv5 l">行业属性：<span>公众平台</span><span>移动互联网</span></div>
+                        <div class="dv5 l">位置条件：<span>公众平台</span><span>移动互联网</span><span>公众平台</span><span>移动互联网</span></div>
+                        <div class="dv3 l fte w100">优惠政策：享受政府补贴，项目扶持及税收减免等政策。</div>
+                        <div class="dv6 l"><a href="#">我要入驻</a></div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="width: 100%; height: auto">
+                    <img src="images/cl/img-fhq.jpg" class="fhq-img l">
+                    <div class="cl-fhq-con-con">
+                        <div class="dv1 l x">
+                            <span class="sp1 fte">重庆渝中孵化器基地3</span>
+                            <span class="sp2 fte">重庆渝中区龙湖时代天街32-1</span>
+                            <div class="y">
+                                <img src="images/cl/cl-hot.png" width="32" height="38">
+                                <span><i>99999</i>人关注</span>
+                            </div>
+                            <img class="y yrz" src="images/cl/cl-icon-yyz.png" width="130" height="105">
+                        </div>
+                        <div class="dv2 l fte w75">国家级孵化器</div>
+                        <div class="dv3 l fte w75">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</div>
+                        <div class="dv4 l">
+                            <div class="dv41 l boxS">增值<br />服务</div>
+                            <div class="dv42 l boxS"><span>移动互联网</span><span>公众平台</span><span>移动互联网</span><span>公众平台</span><span>移动互联网</span></div>
+                        </div>
+                        <div class="dv5 l">行业属性：<span>公众平台</span><span>移动互联网</span></div>
+                        <div class="dv5 l">位置条件：<span>公众平台</span><span>移动互联网</span><span>公众平台</span><span>移动互联网</span></div>
+                        <div class="dv3 l fte w100">优惠政策：享受政府补贴，项目扶持及税收减免等政策。</div>
+                        <div class="dv6 l"><a href="#">我要入驻</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <!--筛选孵化器-->
+    <div class="cl-fhq-screen boxS">
+
+        <div class="dv dv1">筛选孵化器</div>
+
+        <div class="dv dv2 clearfix map">
+            <div class="dv21 l cl-lh64">区域：</div>
+            <div class="dv22 l">
+
+                <div class="t-form-item-con t-clear cl-ml-1">
+                    <div class="t-form-input-box t-input-140 t-simulate-select">
+                        <input type="hidden" name="" class="diy_select_input" value="">
+                        <div class="diy_select_txt has has has has">省</div>
+                        <ul class="diy_select_list" style="display: none;">
+                            <li data-value="河北" >河北</li>
+                            <li data-value="甘肃" >甘肃</li>
+                            <li data-value="辽宁" >辽宁</li>
+                        </ul>
+                        <i class="t-icon t-icon-arrow-down"></i>
+                    </div>
+                </div>
+
+                <div class="t-form-item-con t-clear cl-ml-1">
+                    <div class="t-form-input-box t-input-140 t-simulate-select">
+                        <input type="hidden" name="" class="diy_select_input" value="">
+                        <div class="diy_select_txt has has has has">市</div>
+                        <ul class="diy_select_list" style="display: none;">
+                            <li>成都</li>
+                            <li>西安</li>
+                            <li>南京</li>
+                            <li>张家界</li>
+                        </ul>
+                        <i class="t-icon t-icon-arrow-down"></i>
+                    </div>
+                </div>
+
+                <div class="t-form-item-con t-clear cl-ml-1">
+                    <div class="t-form-input-box t-input-140 t-simulate-select">
+                        <input type="hidden" name="" class="diy_select_input" value="">
+                        <div class="diy_select_txt has has has has">区/县</div>
+                        <ul class="diy_select_list" style="display: none;">
+                            <li>垫江</li>
+                            <li>万州</li>
+                            <li>渝北</li>
+                        </ul>
+                        <i class="t-icon t-icon-arrow-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="dv21 l cl-lh64">孵化器级别：</div>
+            <div class="dv22 l">
+
+                <div class="t-form-item-con t-clear cl-ml-1">
+                    <div class="t-form-input-box t-input-140 t-simulate-select">
+                        <input type="hidden" name="" class="diy_select_input" value="">
+                        <div class="diy_select_txt has has has has">请选择</div>
+                        <ul class="diy_select_list" style="display: none;">
+                            <li>一级</li>
+                            <li>二级</li>
+                            <li>三级</li>
+                        </ul>
+                        <i class="t-icon t-icon-arrow-down"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="dv dv2 clearfix hysxList">
+            <div class="dv21 l cl-lh64">行业属性：</div>
+            <div class="dv22 l w1048 pad-b24 industry">
+                <label class="fte a"><input type="checkbox" value="不限" /><span></span>不限</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="农林牧渔" value="农林牧渔" /><span></span>农林牧渔</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="创意地产" value="创意地产" /><span></span>创意地产</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="特色店铺" value="特色店铺" /><span></span>特色店铺</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="连锁扩张" value="连锁扩张" /><span></span>连锁扩张</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="工矿项目" value="工矿项目" /><span></span>工矿项目</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="生活领域" value="生活领域" /><span></span>生活领域</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="智能制造" value="智能制造" /><span></span>智能制造</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="工业4.0" value="工业4.0" /><span></span>工业4.0</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="大健康" value="大健康" /><span></span>大健康</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="环保领域" value="环保领域" /><span></span>环保领域</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="互联网+" value="互联网+" /><span></span>互联网+</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="新能源+" value="新能源+" /><span></span>新能源+</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="文教卫生" value="文教卫生" /><span></span>文教卫生</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="影视演艺" value="影视演艺" /><span></span>影视演艺</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="广告传媒" value="广告传媒" /><span></span>广告传媒</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="旅游度假" value="旅游度假" /><span></span>旅游度假</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="生活服务" value="生活服务" /><span></span>生活服务</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="食品领域" value="食品领域" /><span></span>食品领域</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="祖辈传承" value="祖辈传承" /><span></span>祖辈传承</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="其他" value="其他" /><span></span>其他</label>
+            </div>
+        </div>
+
+        <div class="dv dv2 clearfix zzfwList">
+            <div class="dv21 l cl-lh64">增值服务：</div>
+            <div class="dv22 l w1048 pad-b24">
+                <label class="fte a"><input type="checkbox" value="不限" /><span></span>不限</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="标准服务1" value="标准服务1" /><span></span>标准服务1</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="标准服务2" value="标准服务2" /><span></span>标准服务2</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="标准服务3" value="标准服务3" /><span></span>标准服务3</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="标准服务4" value="标准服务4" /><span></span>标准服务4</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="标准服务5" value="标准服务5" /><span></span>标准服务5</label>
+            </div>
+        </div>
+
+        <div class="dv dv2 clearfix wztjList">
+            <div class="dv21 l cl-lh64">位置条件：</div>
+            <div class="dv22 l w1048 pad-b24">
+                <label class="fte a"><input type="checkbox" value="不限" /><span></span>不限</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="紧邻商圈" value="紧邻商圈" /><span></span>紧邻商圈</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="紧邻轻轨" value="紧邻轻轨" /><span></span>紧邻轻轨</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="公交站旁" value="公交站旁" /><span></span>公交站旁</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="机场附近" value="机场附近" /><span></span>机场附近</label>
+                <label class="fte t-lb"><input type="checkbox" data-category="火车站附近" value="火车站附近" /><span></span>火车站附近</label>
+            </div>
+        </div>
+
+        <div class="dv dv2 clearfix map jgList">
+            <div class="dv21 l cl-lh64">价格：</div>
+            <div class="dv22 l">
+                <label class="fte a"><input class="setJg" type="checkbox" value="不限" /><span></span>不限</label>
+            </div>
+            <div class="dv22 l">
+                <div class="t-form-item-con t-clear cl-ml-1">
+                    <div class="t-form-input-box t-input-140 t-simulate-select">
+                        <input type="hidden" name="" class="diy_select_input" value="">
+                        <div class="diy_select_txt has has has has jfStyle">计费方式</div>
+                        <ul class="diy_select_list jfList" style="display: none;">
+                            <li>计费方式一</li>
+                            <li>计费方式二</li>
+                            <li>计费方式三</li>
+                        </ul>
+                        <i class="t-icon t-icon-arrow-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="dv22 l mt14"><input class="tx hovernone" type="text" readonly="readonly" /></div>
+            <div class="dv22 l mt14"><div class="danwei cl-lh64">至</div></div>
+            <div class="dv22 l mt14"><input class="tx hovernone" type="text" readonly="readonly" /></div>
+            <div class="dv22 l mt14"><div class="danwei cl-lh64">元</div></div>
+        </div>
+
+        <div class="dv dv2 clearfix x sxtjLb">
+            <div class="dv21 l cl-lh64">您已选择：</div>
+            <div class="dv22 l w860 tjList pad-b18 sxList">
+                <!--<div><span>甘肃</span><a href="javascript:;" class="deLet"></a></div>-->
+                <div class="cl-qk clearBtn">清空</div>
+            </div>
+            <div class="dv22 l w140 cl-sx y"><a href="javascript:;">筛选</a></div>
+        </div>
+
+        <div class="dv dv2 clearfix">
+            <div class="dv21 l cl-h64"></div>
+            <div class="dv22 l w1048 boxS cl-h64">
+                <div class="serarch x mt12 ml653">
+                    <input class="l serarch_input" type="text" value="请输入关键字搜索">
+                    <a href="javascript:;" class="serarch_btn l"><img src="images/cl/search.png" width="18" height="18"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--展示列表-->
+    <div class="cl-fhq-show w1200 center boxS clearfix">
+        <ul class="w1200 clearfix">
+            <li class="x">
+                <a href="#">
+                    <img src="images/cl/cl-fhq-show-img.jpg" width="378" height="230">
+                    <div class="y cl-fhq-rz">认证</div>
+                    <div class="y cl-fhq-info f-ff0">
+                        <span class="sp1">重庆市渝中区孵化基地</span>
+                        <span class="sp2">重庆渝中区龙湖时代天街32-1</span>
+                        <span class="sp2">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</span>
+                    </div>
+                    <div class="y cl-fhq-tips"><span>互联网</span><span>农民</span></div>
+                </a>
+            </li>
+            <li class="x">
+                <a href="#">
+                    <img src="images/cl/cl-fhq-show-img.jpg" width="378" height="230">
+                    <div class="y cl-fhq-rz">认证</div>
+                    <div class="y cl-fhq-info f-ff0">
+                        <span class="sp1">重庆市渝中区孵化基地</span>
+                        <span class="sp2">重庆渝中区龙湖时代天街32-1</span>
+                        <span class="sp2">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</span>
+                    </div>
+                    <div class="y cl-fhq-tips"><span>互联网</span><span>农民</span></div>
+                </a>
+            </li>
+            <li class="x">
+                <a href="#">
+                    <img src="images/cl/cl-fhq-show-img.jpg" width="378" height="230">
+                    <div class="y cl-fhq-rz">认证</div>
+                    <div class="y cl-fhq-info f-ff0">
+                        <span class="sp1">重庆市渝中区孵化基地</span>
+                        <span class="sp2">重庆渝中区龙湖时代天街32-1</span>
+                        <span class="sp2">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</span>
+                    </div>
+                    <div class="y cl-fhq-tips"><span>互联网</span><span>农民</span></div>
+                </a>
+            </li>
+            <li class="x">
+                <a href="#">
+                    <img src="images/cl/cl-fhq-show-img.jpg" width="378" height="230">
+                    <div class="y cl-fhq-rz">认证</div>
+                    <div class="y cl-fhq-info f-ff0">
+                        <span class="sp1">重庆市渝中区孵化基地</span>
+                        <span class="sp2">重庆渝中区龙湖时代天街32-1</span>
+                        <span class="sp2">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</span>
+                    </div>
+                    <div class="y cl-fhq-tips"><span>互联网</span><span>农民</span></div>
+                </a>
+            </li>
+            <li class="x">
+                <a href="#">
+                    <img src="images/cl/cl-fhq-show-img.jpg" width="378" height="230">
+                    <div class="y cl-fhq-rz">认证</div>
+                    <div class="y cl-fhq-info f-ff0">
+                        <span class="sp1">重庆市渝中区孵化基地</span>
+                        <span class="sp2">重庆渝中区龙湖时代天街32-1</span>
+                        <span class="sp2">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</span>
+                    </div>
+                    <div class="y cl-fhq-tips"><span>互联网</span><span>农民</span></div>
+                </a>
+            </li>
+            <li class="x">
+                <a href="#">
+                    <img src="images/cl/cl-fhq-show-img.jpg" width="378" height="230">
+                    <div class="y cl-fhq-rz">认证</div>
+                    <div class="y cl-fhq-info f-ff0">
+                        <span class="sp1">重庆市渝中区孵化基地</span>
+                        <span class="sp2">重庆渝中区龙湖时代天街32-1</span>
+                        <span class="sp2">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</span>
+                    </div>
+                    <div class="y cl-fhq-tips"><span>互联网</span><span>农民</span></div>
+                </a>
+            </li>
+            <li class="x">
+                <a href="#">
+                    <img src="images/cl/cl-fhq-show-img.jpg" width="378" height="230">
+                    <div class="y cl-fhq-rz">认证</div>
+                    <div class="y cl-fhq-info f-ff0">
+                        <span class="sp1">重庆市渝中区孵化基地</span>
+                        <span class="sp2">重庆渝中区龙湖时代天街32-1</span>
+                        <span class="sp2">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</span>
+                    </div>
+                    <div class="y cl-fhq-tips"><span>互联网</span><span>农民</span></div>
+                </a>
+            </li>
+            <li class="x">
+                <a href="#">
+                    <img src="images/cl/cl-fhq-show-img.jpg" width="378" height="230">
+                    <div class="y cl-fhq-rz">认证</div>
+                    <div class="y cl-fhq-info f-ff0">
+                        <span class="sp1">重庆市渝中区孵化基地</span>
+                        <span class="sp2">重庆渝中区龙湖时代天街32-1</span>
+                        <span class="sp2">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</span>
+                    </div>
+                    <div class="y cl-fhq-tips"><span>互联网</span><span>农民</span></div>
+                </a>
+            </li>
+            <li class="x">
+                <a href="#">
+                    <img src="images/cl/cl-fhq-show-img.jpg" width="378" height="230">
+                    <div class="y cl-fhq-rz">认证</div>
+                    <div class="y cl-fhq-info f-ff0">
+                        <span class="sp1">重庆市渝中区孵化基地</span>
+                        <span class="sp2">重庆渝中区龙湖时代天街32-1</span>
+                        <span class="sp2">优势：专业技术性孵化器，专业导师提供技术及创业辅导。</span>
+                    </div>
+                    <div class="y cl-fhq-tips"><span>互联网</span><span>农民</span></div>
+                </a>
+            </li>
+        </ul>
+        <!--pages-->
+        <div class="y-pages">
+            <a class="previous" href="#">上一页</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a class="active" href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a class="no" href="javascript:;">...</a>
+            <a href="#">122</a>
+            <a href="#">133</a>
+            <a class="next" href="#">下一页</a>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="foot">
+        <div class="foot-m center">
+            <div class="db-tit x l">
+                <img class="y" src="images/logo1.png" width="164" height="40">
+                <div class="y">
+                    <a class="a-wx a-item" href="javascript:;"></a>
+                    <a class="a-tx a-item" href="javascript:;"></a>
+                    <a class="a-sina a-item" href="javascript:;"></a>
+                </div>
+            </div>
+            <div class="db-con l">
+                <div class="db-con-l l">
+                    <ul class="ul-1 s s14">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                    <ul class="ul-2 s">
+                        <li>地址：重庆市大渡口区春晖路街道春晖路91号1-1号</li>
+                        <li>反馈建议：CQC@youth-maker.com</li>
+                        <li>客服电话：023-68249040</li>
+                    </ul>
+                </div>
+                <div class="db-con-r r s"><img src="images/erweima.png" width="92" height="92"><p>扫码关注微信公众平台</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"><div class="bottom-m center s s12">重庆青春实业有限公司<span class="ml15">渝ICP备13010370号-1</span><span class="ml15">渝B-20120039</span><span class="ml45">技术开发：重庆中恒玖联科技有限公司</span><span class="ml50">支持单位：共青团重庆市委</span></div></div>
+    <!--二维码、返回顶部-->
+    <div class="toolbar">
+        <a href="javascript:;" id="backTop" style="display: none;" class="toolbar-item toolbar-item-top"></a>
+        <a href="javascript:;" class="toolbar-item toolbar-item-weixin"><span class="toolbar-layer"></span></a>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/select.js" ></script>
+    <script type="text/javascript" src="js/layer/layer.js"></script>
+    <script type="text/javascript" src="js/plugin/swiper.jquery.min.js"></script>
+    <script type="text/javascript">
+        var swiper1 = new Swiper('.swiper-container', {
+            speed:700,
+            autoplay:false,
+            autoplayDisableOnInteraction:false,
+            slidesPerView: 1,
+            prevButton:'.swiper-button-prev',
+            nextButton:'.swiper-button-next',
+            loop: false,
+            /*effect : 'fade',
+            fade: {
+                crossFade: true
+            }*/
+        });
+    </script>
+    <script type="text/javascript">
+
+        //区域选择
+        $('.map .diy_select_list li').on('click',function(){
+            var txt = $(this).text();
+            var str = '';
+            var t = true;
+            var va = $('.sxList').find('.doMs');
+            $.each(va, function(i,e){
+                var d = $(e).children("span").html();
+                if(txt == d){
+                    t = false;
+                    return false;
+                }
+            });
+            if(t){
+                str = '<div class="doMs"><span>' + txt + '</span><a href="javascript:;" class="deLet"></a></div>';
+                $('.sxList').prepend(str);
+            }
+        });
+
+        //条件选择
+        $('.t-lb input').on('click',function(){
+            $(this).parent().siblings('.a').children('input').attr('checked',false);
+            var txt = $(this).attr('data-category');
+            var str = '';
+            var t = true;
+            var va = $('.sxList').find('.doMs');
+            $.each(va, function(i,e){
+                var d = $(e).children("span").html();
+                if(txt == d){
+                    t = false;
+                    $('.sxList .doMs').eq(i).remove();
+                    return false;
+                }
+            });
+            if(t){
+                str = '<div class="doMs"><span>' + txt + '</span><a href="javascript:;" class="deLet"></a></div>';
+                $('.sxList').prepend(str);
+            }
+        });
+
+        //移除条件
+        $(document).on('click','.deLet',function(){
+            var txt = $(this).siblings('span').text();
+            $('.t-lb input[type="checkbox"]').each(function(i,e){
+                var ckTxt = $(e).val();
+                if(ckTxt==txt){
+                    $(e).attr('checked',false);
+                }
+            });
+            $(this).parent().remove();
+        });
+
+        //行业属性不限
+        $('.hysxList input[type="checkbox"]:first').on('click',function(){
+            var ckS = $('.hysxList input[type="checkbox"]');
+            $.each(ckS,function(i,e){
+                var a = $(e).val();
+                var lbS = $('.sxList').find('.doMs');
+                $.each(lbS,function(index,element){
+                    var b = $(element).children("span").html();
+                    if(a==b){
+                        $('.sxList .doMs').eq(index).remove();
+                    }
+                })
+            });
+            $(this).parent().siblings().find('input[type="checkbox"]').attr('checked',false);
+        });
+
+        //增值服务不限
+        $('.zzfwList input[type="checkbox"]:first').on('click',function(){
+            var ckS = $('.zzfwList input[type="checkbox"]');
+            $.each(ckS,function(i,e){
+                var a = $(e).val();
+                var lbS = $('.sxList').find('.doMs');
+                $.each(lbS,function(index,element){
+                    var b = $(element).children("span").html();
+                    if(a==b){
+                        $('.sxList .doMs').eq(index).remove();
+                    }
+                })
+            });
+            $(this).parent().siblings().find('input[type="checkbox"]').attr('checked',false);
+        });
+
+        //位置条件不限
+        $('.wztjList input[type="checkbox"]:first').on('click',function(){
+            var ckS = $('.wztjList input[type="checkbox"]');
+            $.each(ckS,function(i,e){
+                var a = $(e).val();
+                var lbS = $('.sxList').find('.doMs');
+                $.each(lbS,function(index,element){
+                    var b = $(element).children("span").html();
+                    if(a==b){
+                        $('.sxList .doMs').eq(index).remove();
+                    }
+                })
+            });
+            $(this).parent().siblings().find('input[type="checkbox"]').attr('checked',false);
+        });
+
+        //价格不限
+        $('.jfList li').on('click',function(){
+            $(this).parents('.dv22').siblings('.dv22').find('input[type="checkbox"]').attr('checked',false);
+            $(this).parents('.dv22').siblings('.dv22').find('.tx').removeAttr('readonly').removeClass('hovernone');
+        });
+        //设置价格不限
+        $('.setJg').on('click',function(){
+            var a = $('.jfStyle').text();
+            var lbS = $('.sxList').find('.doMs');
+            $.each(lbS,function(index,element){
+                var b = $(element).children("span").html();
+                if(a==b){
+                    $('.sxList .doMs').eq(index).remove();
+                }
+            })
+            $(this).parents('.dv22').siblings('.dv22').find('.tx').attr('readonly','readonly').addClass('hovernone');
+        });
+
+        //清空
+        $('.clearBtn').on('click',function(){
+            $(this).siblings('.doMs').remove();
+            $('input[type="checkbox"]').attr('checked',false);
+        });
+
+        //显示隐藏
+        $('.cl-fhq-show li').hover(function(){
+            $(this).find('.cl-fhq-info .sp2').stop().show(200);
+        },function(){
+            $(this).find('.cl-fhq-info .sp2').stop().hide(200);
+        });
+
+    </script>
+
+</body>
+</html>

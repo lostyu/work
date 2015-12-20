@@ -1,0 +1,443 @@
+/* 个人中心 */
+.c1{color: #349aff;}
+.c2{color: #ffad1d;}
+.u-btn{
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background-color: #349aff;
+}
+.u-btn-default{
+    background-color: #e5e5e5;
+    color: #909494;
+}
+
+input[type="text"], input[type="password"]{
+    box-sizing: border-box;
+    padding: 0 10px;
+    line-height: 40px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea{
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+select{
+    min-width: 160px;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* 字数限制 */
+.j-maxLen{
+    position: relative;
+}
+.j-maxLen span{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+    color: #e5e5e5;
+}
+.m-upload{
+    display: inline-block;
+    width: 160px;
+    height: 120px;
+    background: url(../images/ty/bg-upload.jpg) no-repeat;
+}
+/* 表单 */
+.ty-form{}
+.ty-form .rq{
+    color: #f08519;
+}
+.ty-form .text{
+    color: #939a9a;
+}
+.ty-form .w100{
+    width: 100%;
+}
+.ty-form .item{
+    zoom: 1;
+    margin-bottom: 20px;
+}
+.ty-form .item:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.ty-form .item .lab{
+    float: left;
+    display: inline-block;
+    width: 125px;
+    margin-top: 8px;
+    margin-right: 10px;
+    text-align: right;
+}
+.ty-form .item .ipt{
+    float: left;
+    width: 505px;
+}
+
+
+/*  */
+.articleList{}
+.articleList li{
+    position: relative;
+    padding: 40px 0;
+    border-bottom: 1px solid #b6b6b6;
+}
+.articleList li:last-child{
+    border-bottom: none;
+}
+.articleList li .sc{
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+.articleList-img{
+    float: left;
+    margin-right: 40px;
+}
+.articleList-img img{}
+.articleList-text{
+}
+.articleList-text h2{
+    line-height: normal;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.articleList-text h2 a{
+    color: #2c2d32;
+}
+.articleList-text .meta{
+    margin-bottom: 10px;
+    color: #949a9a;
+    font-size: 14px;
+}
+.articleList-text .meta .time{
+    margin-left: 50px;
+}
+.articleList-text p{
+    color: #949a9a;
+    font-size: 14px;
+}
+
+/* 我创建的项目 */
+.inner{
+    padding: 30px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+}
+
+.ty-mycreate{}
+.ty-myxmList{
+    margin-left: -40px;
+    zoom: 1;
+}
+.ty-myxmList:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.ty-myxmList li{
+    position: relative;
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding: 15px;
+    width: 264px;
+    height: 326px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+}
+.ty-myxmList h2{
+    margin-bottom: 8px;
+    color: #2c2d32;
+    font-size: 20px;
+}
+.ty-myxmList img{}
+.ty-myxmList .btn{
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #349aff;
+}
+.ty-myxmList .btn-block{
+    display: block;
+}
+.ty-myxmList .btn1{}
+.ty-myxmList .btn1 a{}
+.ty-myxmList .btn2{
+    margin-bottom: 8px;
+}
+.ty-myxmList .btn2 a{
+    width: 125px;
+    box-sizing: border-box;
+}
+.ty-myxmList .zt{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    padding: 5px;
+    color: #fff;
+    background-color: #d0d0d0;
+}
+.ty-myxmList .zt1{
+    background-color: #04db97;
+}
+.ty-myxmList .zt2{
+    background-color: #349aff;
+}
+.ty-myxmList .zt3{
+    background-color: #000;
+}
+.ty-myxmList .bs{
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 138px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    background: url(../images/ty/bg-bs1.png) no-repeat;
+}
+.ty-myxmList .title{
+    position: relative;
+    padding: 10px 0 20px 0;
+    line-height: 22px;
+}
+.ty-myxmList .title img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.ty-myxmList .title .dz{
+    position: absolute;
+    right: 0;
+    top: 18px;
+    font-size: 14px;
+    color: #949a9a;
+}
+
+.ty-myxmList2{
+    width: 1008px;
+    margin-left: 8px;
+}
+.ty-myxmList2 li{
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.ty-myxmList3{
+    text-align: center;
+}
+.ty-myxmList3 li{
+    height: 255px;
+}
+.ty-myxmList3 p{
+    padding: 20px 0;
+}
+
+.ty-myxmList4 li{
+    height: 370px;
+}
+.ty-myxmList4 h2{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.ty-myxmList4 p{
+    margin-bottom: 5px;
+    font-size: 12px;
+    overflow:hidden;word-wrap:normal;white-space:nowrap;text-overflow:ellipsis;
+}
+.ty-myxmList4 .phb{
+    padding: 10px 0;
+    color: #949a9a;
+}
+
+
+/* 我辅导的项目 */
+.ty-myfd{}
+
+/* 我的发布进度 */
+.ty-myjd .inner{
+    padding: 30px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+}
+.ty-myjd .date{
+    width: 160px;
+    background: url(../images/ty/date.png) 120px center no-repeat;
+}
+.ty-myjd .form{
+    border-bottom: 1px solid #d0d0d0;
+}
+.ty-myjd .form li{
+    margin-bottom: 20px;
+}
+.ty-myjd .form li textarea{
+    width: 100%;
+}
+.ty-myjd .title{
+    margin-top: 20px;
+}
+.ty-myjd .alListBox{
+    padding: 40px;
+}
+.alListBox{
+    height: 410px;
+    overflow: hidden;
+}
+.alList{}
+.alList li{
+    position: relative;
+    padding-left: 127px;
+    padding-top: 25px;
+    height: 125px;
+    background: url(../images/ty/bg-anList.png) no-repeat;
+}
+.alList li .close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: url(../images/ty/close.png) no-repeat;
+}
+.alList .orange{
+    background-position: 0 0;
+}
+.alList .blue{
+    background-position: 0 -150px;
+}
+.alList .green{
+    background-position: 0 -300px;
+}
+.alList .yellow{
+    background-position: 0 -450px;
+}
+.alList .date{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 90px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.alList .pic{
+    margin-right: 15px;
+}
+.alList .pic img{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+}
+.alList .text h2{
+    font-size: 16px;
+    color: #000;
+}
+.alList .text p{
+    padding: 10px 0;
+    font-size: 16px;
+    color: #939a9a;
+}
+.open{
+    text-align: right;
+}
+.open a{
+    display: inline-block;
+    padding-right: 25px;
+    font-size: 14px;
+    color: #349aff;
+    background: url(../images/ty/bg-arrow.png) right center no-repeat;
+}
+
+/* 我的融资记录 */
+.ty-myjl{}
+.ty-myjl .inner{
+    padding: 30px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+}
+.alListBox2{
+    height: 640px;
+}
+.alListBox2 .alList{
+    padding: 40px;
+}
+.alListBox2 .text .tag{
+    margin-top: 20px;
+}
+
+/* 添加融资记录 */
+.ty-mytjjl{}
+
+
+.popup-form{
+    padding: 40px;
+}
+.popup-form .item{
+    margin-bottom: 20px;
+}
+.popup-form .w100{
+    width: 100%;
+}
+.popup-form .w60{
+    width: 60%;
+}
+.popBox{
+    position: fixed;
+    z-index: 11;
+    left: 50%;
+    top: 117px;
+    width: 480px;
+    margin-left: -241px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.popup-xgmm .ty-form .item .ipt{
+    width: 250px;
+}
+.popup-quanxian{
+    text-align: center;
+}
+.popup-quanxian .cnt{
+    padding: 40px 0;
+}
+.popup-quanxian .cnt p{
+    margin-bottom: 10px;
+}
+.popup-quanxian .close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/ty/close.png) no-repeat;
+}
+/* 绑定邮箱 */
+.popup-bdyx{}

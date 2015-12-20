@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link href="css/myBase.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/cj.css">
+    <link rel="stylesheet" href="css/kalendae.css">
 </head>
 
 <body>
@@ -92,30 +93,9 @@
     <div class="m-wrap m-bgwhite">
         <div class="mt30">
             
-            <div class="myDialog bor-gray bor-solid-1a warpper-white hidden">
-                <div class="wb94 pal3per par3per h35px lh35px Fgray-3 F150em bor-gray bor-solid-1b ">
-                    添加标签
-                    <img src="images/icon-close.png" class="fr mat5 pointer close-dialog">
-                </div>
-                <div class="wb100 F125em">
-                    <div class="clear1"></div>
-                    <div class="wb30 fl text-right lh30px Fgray-3">
-                        标签名
-                    </div>
-                    <div class="wb68 fr">
-                    	<div class=" bor-gray bor-solid-1a radius5 wb78 over-hidden pal2per">
-                        	<input type="text" class="h30px lh30px Fgray-3 wb100 bor-none tab-name t-form-input" placeholder="标签名">
-                        </div>
-                    </div>
-                    <div class="clear1"></div>
-                    <div class="wb68 fr">
-                        <a href="javascript:;" class="display-inline warpper-blue h30px lh30px wb80 bor-none pointer text-center radius5 F125em white add-tab">确定</a>
-                    </div>
-                    <div class="clear1"></div>
-                </div>
-            </div>
             <div class="wb100">
                 <div class="w1200px center bor-gray bor-solid-1a">
+                	
                     <div class="wb100">
                         <div class="wb96 pal2per par2per h50px lh50px Fgray-3 bor-gray bor-solid-1b">
                             <span class="h50px lh50px bor-blue bor-solid-2b F225em mar20 display-inline">
@@ -139,8 +119,20 @@
                                 <span class="Forange-1 mar5">*</span>营业收入
                             </div>
                             <div class="wb68 fr">
-                            	<div class="bor-gray bor-solid-1a radius5 wb23 Fgray-3 pal2per over-hidden">
-                                	<input type="text" class="h40px lh40px wb100 bor-none pro-income t-form-input" placeholder="50W以下">
+                            	<div class="bor-gray bor-solid-1a radius5 wb23 pal2per over-hidden Fgray-3">
+                                     <!--<div class="mySelect h40px lh40px wb100 bor-none">
+                                     	<p class="select-text wb70 pal5per fl Fgray-3">50W以下</p>
+                                        <input type="hidden" class="pro-income t-form-input">
+                                        <p class="select-btn fr mat15 mar5"></p>
+                                        <div class="wb100 hidden">
+                                            <ul class="myOption">
+                                                <li>50W以下</li>
+                                                <li>50-100W</li>
+                                                <li>100W以上</li>
+                                            </ul>
+                                        </div>
+                                     </div>-->
+                                     <input type="text" class="h40px lh40px Fgray-3 wb100 bor-none pro-income t-form-input" placeholder="50W以下">
                                 </div>
                             </div>
                             <div class="clear1"></div>
@@ -148,9 +140,22 @@
                                 <span class="Forange-1 mar5">*</span>从业人员
                             </div>
                             <div class="wb68 fr">
-                            	<div class="bor-gray bor-solid-1a radius5 wb23 pal2per over-hidden">
-                                	<input type="text" class="h40px lh40px wb100 bor-none Fgray-3 pro-staff t-form-input" placeholder="10人以下">
+                            	<div class="bor-gray bor-solid-1a radius5 wb23 pal2per over-hidden Fgray-3">
+                                     <!--<div class="mySelect h40px lh40px wb100 bor-none">
+                                     	<p class="select-text wb70 pal5per fl Fgray-3">10人以下</p>
+                                        <input type="hidden" class="pro-staff t-form-input">
+                                        <p class="select-btn fr mat15 mar5"></p>
+                                        <div class="wb100 hidden">
+                                            <ul class="myOption">
+                                                <li>10人以下</li>
+                                                <li>10-50人</li>
+                                                <li>50-100人</li>
+                                            </ul>
+                                        </div>
+                                     </div>-->
+                                     <input type="text" class="h40px lh40px Fgray-3 wb100 bor-none pro-staff t-form-input" placeholder="10人以下">
                                 </div>
+                            
                             </div>
                             <div class="clear1"></div>
                             <div class="clear1"></div>
@@ -158,23 +163,83 @@
                                 <span class="Forange-1 mar5">*</span>所在地
                             </div>
                             <div class="wb68 fr">
-                                <select class="h40px lh40px bor-gray bor-solid-1a radius5 wb24 mar3per pal2per Fgray-3 area-1">
-                                    <option>请选择</option>
-                                </select>
-                                <select class="h40px lh40px bor-gray bor-solid-1a radius5 wb24 mar3per pal2per Fgray-3 area-2">
-                                    <option>请选择</option>
-                                </select>
-                                <select class="h40px lh40px bor-gray bor-solid-1a radius5 wb24 mar3per pal2per Fgray-3 area-3">
-                                    <option>请选择</option>
-                                </select>
+                                <div class="bor-gray bor-solid-1a radius5 wb25 Fgray-3 fl mar3per">
+                                    <div class="mySelect h40px lh40px wb100 bor-none area-1-area">
+                                     	<p class="select-text wb70 pal5per fl Fgray-3">请选择</p>
+                                        <input type="hidden" class="area-1 t-form-input">
+                                        <p class="select-btn fr mat15 mar5"></p>
+                                        <div class="wb100 hidden">
+                                            <ul class="myOption">
+                                                <li data-value="1">请选择</li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="bor-gray bor-solid-1a radius5 wb25 Fgray-3 fl mar3per">
+                                    <div class="mySelect h40px lh40px wb100 bor-none area-2-area">
+                                     	<p class="select-text wb70 pal5per fl Fgray-3">请选择</p>
+                                        <input type="hidden" class="area-2 t-form-input">
+                                        <p class="select-btn fr mat15 mar5"></p>
+                                        <div class="wb100 hidden">
+                                            <ul class="myOption">
+                                                <li data-value="1">请选择</li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="bor-gray bor-solid-1a radius5 wb25 Fgray-3 fl mar3per">
+                                    <div class="mySelect h40px lh40px wb100 bor-none area-3-area">
+                                     	<p class="select-text wb70 pal5per fl Fgray-3">请选择</p>
+                                        <input type="hidden" class="area-3 t-form-input">
+                                        <p class="select-btn fr mat15 mar5"></p>
+                                        <div class="wb100 hidden">
+                                            <ul class="myOption">
+                                                <li data-value="1">请选择</li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                </div>
                             </div>
                             <div class="clear1"></div>
+                            <div class="wb30 fl text-right">
+                                <span class="Forange-1 mar5">*</span>行业分类
+                            </div>
+                            <div class="wb68 fr">
+                            	<div class="bor-gray bor-solid-1a radius5 wb25 Fgray-3">
+                                    <div class="mySelect h40px lh40px wb100 bor-none pro-type-area">
+                                     	<p class="select-text wb70 pal5per fl Fgray-3">行业分类</p>
+                                        <input type="hidden" class="pro-type t-form-input">
+                                        <p class="select-btn fr mat15 mar5"></p>
+                                        <div class="wb100 hidden">
+                                            <ul class="myOption">
+                                                <li data-value="1">行业分类</li>
+                                                <li data-value="2">行业分类</li>
+                                                <li data-value="3">行业分类</li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="clear1"></div>
+                            
                             <div class="wb30 fl text-right">
                                 <span class="Forange-1 mar5">*</span>标签
                             </div>
                             <div class="wb68 fr">
-                                <img src="images/icon-add.png" class="fl mat5 open-dialog pointer pro-tab">
-                                <div class="mal10 tab-area fl"></div>
+                                <div class="bor-gray bor-solid-1a radius5 wb50 Fgray-3 fl mar10">
+                                    <div class="mySelect h40px lh40px wb100 bor-none tab-col-area">
+                               			<input type="text" class="h40px lh40px Fgray-3 wb100 bor-none radius5 t-form-input tab-text" placeholder="标签">
+                                        <div class="wb100 hidden">
+                                            <ul class="myOption tab-add-area">
+                                                <li>行业分类1</li>
+                                                <li>行业分类2</li>
+                                                <li>行业分类3</li>
+                                                <li class="tab-add">添加“行业分类”</li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="tab-area fl"></div>
                                 <input type="hidden" name="tab-param" class="tab-param">
                             </div>
                             <div class="clear1"></div>
@@ -247,7 +312,7 @@
                             </div>
                             <div class="wb68 fr">
                             	<div class="bor-gray bor-solid-1a radius5 wb23 Fgray-3 pal2per over-hidden">
-                                	<input type="text" class="h40px lh40px wb100 bor-none com-date t-form-input" placeholder="请选择日期">
+                                	<input placeholder="请选择日期" class="form-control layer-date h40px lh40px wb100 bor-none com-date t-form-input" id="start">
                                 </div>
                             </div>
                             <div class="clear1"></div>
@@ -339,6 +404,7 @@
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/layer/layer.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/layer/laydate/laydate.js"></script>
     <script src="js/myBase.js"></script>
     <script>
     $(function() {
@@ -358,39 +424,53 @@
         $(".fileBtn").click(function() {
             $(".fileObj").click();
         })
-
-        $(".add-tab").click(function() {
-
-            var flag = true;
-
-            var val = $(".tab-name").val();
-            var temp = "";
-            var _target = $(".tab-area");
-            if (val != "" && val != null && val != undefined) {
-                temp = '<p class="tab">' + val + '<span class="tab-del">X</span></p>';
-            }
-
-            $(".tab-area .tab").each(function(index, element) {
-                var val2 = $(this).text();
-                val2 = val2.substring(val2, val2.length - 1);
-
-                if (val2 == val) {
-                    flag = false;
-                }
-            });
-
-            if (flag) {
-                _target.append(temp);
-            }
-
-            bindEvent();
-            updateParam();
-
-            $(".myDialog").hide(0);
-            $(".myDialog-Warpper").hide(0);
-
-        })
-
+		
+		$(".mySelect .select-btn").click(function(){
+			$(this).parent().find(".myOption").parent().show(0)
+		})
+		
+		$(".myOption li").click(function(){
+			
+			if($(this).hasClass("tab-add")){
+				$(".tab-text").val($(this).attr("data-value"));
+				$(".tab-text").attr("data-value",$(this).attr("data-value"));
+				addTab($(".tab-text").val());
+				$(this).parent().parent().hide(0);
+				return false;
+			}
+			
+			$(this).parent().parent().hide(0);
+			$(this).parent().parent().parent().find(".select-text").text($(this).text());
+			$(this).parent().parent().parent().find("input").val($(this).text());
+			
+			if($(this).parent().hasClass("tab-add-area")){
+				
+				$(".tab-text").val($(this).text());
+				
+				addTab($(this).text());	
+			}
+		
+		})
+		
+		$(".tab-text").unbind("focus").unbind("blur").unbind("keyup").unbind("keydown").unbind("change").focus(function(){
+			var temp = $(this).val();
+			$(this).val("");
+			$(this).attr("data-cache",temp);
+		}).blur(function(){
+			var temp = $(this).attr("data-cache");
+			$(this).val(temp);
+		}).keyup(function(){
+			$(this).parent().find(".myOption").parent().show(0);
+			$(".tab-add").text("添加‘"+$(this).val()+"’").attr("data-value",$(this).val());
+		}).keydown(function(){
+			$(this).parent().find(".myOption").parent().show(0);
+			$(".tab-add").text("添加‘"+$(this).val()+"’").attr("data-value",$(this).val());
+		}).change(function(){
+			$(this).parent().find(".myOption").parent().show(0);
+			$(".tab-add").text("添加‘"+$(this).val()+"’").attr("data-value",$(this).val());
+		})
+		
+			
         $(".textarea-col").keyup(function() {
             var _this = $(this);
             var length = _this.val().length;
@@ -398,7 +478,7 @@
             _this.parent().parent().find(".current-length").text(length);
             if (length >= _max) {
                 var temp = _this.val();
-                _temp = temp.substring(0, _max);
+                _temp = temp.substring(0, _max-1);
                 _this.val(_temp);
             }
         }).keydown(function() {
@@ -408,7 +488,7 @@
             _this.parent().parent().find(".current-length").text(length);
             if (length >= _max) {
                 var temp = _this.val();
-                _temp = temp.substring(0, _max);
+                _temp = temp.substring(0, _max-1);
                 _this.val(_temp);
             }
         }).change(function() {
@@ -418,16 +498,52 @@
             _this.parent().parent().find(".current-length").text(length);
             if (length >= _max) {
                 var temp = _this.val();
-                _temp = temp.substring(0, _max);
+                _temp = temp.substring(0, _max-1);
                 _this.val(_temp);
             }
         })
-
+	
     })
+	
+	function addTab(val){
+		
+		var flag = true;
+		var temp = "";
+		var _target = $(".tab-area");
+		if (val != "" && val != null && val != undefined) {
+			temp = '<p class="tab">' + val + '<span class="tab-del">X</span></p>';
+		}
+
+		$(".tab-area .tab").each(function(index, element) {
+			var val2 = $(this).text();
+			val2 = val2.substring(val2, val2.length - 1);
+
+			if (val2 == val) {
+				flag = false;
+			}
+			
+		});
+
+		if (flag && $(".tab-area .tab").length<3) {
+			_target.append(temp);
+		}
+		
+		if($(".tab-area .tab").length>=3){
+			$(".tab-text").attr("disabled","disabled");
+		}
+		
+		bindEvent();
+		updateParam();
+	}
 
     function bindEvent() {
         $(".tab").unbind("click").click(function() {
             $(this).remove();
+			
+			if($(".tab-area .tab").length<3){
+				$(".tab-text").removeAttr("disabled");
+			}
+			
         })
         updateParam();
     }
@@ -467,6 +583,7 @@
             var proName = $.trim($(".pro-name").val());
             var proIncome = $.trim($(".pro-income").val());
             var proStaff = $.trim($(".pro-staff").val());
+			var proType = $.trim($(".pro-type").val());
             var area1 = $.trim($(".area-1").val());
             var area2 = $.trim($(".area-2").val());
             var area3 = $.trim($(".area-3").val());
@@ -479,7 +596,7 @@
             var comName = $.trim($(".com-name").val());
             var comDate = $.trim($(".com-date").val());
             var comInfo = $.trim($(".com-info").val());
-            var agree = $(".agree").attr("checked");
+            var agree = $(".agree").prop("checked");
 
             //项目名称
             if (proName == null || proName == "") {
@@ -512,7 +629,7 @@
             }
             //所在地
             if (area1 == null || area1 == "") {
-                layer.tips('请选择所在地', '.area-1', {
+                layer.tips('请选择所在地', '.area-1-area', {
                     tips: [1, 'Red'],
                     time: 3000
                 });
@@ -520,7 +637,7 @@
                 return false;
             }
             if (area2 == null || area2 == "") {
-                layer.tips('请选择所在地', '.area-2', {
+                layer.tips('请选择所在地', '.area-2-area', {
                     tips: [1, 'Red'],
                     time: 3000
                 });
@@ -528,14 +645,23 @@
                 return false;
             }
             if (area3 == null || area3 == "") {
-                layer.tips('请选择所在地', '.area-3', {
+                layer.tips('请选择所在地', '.area-3-area', {
                     tips: [1, 'Red'],
                     time: 3000
                 });
                 $(".area-3").focus();
                 return false;
             }
-
+			
+            //行业分类
+            if (proType == null || proType == "") {
+                layer.tips('请选择行业分类', '.pro-type-area', {
+                    tips: [1, 'Red'],
+                    time: 3000
+                });
+                return false;
+            }
+			
             //公司介绍
 
             if (proInfo1 == null || proInfo1 == "") {
@@ -626,7 +752,25 @@
             }
 
         });
-    })
+    	
+		
+	
+	})
+	var start = {
+		elem: '#start',
+		format: 'YYYY/MM/DD',
+		min: laydate.now(), //设定最小日期为当前日期
+		max: '2099-06-16', //最大日期
+		istime: true,
+		istoday: false,
+		choose: function(datas){
+			 end.min = datas; //开始日选好后，重置结束日的最小日期
+			 end.start = datas //将结束日的初始值设定为开始日
+		}
+	};
+
+	laydate(start);
+	
     </script>
 </body>
 
