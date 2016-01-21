@@ -12,6 +12,59 @@
 </head>
 <body>
 
+<!-- 列表 -->
+<ul class="m-list m-list-4">
+    <li>
+        <a href="javascript:;"><img class="pic" width="230" height="130" src="" alt=""></a>
+        <div class="bd">
+            <h2 class="tit"><a href="javascript:;">赛伯乐朱磊：未来科技下生活</a></h2>
+            <span class="u-tag">园区动态</span>
+        </div>
+    </li>
+    <li>
+        <a href="javascript:;"><img class="pic" width="230" height="130" src="" alt=""></a>
+        <div class="bd">
+            <h2 class="tit"><a href="javascript:;">赛伯乐朱磊：未来科技下生活</a></h2>
+            <span class="u-tag">园区动态</span>
+        </div>
+    </li>
+    <li>
+        <a href="javascript:;"><img class="pic" width="230" height="130" src="" alt=""></a>
+        <div class="bd">
+            <h2 class="tit"><a href="javascript:;">赛伯乐朱磊：未来科技下生活</a></h2>
+            <span class="u-tag">园区动态</span>
+        </div>
+    </li>
+    <li>
+        <a href="javascript:;"><img class="pic" width="230" height="130" src="" alt=""></a>
+        <div class="bd">
+            <h2 class="tit"><a href="javascript:;">赛伯乐朱磊：未来科技下生活</a></h2>
+            <span class="u-tag">园区动态</span>
+        </div>
+    </li>
+</ul>
+<!-- /列表 -->
+
+
+<!-- 面包屑 -->
+<div class="m-crm">
+    <a href="javascript:;">首页</a><span class="fg">&gt;</span><span>创客活动</span>
+</div>
+<!-- /面包屑 -->
+
+<!-- 幻灯片 -->
+<div class="m-banner j-banner">
+    <div class="g-wrap">
+        <div class="cnt">
+            <a class="prev" href="javascript:;"></a>
+            <a class="next" href="javascript:;"></a>
+            <ul class="pic"></ul>
+            <ul class="nav"></ul>
+        </div>
+    </div>
+</div>
+<!-- /幻灯片 -->
+
 <!-- 头部导航 -->
 <div class="m-hd">
     <div class="g-wrap f-cb">
@@ -201,7 +254,19 @@
 </ul>
 <!-- /列表扩展3 -->
 
+
+
 <script src="../js/jquery.1.11.1.min.js"></script>
 <script src="../js/main.js"></script>
+<script>
+    $(function() {
+        main.ui.slide($('.j-banner'), [
+            {imgUrl:'../img/upload/banner1.jpg', href: 'xxx', bgc:'#333'},
+            {imgUrl:'../img/upload/banner2.jpg', href: 'xxx', bgc:'#555'},
+            {imgUrl:'../img/upload/banner1.jpg', href: 'xxx', bgc:'#444'},
+            {imgUrl:'../img/upload/banner2.jpg', href: 'xxx', bgc:'#999'}
+        ]);
+    });
+</script>
 </body>
 </html>

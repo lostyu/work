@@ -1,5 +1,5 @@
 $(function () {
-    main.app.index();
+
 });
 
 var main = {};
@@ -82,12 +82,89 @@ main.ui.tabs = function(objTabNav, objTabPanel, type) {
         objTabPanel.hide().eq(index).show();
     });
 };
+/**
+ * 幻灯片
+ * @param $obj  幻灯片父容器
+ * @param aData 数据[{imgUrl:xxx, href:xxx, bgc:xxx}]
+ */
+main.ui.slide = function($obj, aData) {
+    var $prev = $obj.find('.prev');
+    var $next = $obj.find('.next');
+    var $listWp = $obj.find('.pic');
+    var $list = null;
+    var $navWp = $obj.find('.nav');
+    var $nav = null;
+    var current = 0;
+    var arrBg = [];
+    var timer = null;
+
+    function init(){
+        var str = '';
+        var strNav = '';
+        for(var i=0;i<aData.length;i++){
+            str += '<li style="display: none;"><a href="'+ aData[i]['href'] +'"><img width="1130" height="300" src="'+aData[i]['imgUrl']+'" alt=""/></a></li>';
+            arrBg.push(aData[i]['bgc']);
+            strNav += '<li></li>';
+        }
+        $listWp.html(str);
+        $navWp.html(strNav);
+
+        $list = $obj.find('.pic li');
+        $list.eq(current).show();
+
+        $nav = $obj.find('.nav li');
+        $nav.eq(current).addClass('z-crt');
+
+        $obj.css('backgroundColor',  arrBg[current]);
+    }
+    init();
+
+    function tab() {
+        $nav.removeClass('z-crt');
+        $list.stop().fadeOut();
+        $list.eq(current).stop().fadeIn();
+        $nav.eq(current).addClass('z-crt');
+        $obj.css('backgroundColor',  arrBg[current]);
+    }
+
+    timer = setInterval(function() {
+        current++;
+        current%=aData.length;
+        tab();
+    }, 5000);
+
+    $obj.hover(function() {
+        clearInterval(timer);
+    }, function() {
+        timer = setInterval(function() {
+            current++;
+            current%=aData.length;
+            tab();
+        }, 5000);
+    });
+
+    $next.click(function() {
+        current++;
+        current%=aData.length;
+        tab();
+    });
+
+    $prev.click(function() {
+        current--;
+        if(current < 0){
+            current = aData.length-1;
+        }
+        tab();
+    });
+
+    $nav.click(function() {
+        current = $(this).index();
+        tab();
+    });
+};
 
 main.app = {};
 main.app.index = function() {
     main.ui.pageScroll();
     main.ui.tabs($('.j-tab-nav1 li'), $('.j-tab-panel1 .panel'));
-
-
-
 };

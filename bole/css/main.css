@@ -56,11 +56,13 @@ a{ color: #333;}
 .f-csh{cursor:help;}
 .f-csm{cursor:move;}
 .f-usn{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
+.f-mb20{margin-bottom: 20px;}
 
 /*====== 站点重置 ======*/
 html, body{ font-family: '微软雅黑'; font-size: 16px;}
 h1,h2,h3,h4,h5,h6{ font-weight: normal;}
 a:hover{ text-decoration: underline;}
+body{background-color: #fafafa;}
 
 /* 统一清除浮动 */
 .m-list:after{display:block;visibility:hidden;clear:both;height:0;overflow:hidden;content:'.';}
@@ -69,6 +71,8 @@ a:hover{ text-decoration: underline;}
 /*====== 布局 ======*/
 .g-wrap{width:1130px;margin-left: auto; margin-right: auto;}
 .g-wrap2{width:950px;margin-left: auto; margin-right: auto;}
+.g-mn{width: 1000px;float: left;}
+.g-sd{width: 130px;float: right;}
 
 /*====== 模块 ======*/
 /* 头部导航 */
@@ -81,6 +85,9 @@ a:hover{ text-decoration: underline;}
 .m-hd li a{ display: block; padding:0 20px; line-height: 49px;}
 .m-hd .login{ position: absolute; top: 0; right: 50px; line-height: 49px; color: #999;}
 .m-hd .login a{ color: #999;}
+.m-hd .z-crt a{ color: #3499cd;}
+/* 头部导航扩展 */
+.m-hd-1{ display: block; position: relative;}
 
 /* 侧边导航 */
 .m-navSd{ position: fixed; z-index: 9; top: 50%; right: 50px; margin-top: -52px; cursor: pointer;}
@@ -113,7 +120,6 @@ a:hover{ text-decoration: underline;}
 .m-list .pic{ display: block;}
 .m-list .tit{ margin: 5px 0 15px; overflow:hidden;word-wrap:normal;white-space:nowrap;text-overflow:ellipsis;}
 .m-list .bd{ height: 60px; padding: 10px 10px 0;}
-
 /* 列表扩展2 */
 .m-list-2{ width: 880px; margin-left: 0;}
 .m-list-2 li{ width: 220px; padding: 20px 0; margin-left: 0; text-align: center;}
@@ -121,7 +127,6 @@ a:hover{ text-decoration: underline;}
 .m-list-2 .tit{ margin: 16px 0 6px; font-weight: bold;}
 .m-list-2 .bd{ height: auto; padding: 0;}
 .m-list-2 .bd p{font-size: 12px; margin-bottom: 10px;}
-
 /* 列表扩展3 */
 .m-list-3{ margin-left: -16px;}
 .m-list-3 li{ width: 270px; height: auto; margin-left: 16px; background-color: transparent;}
@@ -130,6 +135,45 @@ a:hover{ text-decoration: underline;}
 .m-list-3 .tit a{ font-size: 14px; color: #fff;}
 .m-list-3 .pic{ border: 1px solid transparent;}
 .m-list-3 .pic:hover{ border: 1px solid #0a8fcf;}
+/* 列表扩展4 */
+
+/* 图文信息列表 */
+.m-picTextList{}
+.m-picTextList .item{ padding-bottom: 10px; margin-bottom: 10px; overflow: hidden; border-bottom: 1px dotted #cecece;}
+.m-picTextList .pic{float: left; margin-right: 10px;}
+.m-picTextList .text{}
+.m-picTextList .tit{ font-size: 18px; font-weight: bold;}
+.m-picTextList .date{ padding: 16px 0 10px; color: #585858; font-size: 14px;}
+.m-picTextList .cnt{ line-height: 24px; color: #585858; font-size: 14px;}
+.m-picTextList .item:last-child, .m-picTextList .last{ padding-bottom: 0; margin-bottom: 0; border-bottom: none;}
+
+/* banner */
+.m-banner{ height: 300px; background-color: #101a26;}
+.m-banner .cnt{ width: 1130px; height: 300px; position: relative;}
+.m-banner .pic li{ position: absolute;}
+.m-banner .nav{ position: absolute; bottom: 20px; width: 100%; text-align: center;}
+.m-banner .nav li{ display: inline-block; width: 8px; height: 8px; margin:0 2px; border-radius: 50%; cursor: pointer; background-color: #969ba2;}
+.m-banner .nav .z-crt{border-color: #0a8ecf; background-color: #0a8ecf;}
+.m-banner .prev, .m-banner .next{ position: absolute; top: 50%; width: 37px; height: 63px; margin-top: -31px; background: url(../img/bg-banner.png) no-repeat;}
+.m-banner .prev{ left: -47px; background-position: 0 0;}
+.m-banner .next{ right: -47px; background-position: 0 -126px;}
+.m-banner .prev:hover{ background-position: 0 -63px;}
+.m-banner .next:hover{ background-position: 0 -189px;}
+.m-banner-1{background: url(../img/bg-bn1.jpg) center no-repeat;}
+
+/* 面包屑 */
+.m-crm{ padding: 15px 0; font-size: 14px;}
+.m-crm a{ color: #333;}
+.m-crm .fg{ padding: 0 5px;}
+
+/* 内容容器 */
+.m-box{ padding: 20px; background-color: #fff; box-shadow: 0 1px 1px #e0e0e0;}
+
+/* 内容图文 */
+.m-content{}
+.m-content h2{ margin-bottom: 20px; font-size: 20px; font-weight: bold;}
+.m-content p{ margin-bottom: 20px; font-size: 14px; line-height: 24px;}
+.m-content img{ max-width: 100%;}
 
 /*====== 元件 ======*/
 .u-br3{border-radius: 3px;}
@@ -137,6 +181,7 @@ a:hover{ text-decoration: underline;}
 .u-btn{ display: inline-block; padding: 0 35px; line-height: 48px; border: 1px solid #93e3ec; font-size: 20px; color: #99ccff; text-align: center;}
 .u-btn-1{ border-radius: 30px; color: #0099cc; border-color: #0a8fcf;}
 .u-btn-2{ line-height: 38px; font-size: 16px; color: #fff; border: 1px solid #fff;}
+.u-loadBtn{ display: block;line-height: 36px; font-size: 16px; text-align: center; color: #666; box-shadow: 0 1px 1px #e9e9e9; background-color: #fff;}
 
 /*====== 首页 ======*/
 .m-section1{ position: relative; height: 950px; background: url(../img/bg-bg1.jpg) center bottom no-repeat;}
@@ -170,3 +215,49 @@ a:hover{ text-decoration: underline;}
 .m-section4 .title h2{ padding-bottom: 12px; font-size: 48px; font-weight: bold;}
 .m-section4 .title p{ font-size: 18px;}
 .m-section4 .u-btn{ box-sizing: border-box; width: 290px;}
+
+/*====== 关于我们 ======*/
+.m-about{}
+.m-about .title{ margin-bottom: 30px; font-size: 20px; font-weight: bold;}
+.m-about .navSd{ background: url(../img/bg-aboutSd.png) 12px no-repeat;}
+.m-about .navSd li{ padding: 0 16px 0 40px; font-size: 18px;}
+.m-about .navSd a{ display: block; line-height: 42px;}
+.m-about .navSd .z-crt{ background: url(../img/bg-aboutSd-h.png) 8px 12px no-repeat;}
+
+.m-about .js{}
+.m-about .dongtai{}
+.m-about .fzlc{}
+.m-about .fzlc .m-lc{ width: 560px; margin: 0 auto; }
+.m-about .fzlc .m-lc li{ position: relative; padding-left: 280px; height: 130px; background: url(../img/bg-fzlc.png) 257px 24px repeat-y;}
+.m-about .fzlc .m-lc .no-rep{ background-repeat: no-repeat;}
+.m-about .fzlc .m-lc .tit{ margin-bottom: 10px; font-size: 20px; }
+.m-about .fzlc .m-lc .date{ font-size: 24px; color: #3e9efe;}
+.m-about .fzlc .m-lc .nianf{ position: absolute; left: 0; width: 246px; height: 64px; text-align: right;}
+.m-about .fzlc .m-lc .nianf .tag{ display: inline-block; padding:0 10px; min-width: 64px; height: 64px; line-height: 64px; text-align: center; background-color: #36ba71; color: #fff; font-size: 30px;}
+.m-about .fzlc .m-lc .nianf .c1{background-color: #faa0c6;}
+.m-about .fzlc .m-lc .nianf .c2{background-color: #8ecdf6;}
+.m-about .fzlc .m-lc .nianf .c3{background-color: #f9b72a;}
+.m-about .fzlc .m-lc .nianf .c4{background-color: #e3cfae;}
+.m-about .fzlc .m-lc .nianf .c5{background-color: #ff937c;}
+.m-about .fzlc .m-lc .nianf .block{ display: block; text-align: right;}
+.m-about .fzlc .m-lc .dian{ position: absolute; left: 253px; bottom: 0; width: 24px; height: 24px; background: url(../img/bg-fzlc-dot.png) no-repeat;}
+.m-about .concat .addr{ margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px dotted #cecece; background: url(../img/bg-concat.png) no-repeat;}
+.m-about .concat .addr li{ padding-left: 26px; line-height: 36px;}
+.m-about .concat .addr .tit{ font-size: 18px; font-weight: bold;}
+.m-about .concat .addr.last{ border-bottom: none; padding-bottom: 0; margin-bottom: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
