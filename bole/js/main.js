@@ -1,19 +1,25 @@
 $(function () {
+    // 首页
+    main.ui.pageScroll();
+    main.ui.tabs($('.j-tab-nav1 li'), $('.j-tab-panel1 .panel'));
+    main.ui.navHover($('.j-nav'));
+    $('#login').validate();
 
+    // 园区企业
+    main.ui.card($('.j-card'));
 });
 
 var main = {};
 
 main.ui = {};
 main.ui.pageScroll = function () {
-    var $hd = $('.m-hd');
+    var $hd = $('.j-hd');
     var $window = $(window);
-    var $navSdLi = $('.m-navSd li');
+    var $navSdLi = $('.j-navSd li');
     var $body = $('body, html');
 
     $window.scroll(function () {
         var _top = $(this).scrollTop();
-        console.log(_top);
 
         if (_top <= 50) {
             $hd.stop().fadeOut();
@@ -162,9 +168,54 @@ main.ui.slide = function($obj, aData) {
         tab();
     });
 };
+main.ui.card = function($obj) {
+    var $aLi = $obj.find('li');
+    var current = $aLi.length - 1;
+
+    function init() {
+        $aLi.each(function(index, elem) {
+            $(this).css({
+                left: index*212,
+                zIndex: index+1
+            });
+        });
+
+        $aLi.mouseover(function() {
+            var $this = $(this);
+            current = $this.index();
+
+            $aLi.each(function(index, elem) {
+                if(index > current){
+                    $(elem).stop().animate({'left': index*212+282});
+                }else{
+                    $(elem).stop().animate({'left': index*212});
+                }
+            });
+        });
+    }
+    init();
+};
+main.ui.navHover = function($obj) {
+    var $line = $obj.find('.line');
+    var $aLi = $obj.find('li');
+    var current;
+
+    $aLi.hover(function() {
+        $line.show();
+        if(!current){
+            current = $(this).index();
+            $line.css('left', current * 137+26);
+        }else{
+            current = $(this).index();
+            $line.stop().animate({left: current * 137+26});
+        }
+
+
+
+    }, function() {
+        $line.hide();
+    });
+};
+
 
 main.app = {};
-main.app.index = function() {
-    main.ui.pageScroll();
-    main.ui.tabs($('.j-tab-nav1 li'), $('.j-tab-panel1 .panel'));
-};

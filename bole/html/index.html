@@ -13,7 +13,7 @@
 <body>
 
 <!-- 头部导航 -->
-<div class="m-hd">
+<div class="m-hd j-hd">
     <div class="g-wrap f-cb">
         <h1><div class="text">赛伯乐|中国投资</div><a href="javascript:;"><img width="90" height="33" src="../img/logo2.png" alt="" title="赛伯乐|中国投资"/></a></h1>
         <ul>
@@ -31,7 +31,7 @@
 <!-- /头部导航 -->
 
 <!-- 侧边导航 -->
-<ul class="m-navSd"><li class="z-crt"></li><li></li><li></li><li></li></ul>
+<ul class="m-navSd j-navSd"><li class="z-crt"></li><li></li><li></li><li></li></ul>
 <!-- /侧边导航 -->
 
 <!-- 首页模块1 -->
@@ -40,7 +40,7 @@
 	<div class="g-wrap2">
 		<div class="logo"><img src="../img/logo.png" alt=""></div>
 	    <!-- 导航 -->
-	    <div class="m-nav">
+	    <div class="m-nav j-nav">
 	        <div class="line"></div>
 	        <ul>
 	            <li><a href="javascript:;">首页</a></li>
@@ -98,6 +98,34 @@
         </div>
         <div class="tab-panel j-tab-panel1">
             <div class="panel" style="display: block;">
+                <!-- 列表 -->
+                <ul class="m-list m-list-5">
+                    <li>
+                        <img class="pic" width="257" height="274" src="../img/img-cyz1.png" alt="">
+                        <div class="bd">
+                            <h2><span class="tit">600</span><span class="tit1">元</span> 工位/月</h2>
+                            <p>独立的开敞式办公间<br />自由交流无障碍</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="pic" width="257" height="274" src="../img/img-cyz2.png" alt="">
+                        <div class="bd">
+                            <h2><span class="tit">创客咖啡</span></h2>
+                            <p>创业者最想要的那杯“咖啡”<br />灵感的发源地</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="pic" width="257" height="274" src="../img/img-cyz3.png" alt="">
+                        <div class="bd">
+                            <h2><span class="tit">休闲会客区</span></h2>
+                            <p>办公室里有各种玩乐设施<br />让工作不再无趣</p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- /列表 -->
+            </div>
+            <div class="panel">2</div>
+            <div class="panel">
                 <!-- 列表扩展 -->
                 <ul class="m-list m-list-2">
                     <li>
@@ -167,8 +195,6 @@
                 </ul>
                 <!-- /列表扩展 -->
             </div>
-            <div class="panel">2</div>
-            <div class="panel">3</div>
             <div class="panel">4</div>
         </div>
         <ul class="tab-nav j-tab-nav1">
@@ -181,7 +207,7 @@
                 <p>项目融资  项目投资</p>
             </li>
             <li>
-                <h3>创意指导</h3>
+                <h3>创业指导</h3>
                 <p>大咖导师  每周活动</p>
             </li>
             <li>
@@ -273,6 +299,56 @@
 </div>
 <!-- /首页模块4 -->
 
+<div class="m-layout"></div>
+
+<!-- 登录框弹层 -->
+<div class="m-login">
+    <div class="ewm" style="display: none;">
+        <div class="bg"><span>账号<br />登录</span></div>
+        <h2 class="tit">微信扫一扫登录</h2>
+        <div class="box2">
+            <img width="300" height="300" src="../img/img-ewm.jpg" alt=""/>
+        </div>
+        <div class=""><a class="u-btn u-btn-5 u-btn-block" href="javascript:;">没有帐号，我要注册</a></div>
+    </div>
+
+    <div class="dengl" style="display: -none;">
+        <div class="bg"><img width="40" height="40" src="../img/img-ewm.jpg" alt=""/></div>
+        <h2 class="tit">赛伯乐孵化园管理系统</h2>
+        <div class="box2">
+            <form action="#" method="post" id="login">
+                <div class="tips">该帐号不存在，请 <a href="javascript:;">注册</a></div>
+                <ul>
+                    <li><input class="u-ipt" type="text" placeholder="请输入账号"/></li>
+                    <li><input class="u-ipt" type="text" placeholder="请输入密码"/></li>
+                    <li style="margin-bottom: 20px;"><p class="f-tar"><a class="txt" href="javascript:;">忘记密码</a></p></li>
+                    <li><input style="width: 100%; cursor: pointer;" class="u-btn u-btn-4 u-btn-block" type="submit" value="登录"/></li>
+                </ul>
+            </form>
+        </div>
+        <div class=""><a class="u-btn u-btn-5 u-btn-block" href="javascript:;">没有帐号，我要注册</a></div>
+    </div>
+
+
+    <div class="dengl zhaohui" style="display: none;">
+        <h2 class="tit">赛伯乐孵化园管理系统</h2>
+        <div class="box2">
+            <form action="#" method="post">
+                <div class="tips">该帐号不存在，请 <a href="javascript:;">注册</a></div>
+                <ul>
+                    <li><input class="u-ipt" type="text" placeholder="请输入手机号"/></li>
+                    <li class="f-cb"><input class="u-ipt yzm" type="text" placeholder="请输入验证码"/><a class="btnyzm" href="javascript:;">发送验证码</a></li>
+                    <li><input class="u-ipt" type="password" placeholder="新密码，8-20位，必须含字母+数字"/></li>
+                    <li style="margin-bottom: 20px;"><p class="f-tar"><a class="txt" href="javascript:;">忘记密码</a></p></li>
+                    <li><input style="width: 100%; cursor: pointer;" class="u-btn u-btn-4 u-btn-block" type="submit" value="提交修改"/></li>
+                </ul>
+            </form>
+        </div>
+        <div class=""><a class="u-btn u-btn-5 u-btn-block" href="javascript:;">没有帐号，我要注册</a></div>
+    </div>
+</div>
+<!-- /登录框弹层 -->
+
 <!-- 底部 -->
 <div class="m-ft">
 
@@ -287,11 +363,8 @@
 </div>
 <!-- /底部 -->
 <script src="../js/jquery.1.11.1.min.js"></script>
+<script src="../js/jquery-validation-1.14.0/jquery.validate.min.js"></script>
+<script src="../js/jquery-validation-1.14.0/messages_zh.js"></script>
 <script src="../js/main.js"></script>
-<script>
-    $(function() {
-        main.app.index();
-    });
-</script>
 </body>
 </html>
