@@ -302,12 +302,19 @@ body{background-color: #fafafa;}
 .m-login .dengl .bg img{ position: absolute; top: 8px; right: 8px;}
 .m-login .dengl .box2{ text-align: left;}
 .m-login .dengl .box2 li{ margin-bottom: 10px;}
-.m-login .dengl .box2 .tips{ margin-bottom: 5px; height: 36px; padding: 0 10px; line-height: 36px; background-color: #ffded7;  font-size: 14px;}
+.m-login .dengl .box2 .tips{ display: none; margin-bottom: 5px; height: 36px; padding: 0 10px; line-height: 36px; background-color: #ffded7;  font-size: 14px;}
 .m-login .dengl .box2 .tips a{ color: #2680c4; text-decoration: underline;}
 .m-login .dengl .txt{ font-size: 14px;}
 .m-login .dengl .yzm{ float: left; width: 240px;}
-.m-login .dengl .btnyzm{ float: right; width: 150px; height: 50px; line-height: 50px; text-align: center; background-color: #585858; color: #fff;}
+.m-login .dengl .btnyzm{ float: right; width: 150px; height: 48px; line-height: 48px; text-align: center; background-color: #585858; color: #fff;}
+.m-login .dengl form li{ position: relative;}
+.m-login .dengl form li span{ display: none; position: absolute; top: 1px; right: 1px; width: 24px; height: 46px;}
+.m-login .dengl form .succ span{ display: block; background: url(../img/icon-succ.png) left center no-repeat;}
+.m-login .dengl form .err span{ display: block; background: url(../img/icon-err.png) left center no-repeat;}
 .m-login .u-btn-4{line-height: 48px;}
+.m-login .dengl form label.error{ display: block; padding: 5px; font-size: 14px; color: red;}
+
+
 
 /*====== 元件 ======*/
 .u-br3{border-radius: 3px;}
@@ -323,7 +330,7 @@ body{background-color: #fafafa;}
 .u-btn-block{ display: block;}
 .u-loadBtn{ display: block;line-height: 36px; font-size: 16px; text-align: center; color: #666; box-shadow: 0 1px 1px #e9e9e9; background-color: #fff;}
 .u-loadBtn-1{ background-color: #e5e5e5;}
-.u-ipt{ box-sizing: border-box; padding: 0 10px; line-height: 48px; width: 100%; font-size: 14px; border: 1px solid #cecece;}
+.u-ipt{ box-sizing: border-box; padding: 0 10px; line-height: 46px; width: 100%; font-size: 14px; border: 1px solid #cecece;}
 
 /*====== 首页 ======*/
 .m-section1{ position: relative; height: 950px; background: url(../img/bg-bg1.jpg) center bottom no-repeat;}

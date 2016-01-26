@@ -3,13 +3,227 @@ $(function () {
     main.ui.pageScroll();
     main.ui.tabs($('.j-tab-nav1 li'), $('.j-tab-panel1 .panel'));
     main.ui.navHover($('.j-nav'));
-    $('#login').validate();
+
+    (function() {
+        var $login = $('#login');
+        var elements = $('#login').get(0).elements;
+        var $uname = $('#uname');
+        var $upass = $('#upass');
+        var $btn = $('.j-btnLogin');
+        var $tips = $login.find('.tips');
+        var binput = false;
+        var timer = null;
+        var valid1 = false;
+
+        $btn.click(function() {
+            binput = true;
+            if(check() && valid1){
+                $login.submit();
+            }
+        });
+
+        for(var i=0;i<elements.length;i++){
+
+            elements[i].onkeyup = function() {
+                if(binput){
+                    check();
+                }
+            }
+        }
+
+        $uname.on('keyup', function() {
+            var $this = $(this);
+
+            clearTimeout(timer);
+            timer = setTimeout(function() {
+                $.ajax({
+                    url: $this.attr('data-url'),
+                    data: $this.val(),
+                    success: function(str) {
+                        valid1 = true;
+                    },
+                    error: function() {
+                        $tips.show().html('该帐号不存在，请注册');
+                    }
+                })
+            }, 300);
+        });
+
+        function check() {
+            var valid = true;
+
+            $tips.hide();
+            $uname.parent().removeClass().addClass('succ');
+            $upass.parent().removeClass().addClass('succ');
+
+            if(!$.trim($uname.val()).length > 0 && !$.trim($uname.val()) != ''){
+                $uname.parent().addClass('err');
+                $tips.show().html('请输入账号！');
+                valid = false;
+            }
+            if( !$.trim($upass.val()).length > 0 && !$.trim($upass.val()) != '' ){
+                $upass.parent().addClass('err');
+                $tips.show().html('请输入密码！');
+                valid = false;
+            }
+
+            return valid;
+        }
+
+    })();
+
+    (function() {
+        var $reget = $('#reget');
+        var elements = $('#reget').get(0).elements;
+        var $uphone = $('#uphone');
+        var $uyzm = $('#uyzm');
+        var $unpass = $('#unpass');
+        var $btn = $('.j-btnsave');
+        var $tips = $reget.find('.tips');
+        var binput = false;
+
+        $btn.click(function() {
+            binput = true;
+            if(check()){
+                $reget.submit();
+            }
+        });
+
+        for(var i=0;i<elements.length;i++){
+
+            elements[i].onkeyup = function() {
+                if(binput){
+                    check();
+                }
+            }
+        }
+
+
+        function check() {
+            var valid = true;
+            var _val1 = $.trim($uphone.val());
+            var _val2 = $.trim($uyzm.val());
+            var _val3 = $.trim($unpass.val());
+            var reg3 = /^(?![^a-zA-Z]+$)(?!\D+$).{8,15}$/;
+
+            $tips.hide();
+            if( !_val3.length > 0 && !_val3 != '' ){
+                $tips.show().html('请输入密码！');
+                valid = false;
+            }else if(!reg3.test(_val3)){
+                $tips.show().html('8-20位，必须含字母+数字');
+                valid = false;
+            }
+
+            if( !_val2.length > 0 && !_val2 != ''){
+                $tips.show().html('请输入验证码！');
+                valid = false;
+            }
+
+            if(!_val1.length > 0 && !_val1 != ''){
+                $tips.show().html('手机号码不能为空！');
+                valid = false;
+            }else if(!main.tool.check.isMobile(_val1)){
+                $tips.show().html('请输入正确的手机号码！');
+                valid = false;
+            }
+
+            return valid;
+        }
+
+    })();
+
+    (function() {
+        var $reget = $('#reget2');
+        var elements = $('#reget2').get(0).elements;
+        var $uphone = $('#uphone2');
+        var $uyzm = $('#uyzm2');
+        var $unpass = $('#unpass2');
+        var $btn = $('.j-btnzc');
+        var $tips = $reget.find('.tips');
+        var binput = false;
+
+        $btn.click(function() {
+            binput = true;
+            if(check()){
+                $reget.submit();
+            }
+        });
+
+        for(var i=0;i<elements.length;i++){
+
+            elements[i].onkeyup = function() {
+                if(binput){
+                    check();
+                }
+            }
+        }
+
+
+        function check() {
+            var valid = true;
+            var _val1 = $.trim($uphone.val());
+            var _val2 = $.trim($uyzm.val());
+            var _val3 = $.trim($unpass.val());
+            var reg3 = /^(?![^a-zA-Z]+$)(?!\D+$).{8,15}$/;
+
+            $tips.hide();
+            if( !_val3.length > 0 && !_val3 != '' ){
+                $tips.show().html('请输入密码！');
+                valid = false;
+            }else if(!reg3.test(_val3)){
+                $tips.show().html('8-20位，必须含字母+数字');
+                valid = false;
+            }
+
+            if( !_val2.length > 0 && !_val2 != ''){
+                $tips.show().html('请输入验证码！');
+                valid = false;
+            }
+
+            if(!_val1.length > 0 && !_val1 != ''){
+                $tips.show().html('手机号码不能为空！');
+                valid = false;
+            }else if(!main.tool.check.isMobile(_val1)){
+                $tips.show().html('请输入正确的手机号码！');
+                valid = false;
+            }
+
+            return valid;
+        }
+
+    })();
+
+    $('.j-popBtnWx').click(function() {
+        main.ui.loginPop().showLoginWx();
+    });
+    $('.j-popBtnZh').click(function() {
+        main.ui.loginPop().showLoginZh();
+    });
+    $('.j-popBtnWx').click(function() {
+        main.ui.loginPop().showLoginWx();
+    });
+    $('.j-popBtnRegister').click(function() {
+        main.ui.loginPop().showLoginRegister();
+    });
+
 
     // 园区企业
     main.ui.card($('.j-card'));
 });
 
 var main = {};
+
+main.tool = {};
+main.tool.check = {
+    isMobile: function(str) {
+        if (str.toString().length != 11) return false;
+        var prefix = [130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 147, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189];
+        var re = new RegExp("^(" + prefix.join("|") + ")\\d+$");
+        return re.test(str);
+    }
+};
+
 
 main.ui = {};
 main.ui.pageScroll = function () {
@@ -216,6 +430,54 @@ main.ui.navHover = function($obj) {
         $line.hide();
     });
 };
+main.ui.loginPop = function() {
+    var $mask = $('.m-layout');
+    var $loginPop = $('.j-loginPop');
+    var $wx = $loginPop.find('.j-wxBox');
+    var $dl = $loginPop.find('.j-dlBox');
+    var $zh = $loginPop.find('.j-zhBox');
+    var $zc = $loginPop.find('.j-zcBox');
+    var $box = $loginPop.find('.j-popBox');
 
+    function showLoginWx() {
+        showMask();
+        $box.hide();
+        $wx.show();
+        $loginPop.fadeIn();
+    }
+    function showLoginZh() {
+        showMask();
+        $box.hide();
+        $dl.show();
+        $loginPop.fadeIn();
+    }
+    function showLoginRegister() {
+        showMask();
+        $box.hide();
+        $zc.show();
+        $loginPop.fadeIn();
+    }
+    function showLoginZhaohui() {
+        showMask();
+        $box.hide();
+        $zh.show();
+        $loginPop.fadeIn();
+    }
+    function showMask() {
+        $mask.fadeIn();
+    }
+    function hideMask() {
+        $mask.fadeOut();
+    }
+
+    return {
+        showLoginWx: showLoginWx,
+        showLoginZh: showLoginZh,
+        showLoginRegister: showLoginRegister,
+        showLoginZhaohui: showLoginZhaohui,
+        showMask: showMask,
+        hideMask: hideMask
+    }
+};
 
 main.app = {};
