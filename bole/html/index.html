@@ -24,7 +24,7 @@
             <li><a href="javascript:;">投融资</a></li>
             <li><a href="javascript:;">入驻孵化园</a></li>
         </ul>
-        <div class="login"><a href="javascript:;">注册</a> | <a href="javascript:;">登录</a></div>
+        <div class="login"><a class="j-popBtnZhuce" href="javascript:;">注册</a> | <a class="j-popBtnWeixin" href="javascript:;">登录</a></div>
 
     </div>
 </div>
@@ -36,7 +36,7 @@
 
 <!-- 首页模块1 -->
 <div class="m-section1">
-    <a class="login u-btn u-btn-2 j-popBtnDl" href="javascript:;">登录</a>
+    <a class="login u-btn u-btn-2 j-popBtnWeixin j-a1" href="javascript:;">登录</a>
 	<div class="g-wrap2">
 		<div class="logo"><img src="../img/logo.png" alt=""></div>
 	    <!-- 导航 -->
@@ -54,7 +54,7 @@
 	    <!-- /导航 -->
 
 	    <!-- 列表 -->
-	    <ul class="m-list">
+	    <ul class="m-list j-lista">
 	        <li>
 	            <a href="javascript:;"><img class="pic" width="230" height="130" src="../img/upload/img2.jpg" alt=""></a>
 	            <div class="bd">            
@@ -303,17 +303,20 @@
 
 <!-- 登录框弹层 -->
 <div class="m-login j-loginPop" style="display: none;">
-    <div class="ewm j-wxBox j-popBox" style="display: none;">
-        <div class="bg"><span class="j-popBtnZh">账号<br />登录</span></div>
+    <!-- 微信扫一扫登录 -->
+    <div class="ewm j-weixinBox j-popBox" style="display: none;">
+        <div class="bg"><span class="j-popBtnZhanghao">账号<br />登录</span></div>
         <h2 class="tit">微信扫一扫登录</h2>
         <div class="box2">
             <img width="300" height="300" src="../img/img-ewm.jpg" alt=""/>
         </div>
-        <div class=""><a class="u-btn u-btn-5 u-btn-block j-popBtnRegister" href="javascript:;">没有帐号，我要注册</a></div>
+        <div class=""><a class="u-btn u-btn-5 u-btn-block j-popBtnZhuce" href="javascript:;">没有帐号，我要注册</a></div>
     </div>
+    <!-- /微信扫一扫登录 -->
 
-    <div class="dengl j-dlBox j-popBox" style="display: none;">
-        <div class="bg"><img class="j-popBtnWx" width="40" height="40" src="../img/img-ewm.jpg" alt=""/></div>
+    <!-- 账号登录 -->
+    <div class="dengl j-zhanghaoBox j-popBox" style="display: none;">
+        <div class="bg"><img class="j-popBtnWeixin" width="40" height="40" src="../img/img-ewm.jpg" alt=""/></div>
         <h2 class="tit">赛伯乐孵化园管理系统</h2>
         <div class="box2">
             <form action="#" method="post" id="login">
@@ -321,16 +324,18 @@
                 <ul>
                     <li><span></span><input autocomplete="off" id="uname" name="uname" class="u-ipt required" type="text" data-url="fsdf" placeholder="请输入账号"/></li>
                     <li><span></span><input id="upass" name="upass" class="u-ipt required" type="password" placeholder="请输入密码"/></li>
-                    <li style="margin-bottom: 20px;"><p class="f-tar"><a class="txt" href="javascript:;">忘记密码</a></p></li>
+                    <li style="margin-bottom: 20px;"><p class="f-tar"><a class="txt j-popBtnZhaohui" href="javascript:;">忘记密码</a></p></li>
                     <li><a class="u-btn u-btn-4 u-btn-block j-btnLogin" href="javascript:;">登录</a></li>
                 </ul>
             </form>
         </div>
-        <div class=""><a class="u-btn u-btn-5 u-btn-block j-popBtnRegister" href="javascript:;">没有帐号，我要注册</a></div>
+        <div class=""><a class="u-btn u-btn-5 u-btn-block j-popBtnZhuce" href="javascript:;">没有帐号，我要注册</a></div>
     </div>
+    <!-- /账号登录 -->
 
 
-    <div class="dengl zhaohui j-zhBox j-popBox" style="display: none;">
+    <!-- 找回密码 -->
+    <div class="dengl zhaohui j-zhaohuiBox j-popBox" style="display: none;">
         <h2 class="tit">赛伯乐孵化园管理系统</h2>
         <div class="box2">
             <form action="#" method="post" id="reget">
@@ -339,17 +344,17 @@
                     <li><span></span><input id="uphone" name="uphone" class="u-ipt" type="text" placeholder="请输入手机号"/></li>
                     <li class="f-cb"><input id="uyzm" name="uyzm" class="u-ipt yzm" type="text" placeholder="请输入验证码"/><a class="btnyzm" href="javascript:;">发送验证码</a></li>
                     <li><input id="unpass" name="unpass" class="u-ipt" type="text" placeholder="新密码，8-20位，必须含字母+数字"/></li>
-                    <li style="margin-bottom: 20px;"><p class="f-tar"><a class="txt" href="javascript:;">忘记密码</a></p></li>
+                    <li style="margin-bottom: 20px;"><p class="f-tar"><a class="txt j-popBtnZhanghao" href="javascript:;">登录</a> <a class="txt j-popBtnZhaohui" href="javascript:;">忘记密码</a></p></li>
                     <li><a class="u-btn u-btn-4 u-btn-block j-btnsave" href="javascript:;">提交修改</a></li>
                 </ul>
             </form>
         </div>
-        <div class=""><a class="u-btn u-btn-5 u-btn-block" href="javascript:;">没有帐号，我要注册</a></div>
+        <div class=""><a class="u-btn u-btn-5 u-btn-block j-popBtnZhuce" href="javascript:;">没有帐号，我要注册</a></div>
     </div>
+    <!-- /找回密码 -->
 
-
-
-    <div class="dengl zhaohui j-zcBox j-popBox" style="display: none;">
+    <!-- 注册账号 -->
+    <div class="dengl zhaohui j-zhuceBox j-popBox" style="display: none;">
         <h2 class="tit">赛伯乐孵化园管理系统</h2>
         <div class="box2">
             <form action="#" method="post" id="reget2">
@@ -358,13 +363,15 @@
                     <li><span></span><input id="uphone2" name="uphone" class="u-ipt" type="text" placeholder="请输入手机号"/></li>
                     <li class="f-cb"><input id="uyzm2" name="uyzm" class="u-ipt yzm" type="text" placeholder="请输入验证码"/><a class="btnyzm" href="javascript:;">发送验证码</a></li>
                     <li><input id="unpass2" name="unpass" class="u-ipt" type="text" placeholder="新密码，8-20位，必须含字母+数字"/></li>
-                    <li style="margin-bottom: 20px;"><p class="f-tar"><a class="txt" href="javascript:;">忘记密码</a></p></li>
-                    <li><a class="u-btn u-btn-4 u-btn-block j-btnzc" href="javascript:;">提交修改</a></li>
+                    <li style="margin-bottom: 20px;"><p class="f-tar"><a class="txt j-popBtnZhanghao" href="javascript:;">登录</a> <a class="txt j-popBtnZhaohui" href="javascript:;">忘记密码</a></p></li>
+                    <li><a class="u-btn u-btn-4 u-btn-block j-btnzc" href="javascript:;">注册账号</a></li>
                 </ul>
             </form>
         </div>
-        <div class=""><a class="u-btn u-btn-5 u-btn-block" href="javascript:;">没有帐号，我要注册</a></div>
+        <div class=""><a class="u-btn u-btn-5 u-btn-block j-popBtnZhuce" href="javascript:;">没有帐号，我要注册</a></div>
     </div>
+    <!-- /注册账号 -->
+
 </div>
 <!-- /登录框弹层 -->
 
@@ -381,9 +388,18 @@
     <p>Copyright © 2015 Cybernaut. All Rights Reserved.  备案号：渝1928293902830 </p>
 </div>
 <!-- /底部 -->
+
+<!-- 首页动画 -->
+<div class="m-indexAnimate j-animate">
+    <div class="bg"></div>
+    <div class="g-wrap2">
+        <div class="logo"><img src="../img/logo.png" alt=""></div>
+        <div class="prog"><div class="line"></div></div>
+    </div>
+</div>
+<!-- /首页动画 -->
+
 <script src="../js/jquery.1.11.1.min.js"></script>
-<script src="../js/jquery-validation-1.14.0/jquery.validate.js"></script>
-<script src="../js/jquery-validation-1.14.0/messages_zh.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

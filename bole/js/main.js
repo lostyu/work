@@ -4,8 +4,78 @@ $(function () {
     main.ui.tabs($('.j-tab-nav1 li'), $('.j-tab-panel1 .panel'));
     main.ui.navHover($('.j-nav'));
 
+    // 首页动画
+    (function() {
+        var $animateBox = $('.j-animate');
+        var $bg = $animateBox.find('.bg');
+        var $logo = $animateBox.find('.logo');
+        var $prog = $animateBox.find('.prog');
+        var $line = $animateBox.find('.line');
+        var $list = $('.j-lista');
+        var $a1 = $('.j-a1');
+        var timer = null;
+        var $aImg = $('img');
+        var arr = [];
+
+//        setTimeout(function() {
+//            $logo.fadeIn();
+//            $prog.fadeIn().addClass('zoom');
+//            $line.animate({width: '100%'}, 2000, function() {
+//                $bg.fadeIn().addClass('zoom');
+//
+//
+//                setTimeout(function() {
+//                    $bg.fadeOut(function() {
+//                        $(this).remove();
+//                    });
+//                    $animateBox.css('background', 'none');
+//
+//                    $line.animate({width: 0}, 1200, function() {
+//                        $logo.css('visibility', 'hidden');
+//                    });
+//                    $prog.addClass('zoom2');
+//                }, 1000);
+//
+//
+//            });
+//        }, 500);
+
+        function init(){
+            $list.hide();
+            $a1.hide();
+
+            setTimeout(function() {
+                $logo.fadeIn();
+                $prog.fadeIn().addClass('zoom');
+
+//                timer = setInterval(function() {
+//                    console.log(checkAll());
+//                }, 10);
+
+            }, 500);
+        }
+        init();
+
+        function checkLoad() {
+            $aImg.each(function(index, elem) {
+                elem.onload = function() {
+                    elem.loaded = true;
+                    arr.push(index);
+                }
+            });
+        }
+
+        function checkAll() {
+            return arr.length;
+        }
+
+
+    })();
+
+    // 表单验证
     (function() {
         var $login = $('#login');
+        if($login.length <= 0) return;
         var elements = $('#login').get(0).elements;
         var $uname = $('#uname');
         var $upass = $('#upass');
@@ -74,6 +144,7 @@ $(function () {
 
     (function() {
         var $reget = $('#reget');
+        if($reget.length <= 0) return;
         var elements = $('#reget').get(0).elements;
         var $uphone = $('#uphone');
         var $uyzm = $('#uyzm');
@@ -135,6 +206,7 @@ $(function () {
 
     (function() {
         var $reget = $('#reget2');
+        if($reget.length <= 0) return;
         var elements = $('#reget2').get(0).elements;
         var $uphone = $('#uphone2');
         var $uyzm = $('#uyzm2');
@@ -194,22 +266,96 @@ $(function () {
 
     })();
 
-    $('.j-popBtnWx').click(function() {
-        main.ui.loginPop().showLoginWx();
+    (function() {
+        var $rzform = $('#rzform');
+        if($rzform.length <= 0) return;
+        var $lxr = $('#rzform-lxr');
+        var $tel = $('#rzform-tel');
+        var $mail = $('#rzform-mail');
+        var $jj = $('#rzform-jj');
+        var $file = $('#rzform-file');
+        var $btn = $rzform.find('.j-rzform-btn');
+        var $err = $rzform.find('p.error');
+
+        $btn.click(function() {
+            if(check()){
+                alert();
+            }
+        });
+
+        function check() {
+            var valid = true;
+            var _val1 = $.trim($lxr.val());
+            var _val2 = $.trim($tel.val());
+            var _val3 = $.trim($mail.val());
+            var _val4 = $.trim($jj.val());
+            var _val5 = $.trim($file.val());
+
+            $err.hide();
+            if(!_val1.length > 0 && !_val1 != ''){
+                $lxr.next('.error').show().html('请输入联系人!');
+                valid = false;
+            }
+
+            if(!_val2.length > 0 && !_val2 != ''){
+                $tel.next('.error').show().html('手机号码不能为空!');
+                valid = false;
+            }else if(!main.tool.check.isMobile(_val2)){
+                $tel.next('.error').show().html('请输入正确的手机号码!');
+                valid = false;
+            }
+
+            if(!_val3.length > 0 && !_val3 != ''){
+                $mail.next('.error').show().html('邮箱不能为空!');
+                valid = false;
+            }else if(!main.tool.check.isMail(_val3)){
+                $mail.next('.error').show().html('邮箱格式错误!');
+            }
+
+            if(!_val4.length > 0 && !_val4 != ''){
+                $jj.next('.error').show().html('入驻企业的情况或项目介绍!');
+                valid = false;
+            }
+
+            if(!_val5.length > 0 && !_val5 != ''){
+                $file.next('.error').show().html('上传项目相关的文档!');
+                valid = false;
+            }
+
+            return valid;
+        }
+    })();
+
+    $('.j-popBtnWeixin').click(function() {
+        main.ui.loginPop().showLoginWeixin();
     });
-    $('.j-popBtnZh').click(function() {
-        main.ui.loginPop().showLoginZh();
+    $('.j-popBtnZhanghao').click(function() {
+        main.ui.loginPop().showLoginZhanghao();
     });
-    $('.j-popBtnWx').click(function() {
-        main.ui.loginPop().showLoginWx();
+    $('.j-popBtnZhaohui').click(function() {
+        main.ui.loginPop().showLoginZhaohui();
     });
-    $('.j-popBtnRegister').click(function() {
-        main.ui.loginPop().showLoginRegister();
+    $('.j-popBtnZhuce').click(function() {
+        main.ui.loginPop().showLoginZhuce();
+    });
+    $('.m-layout').click(function() {
+        $(this).fadeOut();
+        $('.j-rzform').fadeOut();
+        main.ui.loginPop().hidePop();
     });
 
 
     // 园区企业
     main.ui.card($('.j-card'));
+
+
+    // 孵化园
+    $('.j-btnruzhu').on('click', function(){
+        $('.m-layout').fadeIn();
+        $('.j-rzform').fadeIn();
+        $('#rzform')[0].reset();
+        $('#rzform').find('p.error').hide();
+    });
 });
 
 var main = {};
@@ -221,6 +367,10 @@ main.tool.check = {
         var prefix = [130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 147, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189];
         var re = new RegExp("^(" + prefix.join("|") + ")\\d+$");
         return re.test(str);
+    },
+    isMail: function (yx) {
+        var reyx = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+        return(reyx.test(yx));
     }
 };
 
@@ -433,50 +583,55 @@ main.ui.navHover = function($obj) {
 main.ui.loginPop = function() {
     var $mask = $('.m-layout');
     var $loginPop = $('.j-loginPop');
-    var $wx = $loginPop.find('.j-wxBox');
-    var $dl = $loginPop.find('.j-dlBox');
-    var $zh = $loginPop.find('.j-zhBox');
-    var $zc = $loginPop.find('.j-zcBox');
+    var $weixin = $loginPop.find('.j-weixinBox');
+    var $zhanghao = $loginPop.find('.j-zhanghaoBox');
+    var $zhaohui = $loginPop.find('.j-zhaohuiBox');
+    var $zhuce = $loginPop.find('.j-zhuceBox');
     var $box = $loginPop.find('.j-popBox');
 
-    function showLoginWx() {
+    function showLoginWeixin() {
         showMask();
         $box.hide();
-        $wx.show();
+        $weixin.show();
         $loginPop.fadeIn();
     }
-    function showLoginZh() {
+    function showLoginZhanghao() {
         showMask();
         $box.hide();
-        $dl.show();
-        $loginPop.fadeIn();
-    }
-    function showLoginRegister() {
-        showMask();
-        $box.hide();
-        $zc.show();
+        $zhanghao.show();
         $loginPop.fadeIn();
     }
     function showLoginZhaohui() {
         showMask();
         $box.hide();
-        $zh.show();
+        $zhaohui.show();
         $loginPop.fadeIn();
     }
+    function showLoginZhuce() {
+        showMask();
+        $box.hide();
+        $zhuce.show();
+        $loginPop.fadeIn();
+    }
+
     function showMask() {
         $mask.fadeIn();
     }
     function hideMask() {
         $mask.fadeOut();
     }
+    function hidePop() {
+        $loginPop.fadeOut();
+    }
 
     return {
-        showLoginWx: showLoginWx,
-        showLoginZh: showLoginZh,
-        showLoginRegister: showLoginRegister,
+        showLoginWeixin: showLoginWeixin,
+        showLoginZhanghao: showLoginZhanghao,
         showLoginZhaohui: showLoginZhaohui,
+        showLoginZhuce: showLoginZhuce,
         showMask: showMask,
-        hideMask: hideMask
+        hideMask: hideMask,
+        hidePop: hidePop
     }
 };
 
