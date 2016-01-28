@@ -4,73 +4,149 @@ $(function () {
     main.ui.tabs($('.j-tab-nav1 li'), $('.j-tab-panel1 .panel'));
     main.ui.navHover($('.j-nav'));
 
+    $('.j-backTop').click(function() {
+        $('html,body').animate({scrollTop:0}, 500);
+    });
+
+    setTimeout(function() {
+        $("html,body").scrollTop(0);
+    }, 0);
+
     // 首页动画
-    (function() {
+    function loadAnimate() {
         var $animateBox = $('.j-animate');
         var $bg = $animateBox.find('.bg');
         var $logo = $animateBox.find('.logo');
         var $prog = $animateBox.find('.prog');
         var $line = $animateBox.find('.line');
+        var $line2 = $animateBox.find('.line2');
+        var $line3 = $animateBox.find('.line3');
         var $list = $('.j-lista');
+        var $nav = $('.j-nav');
         var $a1 = $('.j-a1');
-        var timer = null;
-        var $aImg = $('img');
-        var arr = [];
+        var $navSd = $('.j-navSd');
 
-//        setTimeout(function() {
-//            $logo.fadeIn();
-//            $prog.fadeIn().addClass('zoom');
-//            $line.animate({width: '100%'}, 2000, function() {
-//                $bg.fadeIn().addClass('zoom');
-//
-//
-//                setTimeout(function() {
-//                    $bg.fadeOut(function() {
-//                        $(this).remove();
-//                    });
-//                    $animateBox.css('background', 'none');
-//
-//                    $line.animate({width: 0}, 1200, function() {
-//                        $logo.css('visibility', 'hidden');
-//                    });
-//                    $prog.addClass('zoom2');
-//                }, 1000);
-//
-//
-//            });
-//        }, 500);
+        disableScroll();
 
         function init(){
-            $list.hide();
             $a1.hide();
+            $navSd.hide();
+
 
             setTimeout(function() {
                 $logo.fadeIn();
                 $prog.fadeIn().addClass('zoom');
 
-//                timer = setInterval(function() {
-//                    console.log(checkAll());
-//                }, 10);
+                var arrImg = document.getElementsByTagName('img');
+                var count = 0;
+
+                for(var i=0;i<arrImg.length;i++){
+                    imgLoad(arrImg[i], function() {
+                        count++;
+                    });
+                }
+
+                var timer2 = setInterval(function() {
+                    if(count == arrImg.length){
+                        clearInterval(timer2);
+
+                        // 页面加载完成，进度条加载
+                        $line.animate({width: '100%'}, 2000, function() {
+                            // 背景放大
+                            $bg.fadeIn().addClass('zoom');
+
+                            $line.animate({width: 0}, 2000, function() {});
+
+                            $line2.show();
+                            $line3.show();
+                            $line2.animate({left: 0}, 1200, function() {
+                                $prog.fadeOut(350);
+                                $nav.find('ul').animate({left: 0}, 500);
+                                $nav.find('.rz').animate({right: 0}, 500);
+
+                            });
+
+                            setTimeout(function() {
+                                $bg.fadeOut(function() {
+                                    $(this).remove();
+                                });
+                                $animateBox.css('background', 'none');
+                                setTimeout(function() {
+                                    $logo.css('visibility', 'hidden');
+                                }, 1000);
+
+                                $a1.fadeIn();
+                                $navSd.fadeIn();
+
+                                $list.animate({
+                                    opacity: 1,
+                                    marginTop: 0
+                                }, 1450, function () {
+                                    enableScroll();
+                                    $animateBox.hide();
+                                });
+
+                            }, 1100);
+                        });
+
+
+                    }
+                }, 50);
 
             }, 500);
+
         }
         init();
 
-        function checkLoad() {
-            $aImg.each(function(index, elem) {
-                elem.onload = function() {
-                    elem.loaded = true;
-                    arr.push(index);
+        function imgLoad(img, callback) {
+            var timer = setInterval(function() {
+                if (img.complete) {
+                    callback(img);
+                    clearInterval(timer);
                 }
-            });
-        }
-
-        function checkAll() {
-            return arr.length;
+            }, 50)
         }
 
 
-    })();
+        var keys = [37, 38, 39, 40];
+
+        function preventDefault(e) {
+            e = e || window.event;
+            if (e.preventDefault)
+                e.preventDefault();
+            e.returnValue = false;
+        }
+
+        function keydown(e) {
+            for (var i = keys.length; i--;) {
+                if (e.keyCode === keys[i]) {
+                    preventDefault(e);
+                    return;
+                }
+            }
+        }
+
+        function wheel(e) {
+            preventDefault(e);
+        }
+
+        function disableScroll() {
+            if (window.addEventListener) {
+                window.addEventListener('DOMMouseScroll', wheel, false);
+            }
+            window.onmousewheel = document.onmousewheel = wheel;
+            document.onkeydown = keydown;
+        }
+
+        function enableScroll() {
+            if (window.removeEventListener) {
+                window.removeEventListener('DOMMouseScroll', wheel, false);
+            }
+            window.onmousewheel = document.onmousewheel = document.onkeydown = null;
+        }
+    }
+//    loadAnimate();
+
 
     // 表单验证
     (function() {
@@ -375,12 +451,14 @@ main.tool.check = {
 };
 
 
+
 main.ui = {};
 main.ui.pageScroll = function () {
     var $hd = $('.j-hd');
     var $window = $(window);
     var $navSdLi = $('.j-navSd li');
     var $body = $('body, html');
+    var $sideTool = $('.m-sideTool');
 
     $window.scroll(function () {
         var _top = $(this).scrollTop();
@@ -395,10 +473,12 @@ main.ui.pageScroll = function () {
         if (_top < 950) {
             $navSdLi.removeClass('z-crt');
             $navSdLi.eq(0).addClass('z-crt');
+            $sideTool.fadeOut();
         }
         if (_top >= 950 && _top < 1863) {
             $navSdLi.removeClass('z-crt');
             $navSdLi.eq(1).addClass('z-crt');
+            $sideTool.fadeIn();
         }
         if (_top >= 1863 && _top < 2849) {
             $navSdLi.removeClass('z-crt');
