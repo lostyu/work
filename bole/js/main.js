@@ -145,7 +145,7 @@ $(function () {
             window.onmousewheel = document.onmousewheel = document.onkeydown = null;
         }
     }
-//    loadAnimate();
+    loadAnimate();
 
 
     // 表单验证
