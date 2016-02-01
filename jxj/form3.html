@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>绑定驾驶人</title>
+    <link rel="stylesheet" href="iframe/lib/weui.min.css">
+    <link rel="stylesheet" href="iframe/css/jquery-weui.css">
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+
+
+<form action="">
+    <div class="weui_cells weui_cells_form" style="margin-top: 40px;" >
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">姓名</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" placeholder="请输入姓名">
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd">
+                <label class="weui_label">驾驶证号</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" placeholder="请输入驾驶证号">
+            </div>
+        </div>
+    </div>
+    <div class="weui_btn_area">
+        <a class="weui_btn weui_btn_primary" href="javascript:" id="showTooltips">保存并查询</a>
+    </div>
+</form>
+<a href="javascript:location.reload();">刷新</a>
+
+<script src="iframe/lib/jquery-2.1.4.js"></script>
+<script src="iframe/js/jquery-weui.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>

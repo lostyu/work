@@ -6,41 +6,49 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
-    <title>标题</title>
-    <link rel="stylesheet" href="ui/lib/weui.min.css">
-    <link rel="stylesheet" href="ui/css/jquery-weui.css">
+    <title>导航</title>
+    <link rel="stylesheet" href="iframe/lib/weui.min.css">
+    <link rel="stylesheet" href="iframe/css/jquery-weui.css">
     <link rel="stylesheet" href="src/css/main.css"/>
 </head>
 <body>
-<div class="weui_grids">
-    <a href="javascript:;" class="weui_grid js_grid" data-id="button">
-        <div class="weui_grid_icon">
-            <img src="./images/icon_nav_button.png" alt="">
+
+<div class="weui_cells weui_cells_access">
+    <a class="weui_cell" href="form.html">
+        <div class="weui_cell_bd weui_cell_primary">
+            <p>绑定个人资料</p>
         </div>
-        <p class="weui_grid_label">
-            Button
-        </p>
-    </a>
-    <a href="javascript:;" class="weui_grid js_grid" data-id="cell">
-        <div class="weui_grid_icon">
-            <img src="./images/icon_nav_cell.png" alt="">
+        <div class="weui_cell_ft">
         </div>
-        <p class="weui_grid_label">
-            Cell
-        </p>
     </a>
-    <a href="javascript:;" class="weui_grid js_grid" data-id="toast">
-        <div class="weui_grid_icon">
-            <img src="./images/icon_nav_toast.png" alt="">
+    <a class="weui_cell" href="form2.html">
+        <div class="weui_cell_bd weui_cell_primary">
+            <p>个人中心</p>
         </div>
-        <p class="weui_grid_label">
-            Toast
-        </p>
+        <div class="weui_cell_ft">
+        </div>
     </a>
+    <a class="weui_cell" href="form3.html">
+        <div class="weui_cell_bd weui_cell_primary">
+            <p>绑定驾驶人</p>
+        </div>
+        <div class="weui_cell_ft">
+        </div>
+    </a>
+    <a class="weui_cell" href="javascript:location.reload();">
+        <div class="weui_cell_bd weui_cell_primary">
+            <p>刷新</p>
+        </div>
+        <div class="weui_cell_ft">
+        </div>
+    </a>
+
 </div>
 
-<script src="ui/lib/jquery-2.1.4.js"></script>
-<script src="ui/js/jquery-weui.js"></script>
+
+
+<script src="iframe/lib/jquery-2.1.4.js"></script>
+<script src="iframe/js/jquery-weui.js"></script>
 <script src="src/js/main.js"></script>
 </body>
 </html>

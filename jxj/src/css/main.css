@@ -1,0 +1,61 @@
+/* reset */
+html, body{ background-color: #f5f5f9;}
+h2{ font-weight: normal; color: #000;}
+a{ color: #444;}
+a:active{ color: #000;}
+
+/* function */
+.f-cb:after,.f-cbli li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.f-cb,.f-cbli li{zoom:1;}
+.f-ib{display:inline-block;*display:inline;*zoom:1;}
+.f-dn{display:none;}
+.f-db{display:block;}
+.f-fl{float:left;}
+.f-fr{float:right;}
+.f-nbr, .f-nbr:after{ border-radius: 0;}
+.f-fz12{ font-size: 12px;}
+.f-fz14{ font-size: 14px;}
+.f-fz16{ font-size: 16px;}
+.f-fz18{ font-size: 18px;}
+.f-br50{ border-radius: 50%;}
+.f-vam,.f-vama *{vertical-align:middle;}
+
+/* 表单 */
+.weui_cells_form .weui_cell_hd{ padding-right: 10px;}
+.weui_cells_title{ margin-bottom: .77em;}
+.weui_label{ width: 4em; color: #666;}
+
+
+.c1{ color: #8d8d8d;}
+.c2{ color: #3a5a9e;}
+.c3{ color: #444;}
+
+/* 九宫格2列 */
+.weui_grids_2 .weui_grid{ width: 50%;}
+
+
+/*====== 个人中心 ======*/
+.m-gezx{}
+.m-gezx .weui_cells{ font-size: 16px;}
+.m-gezx .weui_cell{ padding: 12px 15px;}
+
+.m-gezx .m-xinxi{ height: 30px; line-height: 30px; font-size: 12px;}
+.m-gezx .m-xinxi .cnt{ display: block; color: #fff;}
+.m-gezx .m-xinxi .cnt:active{ color: #3a5a9e;}
+.m-gezx .m-xinxi .box{ position: relative; padding: 0 35px; background: rgba(0,0,0,.5) url(../img/icon/icon-voice-34x34.png) 10px center no-repeat; background-size: auto 20px;}
+.m-gezx .m-xinxi .close{ position: absolute; right: 0; top: 0; width: 35px; height: 30px; background: url(../img/icon/icon-close-34x34.png) left center no-repeat; background-size: 20px;}
+
+.m-gezx .m-info{ margin-top: 0;}
+.m-gezx .m-info .weui_cell_hd img{ margin-right: 15px; width: 60px; height: 60px; border-radius: 50%;}
+.m-gezx .m-info .name{ line-height: 1; font-size: 20px; color: #444;}
+.m-gezx .m-info .info2{ margin-top: 10px; font-size: 16px; line-height: 16px; color: #8d8d8d;}
+.m-gezx .m-info .info2 .phone{ display: inline-block; padding-left: 15px; background: url(../img/icon/icon-phone.png) left center no-repeat; background-size: auto 16px;}
+
+.m-gezx .m-info2{ background-color: #fff;}
+.m-gezx .m-info2 .weui_grid_icon{ width: 40px; height: 40px;}
+.m-gezx .m-info2 .weui_grid_label{ margin-top: 0; font-size: 16px; color: #3a5a9e;}
+.m-gezx .m-info2 .weui_grid{ padding:10px;}
+
+.m-gezx .m-info3{ margin-top: 30px;}
+.m-gezx .m-info3 .weui_cell{ color: #444;}
+.m-gezx .m-info3 .weui_cell_hd img{ display: block; width: 24px; height: 24px; margin-right: 15px;}
