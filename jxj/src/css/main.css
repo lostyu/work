@@ -3,6 +3,7 @@ html, body{ background-color: #f5f5f9;}
 h2{ font-weight: normal; color: #000;}
 a{ color: #444;}
 a:active{ color: #000;}
+img{ max-width: 100%;}
 
 /* function */
 .f-cb:after,.f-cbli li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
@@ -18,32 +19,107 @@ a:active{ color: #000;}
 .f-fz16{ font-size: 16px;}
 .f-fz18{ font-size: 18px;}
 .f-br50{ border-radius: 50%;}
+.f-mt40{ margin-top: 40px;}
+.f-mt20{ margin-top: 20px;}
+.f-mt10{ margin-top: 10px;}
 .f-vam,.f-vama *{vertical-align:middle;}
+.f-pd{ padding: 0 15px;}
+.f-tar{ text-align: right;}
+.f-tac{ text-align: center;}
+.f-fb{ font-weight: bold;}
 
 /* 表单 */
 .weui_cells_form .weui_cell_hd{ padding-right: 10px;}
 .weui_cells_title{ margin-bottom: .77em;}
 .weui_label{ width: 4em; color: #666;}
+.weui_cell_select_2 .select_label{ position: relative; display: block; float: left; width: 4em; height: 44px; line-height: 44px; padding-left: 15px; padding-right: 9px; color: #666;}
+.weui_cell_select_2 .select_label:after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    border-right: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+}
+.weui_cell_select_2.weui_select_before .weui_cell_hd:after{ display: none;}
+.weui_cell_select_2 .weui_select{ padding-left: 10px; padding-right: 20px;}
+.bdleft.weui_cell:before { left: 0;}
 
 
 .c1{ color: #8d8d8d;}
 .c2{ color: #3a5a9e;}
 .c3{ color: #444;}
+.c4{ color: #666;}
+.c5{ color: #232323;}
 
 /* 九宫格2列 */
 .weui_grids_2 .weui_grid{ width: 50%;}
+.weui_grids_4 .weui_grid{ width: 25%;}
 
+
+/*====== module ======*/
+.m-box{ padding: 10px; background-color: #fff; border: 1px solid #dcdcdc; border-radius: 5px;}
+.m-article{ font-size: 15px; color: #232323;}
+.m-article h2, .m-article h3, .m-article h4{ font-size: 16px;}
+
+.m-xinxi{ height: 30px; line-height: 30px; font-size: 12px;}
+.m-xinxi .cnt{ display: block; color: #fff;}
+.m-xinxi .cnt:active{ color: #3a5a9e;}
+.m-xinxi .box{ position: relative; padding: 0 35px; background: rgba(0,0,0,.5) url(../img/icon/icon-voice-34x34.png) 10px center no-repeat; background-size: auto 20px;}
+.m-xinxi .close{ position: absolute; right: 0; top: 0; width: 35px; height: 30px; background: url(../img/icon/icon-close-34x34.png) left center no-repeat; background-size: 20px;}
+.m-xinxi-2{ height: 40px; line-height: 40px; font-size: 14px; color: #535b62;}
+.m-xinxi-2 .box{ background-color: #fff; background-image: url(../img/icon/icon-err.png);}
+
+.m-bdt{ border-top: 1px solid #9aa0a4;}
+.m-tit-w{ width: 100px;}
+.m-loadMore{ text-align: center}
+.m-loadMore a{ display: block; color: #3a5a9e; }
+
+/* 驾驶人信息 */
+.m-jsrxx{ color: #737373;}
+.m-jsrxx .weui_cell:before{ border-top: none;}
+.m-jsrxx .weui_cells{ margin-top: 0;}
+.m-jsrxx .weui_cells:before{ border-top-color: #9aa0a4;}
+
+/* 非法记录 */
+.m-items1{ margin-bottom: 10px; background-color: #fff; border: 1px solid #d7d7d7;}
+.m-items1 .weui_cells{ margin-top: 0;}
+.m-items1 .m-item-hd{ overflow: hidden; padding: 10px 15px; color: #5f6264;}
+.m-items1 .m-item-hd .weui_btn{ float: right;}
+.m-items1 .weui_cells:before{ border-top: 1px dotted #474747; }
+.m-items1 .weui_cells:after{ border-bottom: none;}
+.m-items1 .weui_cell_bd h2{margin-bottom:10px; font-size: 18px; color: #343434;}
+.m-items1 .weui_cell_bd p{ font-size: 14px; color: #55585a;}
+.m-items1 .m-item-ft .weui_grids_4:before,
+.m-items1 .m-item-ft .weui_grids_4:after,
+.m-items1 .m-item-ft .weui_grid:before,
+.m-items1 .m-item-ft .weui_grid:after{ border: none;}
+.m-items1 .m-item-ft .weui_grid{ padding: 5px; padding-bottom: 20px; font-size: 14px; text-align: center; color: #5c5f61;}
+.m-items1 .m-item-ft .weui_grid img{ vertical-align: middle;}
+
+
+.m-page{ position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow-y: scroll;}
+.m-page.has-ft{ bottom: 50px;}
+
+/* 通用底部 */
+.m-ft{ position: fixed; z-index: 9; left: 0; right: 0; bottom: 0; height: 49px; border-top: 1px solid #c2c2c2; background-color: #fff;}
+.m-ft li{ float: left; width: 20%; list-style: none;}
+.m-ft a{ display: block; height: 49px;  font-size: 12px; text-align: center;}
+.m-ft a img{ display: block; height: 24px; margin: 5px auto 0;}
+.m-ft .grzy{ position: relative;}
+.m-ft .grzy img{ width: 100%; height: auto; margin-top: 0;}
+.m-ft .grzy a{ position: relative; top: -5px; background: url(../img/icon/icon-ft5.png) center top no-repeat; background-size: contain;}
 
 /*====== 个人中心 ======*/
 .m-gezx{}
 .m-gezx .weui_cells{ font-size: 16px;}
 .m-gezx .weui_cell{ padding: 12px 15px;}
-
-.m-gezx .m-xinxi{ height: 30px; line-height: 30px; font-size: 12px;}
-.m-gezx .m-xinxi .cnt{ display: block; color: #fff;}
-.m-gezx .m-xinxi .cnt:active{ color: #3a5a9e;}
-.m-gezx .m-xinxi .box{ position: relative; padding: 0 35px; background: rgba(0,0,0,.5) url(../img/icon/icon-voice-34x34.png) 10px center no-repeat; background-size: auto 20px;}
-.m-gezx .m-xinxi .close{ position: absolute; right: 0; top: 0; width: 35px; height: 30px; background: url(../img/icon/icon-close-34x34.png) left center no-repeat; background-size: 20px;}
 
 .m-gezx .m-info{ margin-top: 0;}
 .m-gezx .m-info .weui_cell_hd img{ margin-right: 15px; width: 60px; height: 60px; border-radius: 50%;}
@@ -59,3 +135,27 @@ a:active{ color: #000;}
 .m-gezx .m-info3{ margin-top: 30px;}
 .m-gezx .m-info3 .weui_cell{ color: #444;}
 .m-gezx .m-info3 .weui_cell_hd img{ display: block; width: 24px; height: 24px; margin-right: 15px;}
+
+/*====== 驾驶人信息查询 ======*/
+.m-jsr{}
+.m-jsr .weui_icon_area{ margin-bottom: 10px;}
+
+.m-jsr .wfjl .title{ padding: 20px 0; text-align: center}
+.m-jsr .wfjl .title img{ width: 80%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

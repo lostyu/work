@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>添加车辆信息</title>
+    <link rel="stylesheet" href="iframe/lib/weui.min.css">
+    <link rel="stylesheet" href="iframe/css/jquery-weui.css">
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+
+
+<form action="">
+    <div class="weui_cells weui_cells_form f-mt40">
+
+        <div class="weui_cell weui_cell_select weui_cell_select_2 weui_select_before ">
+            <div class="weui_cell_hd">
+                <label class="select_label">车牌号</label>
+                <select class="weui_select" name="select2">
+                    <option value="1">渝</option>
+                    <option value="2">川</option>
+                    <option value="3">杭</option>
+                    <option value="4">沪</option>
+                    <option value="4">湘</option>
+                </select>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary" style="padding-left: 0;">
+                <input class="weui_input" type="text" placeholder="请输入车牌号">
+            </div>
+        </div>
+
+        <div class="weui_cell bdleft">
+            <div class="weui_cell_hd" style="width: 77px;">
+                <label class="weui_label">车架号</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="tel" placeholder="请输入车架号后6位">
+            </div>
+            <div class="weui_cell_ft"><img width="24" height="24" src="src/img/icon/icon-i.png" alt=""/></div>
+        </div>
+
+        <div class="weui_cell weui_cell_select weui_select_after bdleft">
+            <div class="weui_cell_hd" style="width: 77px;">
+                <span class="c4">车型</span>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <select class="weui_select" name="select2" style="padding-left: 0;">
+                    <option value="1">小汽车</option>
+                    <option value="2">卡车</option>
+                    <option value="3">跑车</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="weui_cell weui_cell_switch bdleft">
+            <div class="weui_cell_hd weui_cell_primary"><span class="c4">违法提醒</span></div>
+            <div class="weui_cell_ft">
+                <input class="weui_switch" type="checkbox" checked>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="weui_btn_area">
+        <a class="weui_btn weui_btn_primary" href="javascript:" id="showTooltips">保存并查询</a>
+    </div>
+</form>
+<a href="javascript:location.reload();">刷新</a>
+
+<script src="iframe/lib/jquery-2.1.4.js"></script>
+<script src="iframe/js/jquery-weui.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>

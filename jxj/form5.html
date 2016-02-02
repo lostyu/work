@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>缴纳罚款</title>
+    <link rel="stylesheet" href="iframe/lib/weui.min.css">
+    <link rel="stylesheet" href="iframe/css/jquery-weui.css">
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+
+
+<form action="">
+    <div class="weui_cells weui_cells_form f-mt40">
+
+        <div class="weui_cell weui_cell_select weui_cell_select_2 weui_select_before ">
+            <div class="weui_cell_hd">
+                <label class="select_label">车牌号</label>
+                <select class="weui_select" name="select2">
+                    <option value="1">渝</option>
+                    <option value="2">川</option>
+                    <option value="3">杭</option>
+                    <option value="4">沪</option>
+                    <option value="4">湘</option>
+                </select>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary" style="padding-left: 0;">
+                <input class="weui_input" type="text" placeholder="请输入车牌号">
+            </div>
+        </div>
+
+        <div class="weui_cell bdleft">
+            <div class="weui_cell_hd" style="width: 77px;">
+                <label class="weui_label">处罚单号</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="tel" placeholder="请输入16位处罚单编号">
+            </div>
+            <div class="weui_cell_ft"><img width="24" height="24" src="src/img/icon/icon-i.png" alt=""/></div>
+        </div>
+
+    </div>
+    <div class="weui_btn_area">
+        <a class="weui_btn weui_btn_primary" href="javascript:" id="showTooltips">查询</a>
+    </div>
+</form>
+
+<div class="f-pd f-mt20">
+    <p class="f-tar"><a class="c2 f-fz14" href="javascript:;">索要缴费收据网点查询》</a></p>
+    <div class="m-box f-mt10">
+        <div class="m-article">
+            <h2 class="f-fb"> 罚款缴纳特别提醒：</h2>
+            <p>（一）本渠道是由中国银联重庆分公司提供，支持190多家银行发行的银联卡（含信用卡和储蓄卡） 。 咨询电话95516、023-63716572、023-63107148。</p>
+            <p>（二）本渠道需凭“处罚决定书编号”进行交通违法罚款缴纳，如罚单中含"X"，请输入大写的字母“X”； </p>
+            <p>（三）本渠道暂不支持垫江地区交通违法罚款缴纳； </p>
+            <p>（四）缴纳罚款后如未出现立即消除违章情况，会在3个工作日内补销账。</p>
+        </div>
+    </div>
+</div>
+
+<a href="javascript:location.reload();">刷新</a>
+
+<script src="iframe/lib/jquery-2.1.4.js"></script>
+<script src="iframe/js/jquery-weui.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>
