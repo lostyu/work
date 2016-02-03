@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>banner</title>
+    <link rel="stylesheet" href="iframe/lib/weui.min.css">
+    <link rel="stylesheet" href="iframe/css/jquery-weui.css">
+    <link rel="stylesheet" href="iframe/lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img width="320" height="160" src="src/img/upload/banner11.jpg" alt=""/></div>
+        <div class="swiper-slide"><img width="320" height="160" src="src/img/upload/banner22.jpg" alt=""/></div>
+        <div class="swiper-slide"><img width="320" height="160" src="src/img/upload/banner33.jpg" alt=""/></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+
+
+<div class="m-banner">
+    <img class="pic" src="src/img/upload/banner22.jpg" alt=""/>
+    <div class="text">重庆第三届汽车博览会</div>
+    <a class="close" href="javascript:;"></a>
+</div>
+
+
+<div class="m-banner m-banner-2">
+    <ul>
+        <li><a href="javascript:;"><img width="68" height="68" src="src/img/upload/gg1.jpg" alt=""/><h2>紧急拖车</h2></a></li>
+        <li><a href="javascript:;"><img width="68" height="68" src="src/img/upload/gg2.jpg" alt=""/><h2>紧急送油</h2></a></li>
+        <li><a href="javascript:;"><img width="68" height="68" src="src/img/upload/gg3.jpg" alt=""/><h2>紧急送水</h2></a></li>
+    </ul>
+    <a class="close" href="javascript:;"></a>
+</div>
+
+
+<a href="javascript:location.reload();">刷新</a>
+
+
+<script src="iframe/lib/jquery-2.1.4.js"></script>
+<script src="iframe/js/jquery-weui.js"></script>
+<!-- Swiper JS -->
+<script src="iframe/lib/swiper/js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
+<script src="src/js/main.js"></script>
+</body>
+</html>
