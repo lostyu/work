@@ -55,6 +55,18 @@ img{ max-width: 100%;}
 .weui_cell_select_2 .weui_select{ padding-left: 10px; padding-right: 20px;}
 .bdleft.weui_cell:before { left: 0;}
 
+.weui_btn_plain_primary{color: #3a5a9e ;border: 1px solid #3a5a9e;}
+.weui_btn_plain_primary:active{ border-color: #3a5a9e;}
+
+.weui_btn_primary {background-color: #3a5a9e;}
+.weui_btn_primary:not(.weui_btn_disabled):active {
+    color: hsla(0,0%,100%,.4);
+    background-color: #3a5a9e;
+}
+
+input.weui_switch{border-color: #3a5a9e;background-color: #3a5a9e;}
+.weui_switch:checked{border-color: #3a5a9e;background-color: #3a5a9e;}
+
 .cell_nobd:before, .cell_nobd:after{ border: none;}
 .cell_nobd .weui_cell:before{ border-top: none;}
 .cell_bdt.weui_cell:before{ border-top: 1px solid #d9d9d9; left: 0;}
@@ -149,7 +161,8 @@ img{ max-width: 100%;}
 
 
 .m-page{ position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow-y: scroll;}
-.m-page.has-ft{ bottom: 60px;}
+.m-page.has-ft{ padding-bottom: 60px;}
+.m-page.has-hd{ padding-top: 50px;}
 
 /* 车牌号 */
 .m-cph{ display: inline-block;  color: #fff; font-size: 12px;  border: 1px solid #3a5a9e; border-radius: 5px;}
@@ -163,6 +176,9 @@ img{ max-width: 100%;}
 .m-ft .grzy{ position: relative;}
 .m-ft .grzy img{ width: 100%; height: auto; margin-top: 0;}
 .m-ft .grzy a{ position: relative; top: -5px; background: url(../img/icon/icon-ft5.png) center top no-repeat; background-size: contain;}
+
+/* 头部 */
+.m-header{ position: fixed; z-index: 9; left: 0; right: 0; top: 0; height: 49px; line-height: 49px; border-bottom: 1px solid #c2c2c2; background-color: #fff;}
 
 
 /* 广告 */
@@ -182,7 +198,45 @@ img{ max-width: 100%;}
 .m-fw{}
 .m-fw .title{ position: relative; top: 1px; height: 44px; line-height: 44px; border-top: 1px solid #d9e6f5; border-bottom: 1px solid #d9e6f5; border-left: 4px solid #3e7fcf; background-color: #fff;}
 .m-fw .title h2{ padding-left: 10px; font-size: 18px; color: #2b4e98;}
-.m-fw .bd{ background-color: #fff; }
+.m-fw .bd{ background-color: #fff; color: #7e7e7e; font-size: 14px;}
+.m-fw .bd a{ color: #7e7e7e;}
+.m-fw .weui_grid{}
+
+
+/* 地图 */
+.m-ditu{}
+.m-ditu .title{ padding: 0 15px; line-height: 30px; background-color: #878787; color: #fff; border-bottom: 1px solid #606060;}
+
+.m-map{ background-color: #ccc; height: 340px;}
+
+.m-bdb{ border-bottom: 1px solid #aeaead;}
+
+
+
+/* 最近违章 */
+.m-zjwz{ background-color: #fff;}
+.m-zjwz .tit{ line-height: 35px; padding: 0 15px; border-bottom: 1px solid #aeaead;}
+.m-zjwz ul{ overflow: hidden; padding: 10px; padding-bottom: 0; margin-left: -10px;}
+.m-zjwz ul li{ float: left; margin-left: 10px; margin-bottom: 10px; width: 40px; height: 40px; border-radius: 50%; overflow: hidden;}
+.m-zjwz li img{ width: 40px; height: 40px;}
+
+/* 评论 */
+.m-pinglun{ padding: 15px; background-color: #fff;}
+.m-pinglun .pinglunItem{ padding-bottom: 10px; border-bottom: 1px solid #efeff0;}
+.m-pinglun .pinglunItem .hd{overflow: hidden; padding: 10px 0;}
+.m-pinglun .pinglunItem .hd .pic{ float: left; width: 40px; height: 40px; margin-right: 10px; border-radius: 50%; overflow: hidden;}
+.m-pinglun .pinglunItem .hd .name{float: left; padding-top: 8px; font-size: 16px; color: #3a5a9e;}
+.m-pinglun .pinglunItem .hd .date{float: right; padding-top: 10px; font-size: 14px; color: #8d8d8d;}
+.m-pinglun .pinglunItem .bd{ position: relative; padding-bottom: 20px;}
+.m-pinglun .pinglunItem .bd .reply{ position: absolute; right: 0; bottom: 0; width: 30px; height: 20px; background: url(../img/icon/icon-reply.png) center no-repeat; background-size: contain;}
+.m-pinglun .pinglunItem .cnt{ color: #737a81;}
+
+/* 我要评论 */
+.m-reply-hf{ position: fixed; z-index: 9; left: 0; right: 0; bottom: 0; height: 80px;}
+.m-reply-hf .pic{ overflow: hidden; margin-right: 10px;  border-radius: 50%;}
+.m-reply-hf .pic img{ display: block;}
+.m-reply-hf .text{ display: block; width: 100%; height: 40px; padding: 5px; box-sizing: border-box;}
+.m-reply-hf .weui_btn{ margin-top: 5px; margin-left: 10px;}
 
 
 .u-btn-add a{ border-style: dotted; border-color: #3a5a9e; color: #3a5a9e;}
@@ -248,7 +302,7 @@ img{ max-width: 100%;}
 
 
 
-
+.u-reload{ position: absolute; z-index: 9999; right: 10px; top: 10px; color: red;}
 
 
 

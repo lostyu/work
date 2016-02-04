@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>标题</title>
+    <style>
+        .progress{ display: none; position: absolute; top: 50%; left: 10px; right: 10px; text-align: center;}
+        .progress .progressbar{ width: 0; height: 10px; border: 1px solid #000; background-color: #000;}
+    </style>
+</head>
+<body>
+
+<div id="progress" class="progress">
+    <div class="progressbar"></div>
+    <div><span></span>/<span></span></div>
+</div>
+
+
+<button id="btn1">加载图片</button>
+
+<script src="loadres.js"></script>
+<script>
+function getByClass(sClass, oParent) {
+    oParent = oParent || document;
+    var result = [];
+    var elements = oParent.getElementsByTagName('*');
+    var reg = new RegExp('\\b' + sClass + '\\b', 'i');
+
+    for(var i=0;i<elements.length;i++){
+        if(reg.test(elements[i].className)){
+            result.push(elements[i]);
+        }
+    }
+
+    return result;
+}
+
+window.onload = function() {
+    var oBtn = document.getElementById('btn1');
+    var oProgress = document.getElementById('progress');
+    var oBar = getByClass('progressbar', oProgress)[0];
+    console.log(oBar);
+    var oCurrent = oProgress.getElementsByTagName('span')[0];
+    var oTotal = oProgress.getElementsByTagName('span')[1];
+
+    var loader = new Loaderes({
+        resources : [
+            'http://p2.qhimg.com/t01ed1438874f940dc0.jpg',
+            'http://p9.qhimg.com/t01b4ff03b72c7dc6c7.jpg',
+            'http://p2.qhimg.com/t01dd90dfbec92074d0.jpg',
+            'http://p7.qhimg.com/t01cfec6d87cde457c5.jpg',
+            'http://p9.qhimg.com/t01943ced462da67833.jpg',
+            'http://p0.qhimg.com/t01943ced462da67833.jpg',
+            'http://p6.qhimg.com/t01aa15a7ba7ccb49a7.jpg',
+            'http://p8.qhimg.com/t010f1e8badf1134376.jpg',
+            'http://p8.qhimg.com/t01cf37ea915533a032.jpg',
+            'http://p3.qhimg.com/t0193d8a3963e1803e9.jpg',
+            'http://p3.qhimg.com/t01cd6a4d4b4bd4457b.jpg'
+        ],
+        onStart : function(total){
+            oProgress.style.display = 'block';
+            console.log('start:'+total);
+        },
+        onProgress : function(current, total){
+            console.log(current+'/'+total);
+            var percent = current/total*100;
+            oBar.style.width = percent + '%';
+            oCurrent.innerHTML = current;
+            oTotal.innerHTML = total;
+        },
+        onComplete : function(total){
+//            alert('加载完毕:'+total+'个资源');
+        }
+
+    });
+
+    loader.start();
+
+    oBtn.onclick = function() {
+
+    };
+};
+</script>
+</body>
+</html>
