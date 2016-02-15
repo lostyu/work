@@ -81,6 +81,8 @@ input.weui_switch{border-color: #3a5a9e;background-color: #3a5a9e;}
 .c4{ color: #666 !important;}
 .c5{ color: #232323 !important;}
 
+.bg1{ background-color: #fff;}
+
 /* 九宫格 */
 .weui_grids_2 .weui_grid{ width: 50%;}
 .weui_grids_4 .weui_grid{ width: 25%;}
@@ -180,6 +182,10 @@ input.weui_switch{border-color: #3a5a9e;background-color: #3a5a9e;}
 /* 头部 */
 .m-header{ position: fixed; z-index: 9; left: 0; right: 0; top: 0; height: 49px; line-height: 49px; border-bottom: 1px solid #c2c2c2; background-color: #fff;}
 
+.m-header-nav li{float: left; width: 25%; list-style: none; text-align: center;}
+.m-header-nav li a{ display: block;}
+.m-header-nav .active a{ color: #3a5a9e; border-bottom: 1px solid #3a5a9e;}
+
 
 /* 广告 */
 .m-banner{ position: relative; background-color: #fff;}
@@ -238,6 +244,23 @@ input.weui_switch{border-color: #3a5a9e;background-color: #3a5a9e;}
 .m-reply-hf .text{ display: block; width: 100%; height: 40px; padding: 5px; box-sizing: border-box;}
 .m-reply-hf .weui_btn{ margin-top: 5px; margin-left: 10px;}
 
+
+/* 地图信息 */
+.m-mapInfo{ position: fixed; z-index: 9; left: 0; right: 0; bottom: 0; background-color: #f5f5f9; border-top: 1px solid #cacac8;}
+.m-mapInfo .toggle{ display: block; height: 30px; background: #fff url(../img/icon/icon-arrow-up.png) center no-repeat; background-size: auto 10px;}
+.m-mapInfo .toggle.active{ background-image: url(../img/icon/icon-arrow-down.png);}
+.m-mapInfo .inner{ height: 100px;}
+.m-mapInfo .inner.active{ height: 300px; overflow-y: scroll;}
+
+
+.m-text{ background-color: #fff; padding: 10px;}
+.m-text h2{ margin-bottom: 5px; font-size: 16px;}
+.m-text p{ line-height: 24px; font-size: 14px; color: #6a6a6a;}
+.m-text p a{color: #6a6a6a;}
+
+.m-text-col2 li{ list-style: none; overflow: hidden;}
+.m-text-col2 .title{float: left; width: 110px; font-size: 14px;}
+.m-text-col2 .text{ overflow: hidden;}
 
 .u-btn-add a{ border-style: dotted; border-color: #3a5a9e; color: #3a5a9e;}
 .u-btn-add span{ display: inline-block; width: 42px; height: 42px; background: url(../img/icon/icon-add.png) center no-repeat; background-size: auto 30px;}
@@ -299,6 +322,8 @@ input.weui_switch{border-color: #3a5a9e;background-color: #3a5a9e;}
 }
 .swiper-pagination-bullet{ background-color: #fff; opacity: .5;}
 .swiper-pagination-bullet-active{ opacity: 1; background-color: #fff;}
+.swiper-slide-active{ color: #3a5a9e;}
+
 
 
 

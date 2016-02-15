@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>车检指南</title>
+    <link rel="stylesheet" href="iframe/lib/weui.min.css">
+    <link rel="stylesheet" href="iframe/css/jquery-weui.css">
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+
+
+<form action="">
+
+    <div class="weui_cells_title f-tac f-fz16">预约前或者到检验机构参加车间前<br />应当提前将交通事故和交通违法处理完</div>
+    <div class="weui_cells weui_cells_form f-mt40">
+
+        <div class="weui_cell weui_cell_select weui_cell_select_2 weui_select_before ">
+            <div class="weui_cell_hd">
+                <label class="select_label">车牌号</label>
+                <select class="weui_select" name="select2">
+                    <option value="1">渝</option>
+                    <option value="2">川</option>
+                    <option value="3">杭</option>
+                    <option value="4">沪</option>
+                    <option value="4">湘</option>
+                </select>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary" style="padding-left: 0;">
+                <input class="weui_input" type="text" placeholder="请输入车牌号">
+            </div>
+        </div>
+
+        <div class="weui_cell bdleft">
+            <div class="weui_cell_hd" style="width: 77px;">
+                <label class="weui_label">登记时间</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input id="appDate" class="weui_input" type="text" placeholder="请选择登记时间" readonly>
+            </div>
+            <div class="weui_cell_ft"><label for="appDate"><img width="24" height="24" src="src/img/icon/icon-rili.png" alt=""/></label></div>
+        </div>
+
+    </div>
+    <div class="weui_btn_area">
+        <a class="weui_btn weui_btn_primary" href="javascript:" id="showTooltips">确定</a>
+    </div>
+</form>
+
+<div class="f-pd f-mt20">
+    <div class="m-box f-mt10">
+        <div class="m-article">
+            <h2 class="f-fb"> 年检所需资料：</h2>
+            <p>（一）《机动车行驶证》原件；</p>
+            <p>（二）机动车交通事故强制保险凭证第二联原件（原件丢失的，提交其他任一联复印件并加盖保险公司印章，原件因上次核发检验合格标志时已收存的，提供任一联原件及复印件）；</p>
+            <p>（三）车船税纳税或者免税证明原件（由保险公司代收车船税的，提交交强险第二联原件）；</p>
+            <p>（四）代理人申请核发机动车检验合格标志业务的，应当提交代理人的身份证明和机动车所有人的书面委托；</p>
+            <p>（五）除以上须提交的证明、凭证外，使用警报器和标志灯具的非警用特种车辆须持重庆市公安交通管理局核发的《特种车辆警报器和标志灯具使用证》正本和复印件。</p>
+        </div>
+    </div>
+</div>
+
+<div class="weui_msg">
+    <div class="weui_text_area">
+        <p class="weui_msg_desc">重庆市公安局交通管理局  版权所有</p>
+        <p class="weui_msg_desc">技术支持：中恒玖联 微务宝</p>
+    </div>
+</div>
+
+<a href="javascript:location.reload();">刷新</a>
+
+<script src="iframe/lib/jquery-2.1.4.js"></script>
+<script src="iframe/js/jquery-weui.js"></script>
+
+<!-- 日历插件 -->
+<script src="iframe/lib/mobiscroll/dev/js/mobiscroll.core-2.5.2.js" type="text/javascript"></script>
+<script src="iframe/lib/mobiscroll/dev/js/mobiscroll.core-2.5.2-zh.js" type="text/javascript"></script>
+
+<link href="iframe/lib/mobiscroll/dev/css/mobiscroll.core-2.5.2.css" rel="stylesheet" type="text/css" />
+<link href="iframe/lib/mobiscroll/dev/css/mobiscroll.animation-2.5.2.css" rel="stylesheet" type="text/css" />
+<script src="iframe/lib/mobiscroll/dev/js/mobiscroll.datetime-2.5.1.js" type="text/javascript"></script>
+<script src="iframe/lib/mobiscroll/dev/js/mobiscroll.datetime-2.5.1-zh.js" type="text/javascript"></script>
+
+<!-- S 可根据自己喜好引入样式风格文件 -->
+<script src="iframe/lib/mobiscroll/dev/js/mobiscroll.android-ics-2.5.2.js" type="text/javascript"></script>
+<link href="iframe/lib/mobiscroll/dev/css/mobiscroll.android-ics-2.5.2.css" rel="stylesheet" type="text/css" />
+<!-- E 可根据自己喜好引入样式风格文件 -->
+<!-- /日历插件 -->
+
+<script>
+    var currYear = (new Date()).getFullYear();
+    var opt={};
+    opt.date = {preset : 'date'};
+    opt.default = {
+        theme: 'android-ics', //皮肤样式
+        display: 'modal', //显示方式
+        mode: 'scroller', //日期选择模式
+        lang:'zh',
+        startYear:currYear - 10, //开始年份
+        endYear:currYear + 10 //结束年份
+    };
+
+    $("#appDate").scroller($.extend(opt['date'], opt['default']));
+
+</script>
+
+<script src="src/js/main.js"></script>
+</body>
+</html>
