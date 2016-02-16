@@ -86,6 +86,7 @@ input.weui_switch{border-color: #3a5a9e;background-color: #3a5a9e;}
 /* 九宫格 */
 .weui_grids_2 .weui_grid{ width: 50%;}
 .weui_grids_4 .weui_grid{ width: 25%;}
+.weui_grid_nobd .weui_grid:before, .weui_grid_nobd .weui_grid:after{ border: none;}
 
 
 /*====== module ======*/
@@ -261,6 +262,19 @@ input.weui_switch{border-color: #3a5a9e;background-color: #3a5a9e;}
 .m-text-col2 li{ list-style: none; overflow: hidden;}
 .m-text-col2 .title{float: left; width: 110px; font-size: 14px;}
 .m-text-col2 .text{ overflow: hidden;}
+
+
+/* 提示 */
+.m-tishi{ padding: 15px; background-color: #3a5a9e; color: #fff;}
+.m-tishi .title{ margin-bottom: 10px; font-size: 18px;}
+
+.m-title{ position: relative; height: 30px; line-height: 30px; margin-bottom: 20px;}
+.m-title span{ position: absolute; left: 0; top: -5px; width: 40px; height: 40px; line-height: 40px; background-color: #3a5a9e; color: #fff; text-align: center; border-radius: 50%; font-size: 30px;}
+.m-title p{display: inline-block; margin-left: 5px; padding:0 10px 0 40px; min-width: 176px; background-color: #879ac3; color: #fff; font-size: 16px; border-radius: 5px;}
+
+.m-imgBox{ margin-bottom: 20px; padding: 4px; border: 1px solid #adadad; background-color: #fff;}
+.m-imgBox img{ display: block;}
+
 
 .u-btn-add a{ border-style: dotted; border-color: #3a5a9e; color: #3a5a9e;}
 .u-btn-add span{ display: inline-block; width: 42px; height: 42px; background: url(../img/icon/icon-add.png) center no-repeat; background-size: auto 30px;}

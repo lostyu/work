@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>事故描述</title>
+    <link rel="stylesheet" href="iframe/lib/weui.min.css">
+    <link rel="stylesheet" href="iframe/css/jquery-weui.css">
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+
+
+
+
+
+<div class="weui_cells_title f-tac f-fz14">为了能够快速响应请简单描述一下事故状况</div>
+<div class="weui_cells">
+
+    <div class="weui_cell" style="padding: 0 0 0 15px;">
+        <div class="weui_cell_hd" style="width: 30%;">事故位置</div>
+        <div class="weui_cell_bd" style="width: 35%;">
+            <div class="weui_cell weui_cell_select">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select1">
+                        <option selected="" value="1">主城</option>
+                        <option value="2">万州</option>
+                        <option value="3">丰都</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="weui_cell_ft" style="width: 35%;">
+            <div class="weui_cell weui_cell_select">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select1">
+                        <option selected="" value="1">江北</option>
+                        <option value="2">渝北</option>
+                        <option value="3">九龙坡</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="weui_cell">
+        <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="text" placeholder="请输入详细地址（非必填）">
+        </div>
+    </div>
+</div>
+
+
+<div class="weui_cells">
+    <div class="weui_cell">
+        <div class="weui_cell_hd">1、是否人员伤亡</div>
+        <div class="weui_cell_bd weui_cell_primary">
+            <div class="f-tar">
+                <label for="x01"><input type="radio" name="radio1" id="x01"> 是</label>
+                <label for="x02"><input type="radio" name="radio1" id="x02"> 否</label>
+            </div>
+        </div>
+    </div>
+    <div class="weui_cell">
+        <div class="weui_cell_hd">2、车辆是否可以移动</div>
+        <div class="weui_cell_bd weui_cell_primary">
+            <div class="f-tar">
+                <label for="x01"><input type="radio" name="radio2" id="x03"> 是</label>
+                <label for="x02"><input type="radio" name="radio2" id="x04"> 否</label>
+            </div>
+        </div>
+    </div>
+    <div class="weui_cell">
+        <div class="weui_cell_hd">3、是否造成公共财产损坏</div>
+        <div class="weui_cell_bd weui_cell_primary">
+            <div class="f-tar">
+                <label for="x01"><input type="radio" name="radio3" id="x05"> 是</label>
+                <label for="x02"><input type="radio" name="radio3" id="x06"> 否</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="f-pd" style="padding: 20px;">
+    <a class="weui_btn weui_btn_primary" href="javascript:;">提交信息</a>
+</div>
+
+
+<a class="u-reload" href="javascript:location.reload();">刷新</a>
+<script src="iframe/lib/jquery-2.1.4.js"></script>
+<script src="iframe/js/jquery-weui.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>
