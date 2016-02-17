@@ -27,6 +27,7 @@ img{ max-width: 100%;}
 .f-pt15{ padding-top: 15px;}
 .f-pb15{ padding-bottom: 15px;}
 .f-mb15{ margin-bottom: 15px;}
+.f-mb20{ margin-bottom: 20px;}
 .f-tar{ text-align: right;}
 .f-tac{ text-align: center;}
 .f-tal{ text-align: left;}
@@ -73,6 +74,13 @@ input.weui_switch{border-color: #3a5a9e;background-color: #3a5a9e;}
 .cell_nomt{ margin-top: 0;}
 .cell_bd{ border: 1px solid #d9d9d9; }
 .cell_npd{ padding: 0;}
+.cell-bdlr{ border-left: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9;}
+
+
+.weui_uploader_file2{ width: 45%; height: auto; margin-bottom: 15px; font-size: 14px; text-align: center;}
+.weui_uploader_file2 img{ display: inline-block; height: 77px; margin-bottom: 10px; padding: 2px; border: 1px solid #e2e2e2; border-radius: 5px;}
+.weui_uploader_input_wrp2{float: left; width: 45%;}
+.weui_uploader_input_wrp2 .weui_uploader_input_wrp{ width: 100%; height: 81px; border-radius: 5px;}
 
 
 .c1{ color: #8d8d8d !important;}
@@ -80,6 +88,8 @@ input.weui_switch{border-color: #3a5a9e;background-color: #3a5a9e;}
 .c3{ color: #444 !important;}
 .c4{ color: #666 !important;}
 .c5{ color: #232323 !important;}
+.cgreen{ color: #3d9918 !important;}
+.cred{ color: #ff0000 !important;}
 
 .bg1{ background-color: #fff;}
 
@@ -170,6 +180,11 @@ input.weui_switch{border-color: #3a5a9e;background-color: #3a5a9e;}
 /* 车牌号 */
 .m-cph{ display: inline-block;  color: #fff; font-size: 12px;  border: 1px solid #3a5a9e; border-radius: 5px;}
 .m-cph div{ margin: 1px; padding: 10px; background-color: #3a5a9e; border-radius: 5px;}
+
+.m-chepaihao{ border-radius: 5px;}
+.m-chepaihao .cell_title{ height: 44px; line-height: 44px; background-color: #3a5a9e; text-align: center; color: #fff; font-size: 16px;}
+.m-chepaihao .cell_title2{ background-color: #9c9c9c;}
+
 
 /* 通用底部 */
 .m-ft{ position: fixed; z-index: 9; left: 0; right: 0; bottom: 0; height: 49px; border-top: 1px solid #c2c2c2; background-color: #fff;}
@@ -275,6 +290,27 @@ input.weui_switch{border-color: #3a5a9e;background-color: #3a5a9e;}
 .m-imgBox{ margin-bottom: 20px; padding: 4px; border: 1px solid #adadad; background-color: #fff;}
 .m-imgBox img{ display: block;}
 
+.m-uploader{ overflow: hidden; margin-top: 10px;}
+.m-uploader li{float: left; width: 45%; margin-right: 5%; margin-bottom: 5%; list-style: none;}
+.m-uploader li p{ text-align: center; font-size: 14px;}
+.m-uploader .pic{ position: relative; border-radius: 5px; background-color: #d0d0d0;}
+.m-uploader .pic img{ display: block; height: 77px; margin: 0 auto;}
+.m-uploader .mask{ position: absolute; width: 100%; height: 100%; line-height: 77px; border-radius: 5px; background-color: rgba(0,0,0,.5); text-align: center; color: #fff;}
+
+
+.m-jiluList{ margin-bottom: 15px; padding: 15px;background-color: #fff; color: #9b9b9b;}
+.m-jiluList h2{ padding-bottom: 10px; color: #3d3d3d; font-size: 16px;}
+.m-jiluList p{ padding-bottom: 10px; font-size: 14px;}
+.m-jiluList .ft{ overflow: hidden; padding-top: 5px; border-top: 1px solid #e8e8e8;}
+.m-jiluList .ft .col{float: left; width: 33.333%;}
+
+
+.m-zhinan{}
+.m-zhinan .title{ padding-bottom: 10px; border-bottom: 1px solid #d7d7d7; text-align: center; font-size: 16px; }
+.m-zhinan .bd{ padding: 10px 0; font-size: 14px;}
+.m-zhinan .bd p{ padding-bottom: 5px; color: #575757;}
+
+.m-list2 a:nth-child(even){ background-color: #eaeaec;}
 
 .u-btn-add a{ border-style: dotted; border-color: #3a5a9e; color: #3a5a9e;}
 .u-btn-add span{ display: inline-block; width: 42px; height: 42px; background: url(../img/icon/icon-add.png) center no-repeat; background-size: auto 30px;}
