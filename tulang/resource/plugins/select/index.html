@@ -3,45 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <title>select级联</title>
+    <script src="citydata.js"></script>
     <script>
-        window.onload = function() {
+        window.onload = function () {
 
-            var data = {
-                "0": ['重庆','北京','上海'],
-                "0_0": ['九龙坡','大渡口','渝中区'],
-                "0_0_0": ['杨家坪','直港大道','动物园'],
+            console.dir(window.cityData);
+//            var data = {
+//                "0": {
+//                    "重庆": "cq",
+//                    "北京": "bj",
+//                    "上海": "sh"
+//                },
+//                "1": {
+//                    "重庆": [{"九龙坡": "jlp"}, {"大渡口": "ddk"}, {"渝中区": "yzq"}],
+//                    "北京": ["朝阳", "五环", "渝中区"]
+//                },
+//                "2": {
+//                    "九龙坡": ["杨家坪", "直港大道", "动物园"]
+//                }
+//            };
+//
+//
+//            console.log(data);
 
 
-            };
-
-            console.log(data);
-
-
-            new lcSelect('sel1', data);
+            new lcSelect('sel1', 3, window.cityData);
 
         };
 
-        function lcSelect(id, data) {
+        function lcSelect(id, num, data) {
             this.parent = document.getElementById(id);
             this.data = data;
+            this.num = num;
+            this.aSel = this.parent.getElementsByTagName('select');
             this.init();
         }
 
         lcSelect.prototype = {
-            init: function() {
-                var oSel = document.createElement('select');
-                var opt = document.createElement('option');
+            init: function () {
+                var arr = this.data;
+                var _this = this;
 
-                oSel.appendChild(opt);
+                for(var i=0;i<this.num;i++){
+                    var oSel = document.createElement('select');
+                    var opt = document.createElement('option');
+                    oSel.index = i;
+
+                    oSel.appendChild(opt);
+                    this.parent.appendChild(oSel);
+
+                    this.aSel[i].onchange = function(){
+                        _this.change(this.index, this);
+                    };
+                }
+
+                for(var i=0;i<arr.length;i++){
+                    var opt = document.createElement('option');
+                    opt.innerHTML = arr[i]['name'];
+                    this.aSel[0].appendChild(opt);
+                }
+
+
             },
-            change: function() {},
-            add: function() {}
+            change: function (index, oSel) {
+                var arr = [];
+                index++;
+                alert(index);
+                if(index < this.num){
+
+                    // 数组length写掉了，也不会报错
+                    for(var i=0;i<this.data.length;i++){
+                        if(this.data[i]['name'] == oSel.value ){
+                            arr = this.data[i]['children'];
+                        }else if(this.data[i]['children']['name'] == oSel.value){
+                            arr = this.data[i]['children']['children'];
+                        }
+                    }
+
+                    console.log(arr);
+
+
+                    for(var i=0;i<arr.length;i++){
+                        var opt = document.createElement('option');
+                        opt.innerHTML = arr[i]['name'];
+                        this.aSel[index].appendChild(opt);
+                    }
+                }
+            }
         };
     </script>
 </head>
 <body>
 
-    <div id="sel1"></div>
+<div id="sel1"></div>
 
 </body>
 </html>
