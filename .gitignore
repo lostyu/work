@@ -3,3 +3,6 @@
 *.xml
 .idea/work.iml
 **/node_modules/
+*.iml
+**/bower_components/
+**/图狼网3.17/

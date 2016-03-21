@@ -1,0 +1,23 @@
+label {
+  font-weight: 500;
+}
+.form-w {
+  width: 560px;
+}
+.form-w2 {
+  width: 150px !important;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+input.form-file {
+  position: relative;
+  display: inline-block;
+}

@@ -1,0 +1,35 @@
+.f-ml5 {
+  margin-left: 5px;
+}
+.f-mr5 {
+  margin-right: 5px;
+}
+.f-mt5 {
+  margin-top: 5px;
+}
+.f-mb5 {
+  margin-bottom: 5px;
+}
+label {
+  font-weight: 500;
+}
+.form-w {
+  width: 560px;
+}
+.form-w2 {
+  width: 150px !important;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+input.form-file {
+  position: relative;
+  display: inline-block;
+}

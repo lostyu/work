@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select级联</title>
+    <script>
+        window.onload = function() {
+
+            var data = {
+                "0": ['重庆','北京','上海'],
+                "0_0": ['九龙坡','大渡口','渝中区'],
+                "0_0_0": ['杨家坪','直港大道','动物园'],
+
+                
+            };
+
+            console.log(data);
+
+
+            new lcSelect('sel1', data);
+
+        };
+
+        function lcSelect(id, data) {
+            this.parent = document.getElementById(id);
+            this.data = data;
+            this.init();
+        }
+
+        lcSelect.prototype = {
+            init: function() {
+                var oSel = document.createElement('select');
+                var opt = document.createElement('option');
+
+                oSel.appendChild(opt);
+            },
+            change: function() {},
+            add: function() {}
+        };
+    </script>
+</head>
+<body>
+
+    <div id="sel1"></div>
+
+</body>
+</html>
