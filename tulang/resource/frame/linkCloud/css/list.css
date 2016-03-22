@@ -1,0 +1,28 @@
+.lc-list-1 {
+  padding: 40px 0;
+  border-bottom: 1px solid #ddd;
+}
+.lc-list-1 .meta {
+  height: 40px;
+}
+.lc-list-1 .meta span {
+  margin-right: 10px;
+}
+.lc-list-1 .media-left {
+  padding-right: 35px;
+}
+.lc-list-1 .media-left img {
+  width: 150px;
+  height: 150px;
+}
+.lc-list-1 .media-heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+.lc-list-1 .price {
+  color: #666;
+}
+.lc-list-1 .price span {
+  font-size: 24px;
+  color: #0C5FC5;
+}

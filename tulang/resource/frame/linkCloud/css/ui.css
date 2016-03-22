@@ -1,0 +1,13 @@
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.label {
+  display: inline-block;
+  border-radius: 0;
+  line-height: normal;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 4px 10px;
+  min-width: 90px;
+}
