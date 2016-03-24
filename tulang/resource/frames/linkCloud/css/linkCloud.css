@@ -415,6 +415,11 @@ input.form-file {
   font-size: 20px;
   color: #777;
 }
+.lc-companyCard .media-heading small {
+  position: relative;
+  top: -10px;
+  font-size: 14px;
+}
 .lc-companyCard .pingjia {
   overflow: hidden;
   margin-bottom: 0;
